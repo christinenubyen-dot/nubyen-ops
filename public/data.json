@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-03T07:19:19.490Z",
+  "syncedAt": "2026-07-03T07:20:14.605Z",
   "orders": [
     {
       "id": "NUB-3805",
@@ -445,7 +445,7 @@
       "sku": "NBEAU",
       "name": "Nubyen 'Botox' alternative- Vegan Beautox Skin Beautifying Elixir",
       "onHand": 1030,
-      "reorderPt": 10,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -652,7 +652,7 @@
       "sku": "NMUS1",
       "name": "Nubyen Glow Highlighter Powder (Muse)",
       "onHand": 999,
-      "reorderPt": 10,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -661,7 +661,7 @@
       "sku": "NMUS2",
       "name": "Nubyen Glow Highlighter Powder (Muse)",
       "onHand": 995,
-      "reorderPt": 10,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -769,7 +769,7 @@
       "sku": "NMHB1",
       "name": "Nubyen Muse Highlighter Face Brush",
       "onHand": 1016,
-      "reorderPt": 10,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -1111,7 +1111,7 @@
       "sku": "NADVQAQ",
       "name": "PRE-ORDER Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
       "onHand": -1,
-      "reorderPt": 10,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -1120,7 +1120,7 @@
       "sku": "NM4N1",
       "name": "The Minimalist- Nubyen Vegan 3 in 1 Face Brush",
       "onHand": 986,
-      "reorderPt": 10,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
