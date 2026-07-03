@@ -1,0 +1,44 @@
+name: Sync Shopify data
+
+on:
+  schedule:
+    - cron: "0 * * * *" # top of every hour (UTC)
+  workflow_dispatch: # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write # needs to commit the refreshed data.json
+
+concurrency:
+  group: "shopify-sync"
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch Shopify data
+        env:
+          SHOPIFY_STORE: ${{ secrets.SHOPIFY_STORE }}
+          SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
+          SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
+        run: node scripts/fetch-shopify.mjs
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "shopify-sync-bot"
+          git config user.email "actions@github.com"
+          git add public/data.json
+          if git diff --staged --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore: hourly Shopify data sync"
+            git push
+          fi
