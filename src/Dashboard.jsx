@@ -88,13 +88,13 @@ const MOCK_PRODUCTS = [
   { sku: "NLIPD", name: "Lip Fila Defining Cleanse Scrub", onHand: 0, reorderPt: 10, onOrder: 0, lastStocked: "2026-05-30", supplier: "Tarlu" },
   { sku: "NLIPA1", name: "Plumping Tinted Lip Fila Balm, Espresso", onHand: 7, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-15", supplier: "Tarlu" },
   { sku: "NLIPA2", name: "Plumping Tinted Lip Fila Balm, Iridescent", onHand: 0, reorderPt: 10, onOrder: 120, lastStocked: "2026-06-11", supplier: "Tarlu" },
-  { sku: "NLIPA3", name: "Plumping Tinted Lip Fila Balm, Nude", onHand: 9, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-20", supplier: "Tarlu" },
+  { sku: "NLIPA3", name: "Plumping Tinted Lip Fila Balm, Nude", onHand: 32, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-20", supplier: "Tarlu" },
   { sku: "NFIRM", name: "Val-i-date Lipid Freeze Body Firming Treatment", onHand: 0, reorderPt: 10, onOrder: 60, lastStocked: "2026-06-02", supplier: "Tarlu" },
-  { sku: "NNUDE2", name: "Nude Lip Gloss - Nude (Black Packaging)", onHand: 22, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-22", supplier: "Launchpad" },
+  { sku: "NNUDE2", name: "Nude Lip Gloss - Nude (Black Packaging)", onHand: 45, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-22", supplier: "Launchpad" },
   { sku: "NLPO1", name: "Powerful Lip Plumping Lip Oil, Clear", onHand: 0, reorderPt: 10, onOrder: 200, lastStocked: "2026-06-06", supplier: "Launchpad" },
-  { sku: "NLPO3", name: "Powerful Lip Plumping Lip Oil, Tawny", onHand: 5, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-18", supplier: "Launchpad" },
+  { sku: "NLPO3", name: "Powerful Lip Plumping Lip Oil, Tawny", onHand: 28, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-18", supplier: "Launchpad" },
   { sku: "NBTLED", name: "Muse Skin Beautifying LED Device", onHand: 3, reorderPt: 10, onOrder: 25, lastStocked: "2026-06-21", supplier: "Launchpad" },
-  { sku: "NCHEEK", name: "Cheek Fila - Reversible Cheek Filler Alt.", onHand: 40, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-24", supplier: "Launchpad" },
+  { sku: "NCHEEK", name: "Cheek Fila - Reversible Cheek Filler Alt.", onHand: 60, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-24", supplier: "Launchpad" },
 ];
 
 const TODAY = new Date("2026-06-29");
@@ -159,6 +159,7 @@ function AgingReport({ title, rows, valueKey, valueFmt, accent }) {
 export default function Dashboard() {
   const [tab, setTab] = useState("orders");
   const [open, setOpen] = useState(null);
+  const [stockView, setStockView] = useState("attention"); // "attention" | "all"
 
   // Live data from hourly Shopify sync (public/data.json), with mock fallback.
   const [ORDERS, setOrders] = useState(MOCK_ORDERS);
@@ -183,8 +184,10 @@ export default function Dashboard() {
       });
   }, []);
 
-  const unfulfilled = useMemo(() => ORDERS.filter((o) => o.status === "Unfulfilled").map((o) => ({ ...o, age: daysSince(o.placed), bucket: bucketOf(daysSince(o.placed)) })).sort((a, b) => b.age - a.age), []);
-  const outOfStock = useMemo(() => PRODUCTS.filter((p) => p.onHand === 0 || p.onHand < p.reorderPt).map((p) => ({ ...p, age: daysSince(p.lastStocked), bucket: bucketOf(daysSince(p.lastStocked)), critical: p.onHand === 0, needsReorder: p.onOrder === 0 })).sort((a, b) => b.age - a.age), []);
+  const unfulfilled = useMemo(() => ORDERS.filter((o) => o.status === "Unfulfilled").map((o) => ({ ...o, age: daysSince(o.placed), bucket: bucketOf(daysSince(o.placed)) })).sort((a, b) => b.age - a.age), [ORDERS]);
+  // Enrich every product, then derive the "needs attention" subset from it.
+  const allStock = useMemo(() => PRODUCTS.map((p) => ({ ...p, age: daysSince(p.lastStocked), bucket: bucketOf(daysSince(p.lastStocked)), critical: p.onHand === 0, low: p.onHand > 0 && p.onHand < p.reorderPt, needsReorder: p.onOrder === 0 && (p.onHand === 0 || p.onHand < p.reorderPt) })).sort((a, b) => a.onHand - b.onHand), [PRODUCTS]);
+  const outOfStock = useMemo(() => allStock.filter((p) => p.critical || p.low).sort((a, b) => b.age - a.age), [allStock]);
 
   const stats = {
     open: unfulfilled.length,
@@ -258,19 +261,27 @@ export default function Dashboard() {
 
       {tab === "stock" && (
         <section className="card">
+          <div className="stock-head">
+            <div className="seg">
+              <button className={stockView === "attention" ? "seg-btn on" : "seg-btn"} onClick={() => setStockView("attention")}>Needs attention ({outOfStock.length})</button>
+              <button className={stockView === "all" ? "seg-btn on" : "seg-btn"} onClick={() => setStockView("all")}>All products ({allStock.length})</button>
+            </div>
+          </div>
           <table>
             <thead><tr><th>SKU</th><th>Product</th><th>Supplier</th><th className="r">On hand</th><th className="r">Reorder pt</th><th className="r">On order</th><th>Flag</th></tr></thead>
             <tbody>
-              {outOfStock.map((p) => (
+              {(stockView === "all" ? allStock : outOfStock).map((p) => (
                 <tr key={p.sku}>
                   <td className="mono">{p.sku}</td>
                   <td>{p.name}</td>
                   <td className="muted">{p.supplier}</td>
-                  <td className="r"><strong style={{ color: p.critical ? "#a9826a" : "#b08968" }}>{p.onHand}</strong></td>
+                  <td className="r"><strong style={{ color: p.critical ? "#a9826a" : p.low ? "#b08968" : "#4a8a7b" }}>{p.onHand}</strong></td>
                   <td className="r muted">{p.reorderPt}</td>
                   <td className="r">{p.onOrder || "\u2014"}</td>
                   <td>
-                    {p.critical ? <span className="pill" style={{ color: "#a9826a", borderColor: "#a9826a" }}>Out of stock</span> : <span className="pill" style={{ color: "#b08968", borderColor: "#b08968" }}>Low</span>}
+                    {p.critical ? <span className="pill" style={{ color: "#a9826a", borderColor: "#a9826a" }}>Out of stock</span>
+                      : p.low ? <span className="pill" style={{ color: "#b08968", borderColor: "#b08968" }}>Low</span>
+                      : <span className="pill" style={{ color: "#4a8a7b", borderColor: "#4a8a7b" }}>In stock</span>}
                     {p.needsReorder && <span className="pill" style={{ color: "#5b8bb8", borderColor: "#5b8bb8", marginLeft: 6 }}>Reorder</span>}
                   </td>
                 </tr>
@@ -346,6 +357,10 @@ tr:last-child td{border-bottom:none;}
 .bar.done{background:var(--accent);}
 .track-back{color:#a9826a;font-weight:700;font-size:13px;}
 .hint{font-size:12px;color:var(--dim);padding:10px 12px;}
+.stock-head{display:flex;justify-content:flex-start;padding:10px 8px 4px;}
+.seg{display:inline-flex;background:var(--surface-alt);border:1px solid var(--border);border-radius:10px;padding:3px;gap:2px;}
+.seg-btn{background:none;border:none;padding:7px 14px;font-size:12.5px;font-weight:700;color:var(--dim);cursor:pointer;border-radius:8px;transition:all .15s;}
+.seg-btn.on{background:var(--surface);color:var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.06);}
 .aging-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
 .aging{padding:16px 16px 8px;}
 .aging h3{margin:0 0 18px;font-size:15px;font-weight:700;color:var(--text);}
