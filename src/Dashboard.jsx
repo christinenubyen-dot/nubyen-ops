@@ -98,14 +98,24 @@ const MOCK_PRODUCTS = [
 ];
 
 const TODAY = new Date("2026-06-29");
-const daysSince = (d) => Math.round((TODAY - new Date(d)) / 86400000);
+const daysSince = (d) => {
+  if (!d) return null;
+  const t = new Date(d).getTime();
+  if (Number.isNaN(t)) return null;
+  return Math.round((TODAY - t) / 86400000);
+};
 const BUCKETS = [
   { label: "0\u20132 days", min: 0, max: 2 },
   { label: "3\u20135 days", min: 3, max: 5 },
   { label: "6\u201310 days", min: 6, max: 10 },
   { label: "11+ days", min: 11, max: Infinity },
 ];
-const bucketOf = (age) => BUCKETS.find((b) => age >= b.min && age <= b.max).label;
+const UNKNOWN_BUCKET = "Unknown";
+const bucketOf = (age) => {
+  if (age === null || age === undefined || Number.isNaN(age)) return UNKNOWN_BUCKET;
+  const b = BUCKETS.find((b) => age >= b.min && age <= b.max);
+  return b ? b.label : UNKNOWN_BUCKET;
+};
 const money = (n) => "$" + n.toLocaleString();
 
 const STAGES = ["Awaiting pick", "Label created", "In transit", "Out for delivery", "Delivered"];
@@ -297,14 +307,14 @@ export default function Dashboard() {
             <AgingReport title="Unfulfilled orders by age" rows={unfulfilled} valueKey="value" valueFmt={money} accent={THEME.brown} />
             <table className="mini">
               <thead><tr><th>Order</th><th className="r">Age</th><th className="r">Value</th></tr></thead>
-              <tbody>{unfulfilled.map((o) => (<tr key={o.id}><td className="mono">{o.id}</td><td className="r">{o.age}d</td><td className="r">{money(o.value)}</td></tr>))}</tbody>
+              <tbody>{unfulfilled.map((o) => (<tr key={o.id}><td className="mono">{o.id}</td><td className="r">{o.age == null ? "\u2014" : o.age + "d"}</td><td className="r">{money(o.value)}</td></tr>))}</tbody>
             </table>
           </div>
           <div className="card">
             <AgingReport title="Out-of-stock items by age" rows={outOfStock.filter((p) => p.critical)} valueKey="reorderPt" valueFmt={(n) => n + " u"} accent={THEME.accent} />
             <table className="mini">
               <thead><tr><th>SKU</th><th>Product</th><th className="r">Days out</th></tr></thead>
-              <tbody>{outOfStock.filter((p) => p.critical).map((p) => (<tr key={p.sku}><td className="mono">{p.sku}</td><td>{p.name}</td><td className="r">{p.age}d</td></tr>))}</tbody>
+              <tbody>{outOfStock.filter((p) => p.critical).map((p) => (<tr key={p.sku}><td className="mono">{p.sku}</td><td>{p.name}</td><td className="r">{p.age == null ? "\u2014" : p.age + "d"}</td></tr>))}</tbody>
             </table>
           </div>
         </section>
