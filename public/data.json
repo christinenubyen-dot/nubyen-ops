@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-07-03T18:46:46.718Z",
+  "syncedAt": "2026-07-03T22:39:39.496Z",
   "orders": [
+    {
+      "id": "NUB-3806",
+      "customer": "Rachel",
+      "placed": "2026-07-03",
+      "value": 60,
+      "status": "Unfulfilled",
+      "items": 2,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Lytham St Annes, ENG"
+    },
     {
       "id": "NUB-3805",
       "customer": "John j Gurin",
@@ -705,7 +720,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 797,
+      "onHand": 796,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -795,7 +810,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2570,
+      "onHand": 2569,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
