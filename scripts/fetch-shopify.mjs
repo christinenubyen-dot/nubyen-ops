@@ -26,13 +26,26 @@ const API_VERSION = "2025-01";
 // ---- EDIT THIS: map real Shopify location names to your two centers --------
 const LOCATION_MAP = {
   // "Exact Shopify location name": "Tarlu" | "Launchpad"
-  "Nubyén Warehouse": "Tarlu",
-  "Launchpad 3PL": "Launchpad",
+  "Tarlu": "Tarlu",
+  "Launchpad": "Launchpad",
   // Add aliases if your Shopify locations are named differently, e.g.:
   // "Nubyen Main Warehouse": "Tarlu",
   // "3PL - Launchpad Logistics": "Launchpad",
 };
 const DEFAULT_FC = "Tarlu"; // used when a location name isn't in the map
+
+// Per-SKU reorder points, sourced from the inventory sheet's LowStockAlertLevel.
+// Anything not listed falls back to DEFAULT_REORDER.
+const REORDER_POINTS = {
+  NNUDE1: 10, NLIPFIL: 10, NLIPD: 10, NLIPA2: 10, NLIPA1: 10, NLIPA3: 10,
+  NLIPA4: 10, NFIRM: 10, NNUDE2: 10, NUBMB: 10, NPRO3: 10, NBTLED: 10,
+  NLASHFLY: 10, NTRIR: 10, NTRIE: 10, NTRIG: 10, NDERM: 10,
+  NCHEEK: 10, NLPO1: 10, NLPO2: 10, NLPO3: 10, NLPO4: 10, NLPO5: 10,
+  NLIPFILBOX: 10, NADVQAQ: 1, POSTPOST: 1, NM4N1: 1, NBEAU: 1, NMHB1: 1,
+  MUSEH1: 1, MUSEH2: 1, MUSEH3: 1, MUSEH4: 1, MUSEH5: 1,
+  NMUS1: 1, NMUS2: 1,
+};
+const DEFAULT_REORDER = 10;
 
 if (!STORE || !CLIENT_ID || !CLIENT_SECRET) {
   console.error(
@@ -208,7 +221,7 @@ async function main() {
     sku: p.sku,
     name: p.name,
     onHand: p.onHand,
-    reorderPt: 10, // sheet's LowStockAlertLevel; adjust or read from a metafield
+    reorderPt: REORDER_POINTS[p.sku] ?? DEFAULT_REORDER,
     onOrder: 0, // Shopify has no native "on order" for POs; left 0 unless you track it
     lastStocked: null,
     supplier: p.supplier,
