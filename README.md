@@ -26,9 +26,13 @@ Live URL (after deploy): `https://<your-username>.github.io/nubyen-ops/`
 ## Connect Shopify (optional, for live data)
 
 See **[SHOPIFY_SETUP.md](./SHOPIFY_SETUP.md)** for the full walkthrough. In
-short: create a Shopify custom app, add `SHOPIFY_STORE` + `SHOPIFY_TOKEN` to
-GitHub Secrets, map your locations to Tarlu/Launchpad, and run the **Sync
-Shopify data** action once. It then refreshes hourly.
+short: install your Dev Dashboard app on the store, add `SHOPIFY_STORE`,
+`SHOPIFY_CLIENT_ID`, and `SHOPIFY_CLIENT_SECRET` to GitHub Secrets, map your
+locations to Tarlu/Launchpad, and run the **Sync Shopify data** action once.
+It then refreshes hourly.
+
+> Note: as of Jan 2026 Shopify apps use a Client ID + Secret (no permanent
+> token). The sync script exchanges them for a short-lived token on each run.
 
 Until you connect Shopify, the dashboard shows built-in **sample data** (badge
 in the header), so it always renders.

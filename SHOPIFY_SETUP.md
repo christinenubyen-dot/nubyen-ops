@@ -1,60 +1,65 @@
-# Nubyén Ops — Shopify Integration Setup
+# Nubyén Ops — Shopify Integration Setup (Dev Dashboard)
 
-Your dashboard now supports **live hourly data from Shopify**. Until you add
-your Shopify credentials, it keeps showing the built-in sample data — so
-nothing breaks in the meantime. The header shows a badge: **○ Sample data** or
-**● Live — Shopify**.
+Your dashboard supports **live hourly data from Shopify**. Until you add
+credentials, it shows built-in sample data — nothing breaks. The header badge
+reads **○ Sample data** or **● Live — Shopify**.
+
+> **Important — what changed (Jan 1, 2026):** Shopify no longer issues
+> permanent `shpat_` tokens for custom apps. Apps created in the **Dev
+> Dashboard** give you a **Client ID** and **Client Secret** instead. Our sync
+> script exchanges those for a short-lived token automatically on each run, so
+> you never copy or store a token yourself.
 
 ## How it works
 
 ```
 Hourly (GitHub Action: sync-shopify.yml)
-   → scripts/fetch-shopify.mjs calls the Shopify Admin API
-   → writes public/data.json (orders + products, in the dashboard's shape)
-   → commits it → triggers a redeploy
-Dashboard (in the browser)
+   → fetch-shopify.mjs POSTs client ID + secret to /admin/oauth/access_token
+   → Shopify returns a short-lived Admin API token (~24h)
+   → script calls Orders / Products / Inventory / Locations
+   → writes public/data.json → commits → redeploys
+Dashboard (browser)
    → fetches data.json on load; falls back to sample data if empty/missing
 ```
 
-No token is ever exposed in the browser — it lives only in GitHub Secrets and
-is used server-side inside the Action.
+Nothing secret ever reaches the browser. The client ID/secret live only in
+GitHub Secrets and are used server-side inside the Action.
 
 ---
 
 ## One-time setup
 
-### 1. Create a Shopify custom app
+### 1. Finish your Dev Dashboard app
 
-1. Shopify admin → **Settings → Apps and sales channels → Develop apps**.
-2. **Allow custom app development** (one-time), then **Create an app**
-   (name it e.g. "Ops Dashboard").
-3. **Configuration → Admin API integration → Configure**, grant these read
-   scopes:
-   - `read_orders`
-   - `read_products`
-   - `read_inventory`
-   - `read_fulfillments`
-   - `read_locations`
-   - `read_merchant_managed_fulfillment_orders`
-4. **Save**, then **Install app**.
-5. Under **API credentials**, reveal and copy the **Admin API access token**
-   (starts with `shpat_`). You only see it once — copy it now.
+You already created the app and have a **Client ID** and **Client Secret**.
+Two things must be true for the token exchange to work:
 
-### 2. Add secrets to GitHub
+- **The app must be installed on your store.** In the Dev Dashboard, open your
+  app and use **Install** / **Select store** to install it on your
+  `your-store.myshopify.com`. If it asks for an **App URL**, you can use
+  `https://shopify.dev/apps/default-app-home` (this isn't a UI app).
+- **Admin API scopes** must include these reads:
+  `read_orders`, `read_products`, `read_inventory`, `read_fulfillments`,
+  `read_locations`, `read_merchant_managed_fulfillment_orders`.
 
-In your repo → **Settings → Secrets and variables → Actions → New repository
-secret**. Add two:
+> The app and the store must be in the **same organization** (they are, since
+> you own both). If they weren't, `client_credentials` would fail with
+> `shop_not_permitted` and a full OAuth flow would be required instead.
 
-| Name             | Value                                   |
-| ---------------- | --------------------------------------- |
-| `SHOPIFY_STORE`  | `your-store.myshopify.com`              |
-| `SHOPIFY_TOKEN`  | `shpat_...` (the token from step 1)     |
+### 2. Add three secrets to GitHub
 
-### 3. Map your locations to Tarlu / Launchpad
+Repo → **Settings → Secrets and variables → Actions → New repository secret**.
 
-Open `scripts/fetch-shopify.mjs` and edit `LOCATION_MAP` near the top so the
-**exact** Shopify location names (Settings → Locations) map to your two
-centers:
+| Name                     | Value                               |
+| ------------------------ | ----------------------------------- |
+| `SHOPIFY_STORE`          | `your-store.myshopify.com`          |
+| `SHOPIFY_CLIENT_ID`      | Client ID from the Dev Dashboard    |
+| `SHOPIFY_CLIENT_SECRET`  | Client Secret from the Dev Dashboard |
+
+### 3. Map locations to Tarlu / Launchpad
+
+Edit `LOCATION_MAP` near the top of `scripts/fetch-shopify.mjs` so your exact
+Shopify location names (Settings → Locations) map to your two centers:
 
 ```js
 const LOCATION_MAP = {
@@ -65,34 +70,32 @@ const LOCATION_MAP = {
 
 ### 4. Run the first sync
 
-Repo → **Actions → Sync Shopify data → Run workflow** (the manual trigger).
-It fetches from Shopify and commits `public/data.json`. That push triggers the
-deploy workflow, and ~1–2 minutes later the live site shows the **● Live**
-badge with your real orders and stock.
-
-After this, it refreshes automatically every hour.
+Repo → **Actions → Sync Shopify data → Run workflow**. It exchanges your
+credentials for a token, fetches your data, and commits `public/data.json`.
+That push triggers a redeploy; ~1–2 min later the site shows **● Live** with
+your real orders and stock. After this it refreshes hourly automatically.
 
 ---
 
-## Notes & limits (honest caveats)
-
-- **"On order" quantities**: Shopify has no native purchase-order field, so
-  `onOrder` is set to `0`. If you track incoming stock (e.g. in a metafield or
-  a separate sheet), tell me and we'll wire it in.
-- **Reorder point** defaults to `10` (your sheet's LowStockAlertLevel). To make
-  it per-SKU, store it in a Shopify metafield and we'll read it.
-- **Courier name / ETA**: only populated once an order has a fulfillment with
-  tracking. Unfulfilled orders correctly show "Awaiting pick".
-- **Order volume**: the script pulls up to 250 recent orders per run and
-  paginates. For very high volume we can add date filtering (e.g. last 30 days).
-- **Cron timing**: GitHub's scheduled Actions can lag a few minutes under load;
-  "hourly" is approximate, which is fine for ops reporting.
-
-## Test the fetch locally (optional)
+## Test locally (optional)
 
 ```bash
 export SHOPIFY_STORE="your-store.myshopify.com"
-export SHOPIFY_TOKEN="shpat_..."
+export SHOPIFY_CLIENT_ID="..."
+export SHOPIFY_CLIENT_SECRET="..."
 npm run sync         # writes public/data.json
-npm run dev          # view at http://localhost:5173/nubyen-ops/
+npm run dev          # http://localhost:5173/nubyen-ops/
 ```
+
+## Notes & limits
+
+- **"On order" quantities**: Shopify has no native purchase-order field, so
+  `onOrder` is `0`. If you track incoming stock elsewhere, we can wire it in.
+- **Reorder point** defaults to `10` (your sheet's LowStockAlertLevel). Can be
+  made per-SKU via a Shopify metafield.
+- **Courier / ETA**: populated once an order has a fulfillment with tracking.
+  Unfulfilled orders correctly show "Awaiting pick".
+- **`shop_not_permitted` error** on sync: means the app isn't installed on the
+  store, or app/store are in different orgs. Re-check step 1.
+- **Order volume**: pulls up to 250 recent orders per run and paginates; we can
+  add date filtering for high volume.
