@@ -111,6 +111,20 @@ const BUCKETS = [
   { label: "11+ days", min: 11, max: Infinity },
 ];
 const UNKNOWN_BUCKET = "Unknown";
+// Severity buckets for stock: how far below the reorder point an item is.
+const SHORTFALL_BUCKETS = [
+  { label: "Out (\u22640)", min: -Infinity, max: 0 },
+  { label: "Critical", min: 0.0001, max: 0.34 },
+  { label: "Low", min: 0.34, max: 0.67 },
+  { label: "Near", min: 0.67, max: 1 },
+];
+// ratio = onHand / reorderPt; lower = worse.
+const shortfallBucketOf = (onHand, reorderPt) => {
+  if (onHand <= 0) return "Out (\u22640)";
+  const r = reorderPt > 0 ? onHand / reorderPt : 1;
+  const b = SHORTFALL_BUCKETS.find((b) => r > b.min && r <= b.max);
+  return b ? b.label : "Near";
+};
 const bucketOf = (age) => {
   if (age === null || age === undefined || Number.isNaN(age)) return UNKNOWN_BUCKET;
   const b = BUCKETS.find((b) => age >= b.min && age <= b.max);
@@ -138,9 +152,9 @@ function DeliveryTrack({ delivery }) {
   );
 }
 
-function AgingReport({ title, rows, valueKey, valueFmt, accent }) {
-  const summary = BUCKETS.map((b) => {
-    const inB = rows.filter((r) => r.bucket === b.label);
+function AgingReport({ title, rows, valueKey, valueFmt, accent, buckets = BUCKETS, bucketKey = "bucket" }) {
+  const summary = buckets.map((b) => {
+    const inB = rows.filter((r) => r[bucketKey] === b.label);
     return { label: b.label, count: inB.length, total: inB.reduce((s, r) => s + (r[valueKey] || 0), 0) };
   });
   const max = Math.max(1, ...summary.map((s) => s.count));
@@ -196,7 +210,7 @@ export default function Dashboard() {
 
   const unfulfilled = useMemo(() => ORDERS.filter((o) => o.status === "Unfulfilled").map((o) => ({ ...o, age: daysSince(o.placed), bucket: bucketOf(daysSince(o.placed)) })).sort((a, b) => b.age - a.age), [ORDERS]);
   // Enrich every product, then derive the "needs attention" subset from it.
-  const allStock = useMemo(() => PRODUCTS.map((p) => ({ ...p, age: daysSince(p.lastStocked), bucket: bucketOf(daysSince(p.lastStocked)), critical: p.onHand === 0, low: p.onHand > 0 && p.onHand < p.reorderPt, needsReorder: p.onOrder === 0 && (p.onHand === 0 || p.onHand < p.reorderPt) })).sort((a, b) => a.onHand - b.onHand), [PRODUCTS]);
+  const allStock = useMemo(() => PRODUCTS.map((p) => ({ ...p, age: daysSince(p.lastStocked), bucket: bucketOf(daysSince(p.lastStocked)), shortfallBucket: shortfallBucketOf(p.onHand, p.reorderPt), critical: p.onHand <= 0, low: p.onHand > 0 && p.onHand < p.reorderPt, needsReorder: p.onOrder === 0 && p.onHand < p.reorderPt })).sort((a, b) => a.onHand - b.onHand), [PRODUCTS]);
   const outOfStock = useMemo(() => allStock.filter((p) => p.critical || p.low).sort((a, b) => b.age - a.age), [allStock]);
 
   const stats = {
@@ -311,10 +325,10 @@ export default function Dashboard() {
             </table>
           </div>
           <div className="card">
-            <AgingReport title="Out-of-stock items by age" rows={outOfStock.filter((p) => p.critical)} valueKey="reorderPt" valueFmt={(n) => n + " u"} accent={THEME.accent} />
+            <AgingReport title="Stock shortfall by severity" rows={outOfStock} valueKey="reorderPt" valueFmt={(n) => n + " u"} accent={THEME.accent} buckets={SHORTFALL_BUCKETS} bucketKey="shortfallBucket" />
             <table className="mini">
-              <thead><tr><th>SKU</th><th>Product</th><th className="r">Days out</th></tr></thead>
-              <tbody>{outOfStock.filter((p) => p.critical).map((p) => (<tr key={p.sku}><td className="mono">{p.sku}</td><td>{p.name}</td><td className="r">{p.age == null ? "\u2014" : p.age + "d"}</td></tr>))}</tbody>
+              <thead><tr><th>SKU</th><th>Product</th><th className="r">On hand</th><th className="r">Reorder</th></tr></thead>
+              <tbody>{outOfStock.map((p) => (<tr key={p.sku}><td className="mono">{p.sku}</td><td>{p.name}</td><td className="r"><strong style={{ color: p.critical ? "#a9826a" : "#b08968" }}>{p.onHand}</strong></td><td className="r muted">{p.reorderPt}</td></tr>))}</tbody>
             </table>
           </div>
         </section>
