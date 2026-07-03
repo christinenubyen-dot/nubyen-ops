@@ -26,8 +26,8 @@ const API_VERSION = "2025-01";
 // ---- EDIT THIS: map real Shopify location names to your two centers --------
 const LOCATION_MAP = {
   // "Exact Shopify location name": "Tarlu" | "Launchpad"
-  "Tarlu": "Tarlu",
-  "Launchpad": "Launchpad",
+  "Nubyén Warehouse": "Tarlu",
+  "Launchpad 3PL": "Launchpad",
   // Add aliases if your Shopify locations are named differently, e.g.:
   // "Nubyen Main Warehouse": "Tarlu",
   // "3PL - Launchpad Logistics": "Launchpad",
