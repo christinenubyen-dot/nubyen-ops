@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-07-03T06:49:36.097Z",
+  "syncedAt": "2026-07-03T07:00:32.035Z",
   "orders": [
+    {
+      "id": "NUB-3805",
+      "customer": "John j Gurin",
+      "placed": "2026-07-03",
+      "value": 38,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Clinton twp, MI"
+    },
     {
       "id": "NUB-3804",
       "customer": "alison allison",
@@ -690,7 +705,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 798,
+      "onHand": 797,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
