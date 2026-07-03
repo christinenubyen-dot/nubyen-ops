@@ -97,7 +97,13 @@ const MOCK_PRODUCTS = [
   { sku: "NCHEEK", name: "Cheek Fila - Reversible Cheek Filler Alt.", onHand: 60, reorderPt: 10, onOrder: 0, lastStocked: "2026-06-24", supplier: "Launchpad" },
 ];
 
-const TODAY = new Date("2026-06-29");
+// Reference "today" for all age calculations — the actual current date,
+// normalized to local midnight so day-diffs are whole numbers.
+const TODAY = (() => {
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  return d;
+})();
 const daysSince = (d) => {
   if (!d) return null;
   const t = new Date(d).getTime();
