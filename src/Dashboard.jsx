@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 
 // ====================================================================
 //  THEME — replace these with your nubyen-launchpad values.
@@ -67,7 +67,7 @@ const CourierIcon = ({ name }) => {
 };
 
 // ---- Sample data -----------------------------------------------------------
-const ORDERS = [
+const MOCK_ORDERS = [
   { id: "SO-10241", customer: "Amara Okafor", placed: "2026-06-26", value: 1840, status: "Unfulfilled", items: 6, courier: null, tracking: null, delivery: "Awaiting pick", eta: null, ship: null, fc: "Tarlu", address: "Portland, OR" },
   { id: "SO-10238", customer: "Sofia Marchetti", placed: "2026-06-24", value: 920, status: "Unfulfilled", items: 3, courier: null, tracking: null, delivery: "Awaiting pick", eta: null, ship: null, fc: "Launchpad", address: "Austin, TX" },
   { id: "SO-10233", customer: "Daniel Whitmore", placed: "2026-06-21", value: 3410, status: "Unfulfilled", items: 12, courier: null, tracking: null, delivery: "Backordered", eta: null, ship: null, fc: "Tarlu", address: "Seattle, WA" },
@@ -82,7 +82,7 @@ const ORDERS = [
   { id: "SO-10227", customer: "Noah Feldman", placed: "2026-06-15", value: 3990, status: "Processing", items: 14, courier: "UPS Freight", tracking: null, delivery: "Label created", eta: "2026-07-03", ship: null, fc: "Launchpad", address: "Seattle, WA" },
 ];
 
-const PRODUCTS = [
+const MOCK_PRODUCTS = [
   { sku: "NNUDE1", name: "Nude Lip Augmentation Plumping Gloss", onHand: 0, reorderPt: 10, onOrder: 240, lastStocked: "2026-06-08", supplier: "Tarlu" },
   { sku: "NLIPFIL", name: "Plumping Lip Fila Elixir Balm", onHand: 4, reorderPt: 10, onOrder: 150, lastStocked: "2026-06-19", supplier: "Tarlu" },
   { sku: "NLIPD", name: "Lip Fila Defining Cleanse Scrub", onHand: 0, reorderPt: 10, onOrder: 0, lastStocked: "2026-05-30", supplier: "Tarlu" },
@@ -160,6 +160,29 @@ export default function Dashboard() {
   const [tab, setTab] = useState("orders");
   const [open, setOpen] = useState(null);
 
+  // Live data from hourly Shopify sync (public/data.json), with mock fallback.
+  const [ORDERS, setOrders] = useState(MOCK_ORDERS);
+  const [PRODUCTS, setProducts] = useState(MOCK_PRODUCTS);
+  const [source, setSource] = useState("mock"); // "mock" | "live"
+  const [synced, setSynced] = useState(null);
+
+  useEffect(() => {
+    const url = `${import.meta.env.BASE_URL}data.json`;
+    fetch(url, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("no data.json"))))
+      .then((d) => {
+        if (Array.isArray(d.orders) && d.orders.length) {
+          setOrders(d.orders);
+          setProducts(Array.isArray(d.products) ? d.products : MOCK_PRODUCTS);
+          setSource("live");
+          setSynced(d.syncedAt || null);
+        }
+      })
+      .catch(() => {
+        /* keep mock data — dashboard still renders */
+      });
+  }, []);
+
   const unfulfilled = useMemo(() => ORDERS.filter((o) => o.status === "Unfulfilled").map((o) => ({ ...o, age: daysSince(o.placed), bucket: bucketOf(daysSince(o.placed)) })).sort((a, b) => b.age - a.age), []);
   const outOfStock = useMemo(() => PRODUCTS.filter((p) => p.onHand === 0 || p.onHand < p.reorderPt).map((p) => ({ ...p, age: daysSince(p.lastStocked), bucket: bucketOf(daysSince(p.lastStocked)), critical: p.onHand === 0, needsReorder: p.onOrder === 0 })).sort((a, b) => b.age - a.age), []);
 
@@ -176,8 +199,9 @@ export default function Dashboard() {
       <style>{css}</style>
       <header className="head">
         <div>
-          <div className="eyebrow">Operations \u00b7 as of Jun 29, 2026</div>
+          <div className="eyebrow">Operations · {source === "live" ? (synced ? `synced ${new Date(synced).toLocaleString()}` : "live") : "sample data"}</div>
           <h1>Fulfillment &amp; Stock Control</h1>
+          <span className={source === "live" ? "src-badge live" : "src-badge"}>{source === "live" ? "● Live — Shopify" : "○ Sample data"}</span>
         </div>
         <div className="kpis">
           <div className="kpi"><span className="kpi-n">{stats.open}</span><span className="kpi-l">Open orders</span></div>
@@ -284,6 +308,8 @@ font-family:'Inter',system-ui,sans-serif;max-width:1080px;margin:0 auto;padding:
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:24px;}
 .eyebrow{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;}
 .head h1{font-size:30px;margin:6px 0 0;letter-spacing:-.02em;font-weight:800;color:var(--text);}
+.src-badge{display:inline-block;margin-top:8px;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--dim);background:var(--surface-alt);border:1px solid var(--border);padding:3px 10px;border-radius:99px;}
+.src-badge.live{color:#2f7d5b;background:#eef7f1;border-color:#cfe8d9;}
 .kpis{display:flex;gap:12px;flex-wrap:wrap;}
 .kpi{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:12px 16px;min-width:96px;}
 .kpi-n{display:block;font-size:22px;font-weight:800;letter-spacing:-.02em;color:var(--text);}
