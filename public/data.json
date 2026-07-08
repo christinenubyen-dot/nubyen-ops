@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-07T23:31:34.732Z",
+  "syncedAt": "2026-07-08T09:16:10.001Z",
   "orders": [
     {
       "id": "NUB-3813",
@@ -100,7 +100,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT628377629GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-07-06",
       "fc": "Tarlu",
@@ -914,7 +914,7 @@
     },
     {
       "sku": "NLIPFIL",
-      "name": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
+      "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
       "onHand": 2564,
       "reorderPt": 10,
       "onOrder": 0,
