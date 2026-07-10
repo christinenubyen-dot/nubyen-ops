@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-10T06:41:26.226Z",
+  "syncedAt": "2026-07-10T10:20:58.250Z",
   "orders": [
     {
       "id": "NUB-3815",
@@ -55,7 +55,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT628394057GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-07-08",
       "fc": "Tarlu",
@@ -555,21 +555,6 @@
       "ship": "2026-05-12",
       "fc": "Tarlu",
       "address": "New York, NY"
-    },
-    {
-      "id": "NUB-3778",
-      "customer": "David",
-      "placed": "2026-05-11",
-      "value": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "courier": "Royal Mail",
-      "tracking": "VU013745192GB",
-      "delivery": "In transit",
-      "eta": null,
-      "ship": "2026-05-11",
-      "fc": "Tarlu",
-      "address": "Motherwell, SCT"
     }
   ],
   "products": [
