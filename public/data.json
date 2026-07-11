@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-10T23:01:21.425Z",
+  "syncedAt": "2026-07-11T02:13:14.654Z",
   "orders": [
     {
       "id": "NUB-3815",
@@ -540,21 +540,6 @@
       "ship": "2026-05-14",
       "fc": "Tarlu",
       "address": "London, ENG"
-    },
-    {
-      "id": "NUB-3779",
-      "customer": "Noor Moezinia",
-      "placed": "2026-05-12",
-      "value": 128,
-      "status": "Fulfilled",
-      "items": 2,
-      "courier": "FedEx",
-      "tracking": "872185872254",
-      "delivery": "In transit",
-      "eta": null,
-      "ship": "2026-05-12",
-      "fc": "Tarlu",
-      "address": "New York, NY"
     }
   ],
   "products": [
