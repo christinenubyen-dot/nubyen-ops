@@ -1,18 +1,18 @@
 {
-  "syncedAt": "2026-07-14T15:21:30.732Z",
+  "syncedAt": "2026-07-14T17:10:48.542Z",
   "orders": [
     {
       "id": "NUB-3820",
       "customer": "Siobhan",
       "placed": "2026-07-13",
       "value": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655886691GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-14",
       "fc": "Tarlu",
       "address": "Hawkhurst, ENG"
     },
