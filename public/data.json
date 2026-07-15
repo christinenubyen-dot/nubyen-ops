@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-07-15T22:57:05.349Z",
+  "syncedAt": "2026-07-15T23:58:40.257Z",
   "orders": [
+    {
+      "id": "NUB-3825",
+      "customer": "Hannah  Clark",
+      "placed": "2026-07-16",
+      "value": 108,
+      "status": "Unfulfilled",
+      "items": 3,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Newcastle Upon Tyne, ENG"
+    },
     {
       "id": "NUB-3824",
       "customer": "Trudy Smith",
@@ -930,7 +945,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 795,
+      "onHand": 794,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -948,7 +963,7 @@
     {
       "sku": "NPRO3",
       "name": "Nubyen Lash + Brow Growth Enhancement Serum (Lash Prósperity)",
-      "onHand": 335,
+      "onHand": 333,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
