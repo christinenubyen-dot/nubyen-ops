@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-07-16T20:53:13.863Z",
+  "syncedAt": "2026-07-16T22:00:30.607Z",
   "orders": [
+    {
+      "id": "NUB-3827",
+      "customer": "Asahi Pompey",
+      "placed": "2026-07-16",
+      "value": 75,
+      "status": "Unfulfilled",
+      "items": 2,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "New York, NY"
+    },
     {
       "id": "NUB-3826",
       "customer": "Sandra",
@@ -987,7 +1002,7 @@
     {
       "sku": "NTRIR",
       "name": "Nubyén Lip Plumping Matte Prosperity  Lipstick",
-      "onHand": 1059,
+      "onHand": 1058,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1005,7 +1020,7 @@
     {
       "sku": "NTRIE",
       "name": "Nubyén Lip Plumping Matte Prosperity  Lipstick",
-      "onHand": 998,
+      "onHand": 997,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
