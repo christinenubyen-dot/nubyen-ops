@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-16T09:10:42.176Z",
+  "syncedAt": "2026-07-16T11:36:53.147Z",
   "orders": [
     {
       "id": "NUB-3825",
@@ -21,13 +21,13 @@
       "customer": "Trudy Smith",
       "placed": "2026-07-15",
       "value": 43,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655894653GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-16",
       "fc": "Tarlu",
       "address": "Wickford, ENG"
     },
@@ -145,7 +145,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655883372GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-14",
       "fc": "Tarlu",
