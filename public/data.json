@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-17T18:02:00.908Z",
+  "syncedAt": "2026-07-17T20:02:44.331Z",
   "orders": [
     {
       "id": "NUB-3829",
@@ -683,9 +683,9 @@
       "value": 112,
       "status": "Fulfilled",
       "items": 3,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
+      "courier": "FedEx",
+      "tracking": "874516143675",
+      "delivery": "In transit",
       "eta": null,
       "ship": "2026-05-26",
       "fc": "Tarlu",
