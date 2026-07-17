@@ -1,18 +1,18 @@
 {
-  "syncedAt": "2026-07-17T12:05:57.995Z",
+  "syncedAt": "2026-07-17T14:39:57.114Z",
   "orders": [
     {
       "id": "NUB-3829",
       "customer": "Sue",
       "placed": "2026-07-17",
       "value": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655898859GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-17",
       "fc": "Tarlu",
       "address": "Reigate, ENG"
     },
@@ -130,7 +130,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655892082GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-07-15",
       "fc": "Tarlu",
@@ -145,7 +145,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655886691GB",
-      "delivery": "In transit",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-14",
       "fc": "Tarlu",
@@ -705,21 +705,6 @@
       "ship": "2026-05-25",
       "fc": "Tarlu",
       "address": "Clinton twp, MI"
-    },
-    {
-      "id": "NUB-3782",
-      "customer": "Bernice Leppard",
-      "placed": "2026-05-18",
-      "value": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-05-19",
-      "fc": "Tarlu",
-      "address": "Bury St. Edmunds, ENG"
     }
   ],
   "products": [
