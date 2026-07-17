@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-07-17T05:38:39.056Z",
+  "syncedAt": "2026-07-17T08:03:04.292Z",
   "orders": [
+    {
+      "id": "NUB-3828",
+      "customer": "Tina",
+      "placed": "2026-07-17",
+      "value": 36,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Gloustershire, ENG"
+    },
     {
       "id": "NUB-3827",
       "customer": "Asahi Pompey",
@@ -1065,7 +1080,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2552,
+      "onHand": 2551,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
