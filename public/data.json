@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-20T15:08:28.659Z",
+  "syncedAt": "2026-07-20T17:57:03.217Z",
   "orders": [
     {
       "id": "NUB-3835",
@@ -130,7 +130,7 @@
       "items": 2,
       "courier": "FedEx",
       "tracking": "8745 1598 9065",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-17",
       "fc": "Tarlu",
