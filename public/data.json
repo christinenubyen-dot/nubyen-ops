@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-21T08:21:26.054Z",
+  "syncedAt": "2026-07-21T11:04:25.853Z",
   "orders": [
     {
       "id": "NUB-3835",
@@ -115,7 +115,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655896844GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-17",
       "fc": "Tarlu",
@@ -808,37 +808,10 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NCHEEK",
-      "name": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
-      "onHand": 966,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NBEAU",
       "name": "Nubyen 'Botox' alternative- Vegan Beautox Skin Beautifying Elixir",
       "onHand": 1030,
       "reorderPt": 1,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NDERM",
-      "name": "Nubyen Dermal Fillher Skin Beautifying Elixir Serum",
-      "onHand": 995,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NELEV",
-      "name": "Nubyen Elevated Mood Oil",
-      "onHand": 22,
-      "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -952,17 +925,8 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "clarity-abundance-top",
-      "name": "Nubyen Clarity & Abundance Top",
-      "onHand": 12998,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "fearless-leopard-mini-dress",
-      "name": "Nubyen Fearless Leopard Mini Dress",
+      "sku": "unshaken-v-waist-pleated-mini-skort",
+      "name": "Nubyen By Erin Unshaken V-Waist Pleated Mini Skort",
       "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -970,9 +934,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-joy-two-tone-chain-cuff-ring-copy",
-      "name": "Nubyen Dominion Double Dome Ring",
-      "onHand": 1000,
+      "sku": "unshaken-v-neck-polo-crop-top",
+      "name": "Nubyen By Erin Unshaken V-Neck Polo Crop Top",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -982,6 +946,33 @@
       "sku": "triumph-v-neck-low-back-mini-dress",
       "name": "Nubyen 'The Triumph' Mini Dress (Low Back, V Neck)",
       "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NCHEEK",
+      "name": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
+      "onHand": 966,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NDERM",
+      "name": "Nubyen Dermal Fillher Skin Beautifying Elixir Serum",
+      "onHand": 995,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NELEV",
+      "name": "Nubyen Elevated Mood Oil",
+      "onHand": 22,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1000,6 +991,15 @@
       "sku": "nubyen-columbia-flower-market-skort-dress-1",
       "name": "Nubyén Flower Market Dress Pear Sorbet",
       "onHand": 4000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "clarity-abundance-top",
+      "name": "Nubyen Clarity & Abundance Top",
+      "onHand": 12998,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1042,24 +1042,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-higher-powers-set",
-      "name": "Nubyen Higher Powers Cap Sleeve Top",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-higher-powers-skirt",
-      "name": "Nubyen Higher Powers Skirt",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "harmony-striped-polo-mini-dress",
       "name": "Nubyen Harmony Striped Polo Mini Dress",
       "onHand": 5000,
@@ -1072,6 +1054,24 @@
       "sku": "gratitude-scoop-neck-mini-dress",
       "name": "Nubyen Gratitude Scoop Neck Mini Dress",
       "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "fearless-leopard-mini-dress",
+      "name": "Nubyen Fearless Leopard Mini Dress",
+      "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-joy-two-tone-chain-cuff-ring-copy",
+      "name": "Nubyen Dominion Double Dome Ring",
+      "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1177,51 +1177,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "Trio1",
-      "name": "Nubyén Plumping Lip Filá Balm Trio-  Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4972,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLIPA4",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
-      "onHand": 982,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLIPA2",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
-      "onHand": 987,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLIPA1",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
-      "onHand": 991,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLIPA3",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
-      "onHand": 984,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NLPO1",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
       "onHand": 971,
@@ -1321,9 +1276,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-nude-duo-set-of-two",
-      "name": "Nubyen Plumping  Lip Fila Duo - Set of Two.Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 1999,
+      "sku": "nubyen-higher-powers-set",
+      "name": "Nubyen Higher Powers Cap Sleeve Top",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1339,18 +1294,18 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLPO2",
-      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-      "onHand": 985,
+      "sku": "nubyen-higher-powers-skirt",
+      "name": "Nubyen Higher Powers Skirt",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "prosperity-pleated-tennis-dress",
-      "name": "Nubyen Prosperity Tennis Dress (Pleated)",
-      "onHand": 5000,
+      "sku": "NLPO2",
+      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
+      "onHand": 985,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1393,6 +1348,51 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "Trio1",
+      "name": "Nubyén Plumping Lip Filá Balm Trio-  Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 4972,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA4",
+      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
+      "onHand": 982,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA2",
+      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
+      "onHand": 987,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA1",
+      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
+      "onHand": 991,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA3",
+      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
+      "onHand": 984,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "nubyen-the-minimalist-boxy-vegan-leather-jacket",
       "name": "Nubyen The Minimalist Boxy Vegan Leather Jacket",
       "onHand": 2999,
@@ -1429,6 +1429,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-nude-duo-set-of-two",
+      "name": "Nubyen Plumping  Lip Fila Duo - Set of Two.Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1999,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "nubyen-manifesting-set",
       "name": "Nubyen Velour Manifesting Top",
       "onHand": 5000,
@@ -1456,26 +1465,17 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "prosperity-pleated-tennis-dress",
+      "name": "Nubyen Prosperity Tennis Dress (Pleated)",
+      "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "radiance-flared-tennis-dress",
       "name": "Nubyen Radiance Flared Tennis Dress",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "unshaken-v-waist-pleated-mini-skort",
-      "name": "Nubyen Unshaken V-Waist Pleated Mini Skort",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "unshaken-v-neck-polo-crop-top",
-      "name": "Nubyen Unshaken V-Neck Polo Crop Top",
       "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
