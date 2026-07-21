@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-07-21T11:04:25.853Z",
+  "syncedAt": "2026-07-21T13:39:00.686Z",
   "orders": [
+    {
+      "id": "NUB-3836",
+      "customer": "Colleen Maguire",
+      "placed": "2026-07-21",
+      "value": 100,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Belfast, NIR"
+    },
     {
       "id": "NUB-3835",
       "customer": "claire london",
@@ -1350,7 +1365,7 @@
     {
       "sku": "Trio1",
       "name": "Nubyén Plumping Lip Filá Balm Trio-  Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4972,
+      "onHand": 4971,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
