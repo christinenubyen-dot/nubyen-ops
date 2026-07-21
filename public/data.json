@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-21T13:39:00.686Z",
+  "syncedAt": "2026-07-21T15:40:38.284Z",
   "orders": [
     {
       "id": "NUB-3836",
@@ -1336,6 +1336,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-abundance-visor",
+      "name": "Nubyén Motivate Visor",
+      "onHand": 0,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NFIRM",
       "name": "Nubyen Val-î-date Lipid (Fat) Freeze AHA Peppermint Body Firming Treatment",
       "onHand": 994,
@@ -1471,15 +1480,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLIPFIL-1",
-      "name": "Nubyén's Lip Plumping & Lash Growth Bundle Set",
-      "onHand": 2756,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "prosperity-pleated-tennis-dress",
       "name": "Nubyen Prosperity Tennis Dress (Pleated)",
       "onHand": 5000,
@@ -1564,6 +1564,15 @@
       "sku": "NLIPFILG",
       "name": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
       "onHand": 0,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPFIL-1",
+      "name": "Nubyén's Lip Plumping & Lash Growth Bundle Set",
+      "onHand": 2756,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
