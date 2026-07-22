@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-22T21:01:50.307Z",
+  "syncedAt": "2026-07-22T22:57:56.439Z",
   "orders": [
     {
       "id": "NUB-3841",
@@ -1398,7 +1398,7 @@
     {
       "sku": "nubyen-abundance-visor",
       "name": "Nubyén Motivate Visor",
-      "onHand": 0,
+      "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
