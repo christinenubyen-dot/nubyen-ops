@@ -1,6 +1,36 @@
 {
-  "syncedAt": "2026-07-22T13:42:14.579Z",
+  "syncedAt": "2026-07-22T15:37:19.359Z",
   "orders": [
+    {
+      "id": "NUB-3839",
+      "customer": "Mrs Gail S Gowan",
+      "placed": "2026-07-22",
+      "value": 60,
+      "status": "Unfulfilled",
+      "items": 2,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Solihull, ENG"
+    },
+    {
+      "id": "NUB-3838",
+      "customer": "Elizabeth",
+      "placed": "2026-07-22",
+      "value": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Malmesbury, ENG"
+    },
     {
       "id": "NUB-3837",
       "customer": "Sally Harrington",
@@ -100,7 +130,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655901354GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-20",
       "fc": "Tarlu",
@@ -1110,7 +1140,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 794,
+      "onHand": 793,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1200,7 +1230,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2544,
+      "onHand": 2542,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
