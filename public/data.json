@@ -1,18 +1,18 @@
 {
-  "syncedAt": "2026-07-23T12:21:34.661Z",
+  "syncedAt": "2026-07-23T15:05:40.581Z",
   "orders": [
     {
       "id": "NUB-3842",
       "customer": "Annette Twentyman",
       "placed": "2026-07-23",
       "value": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655921226GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-23",
       "fc": "Tarlu",
       "address": "Workington, ENG"
     },
