@@ -1,6 +1,36 @@
 {
-  "syncedAt": "2026-07-25T12:02:16.321Z",
+  "syncedAt": "2026-07-25T14:28:08.214Z",
   "orders": [
+    {
+      "id": "NUB-3849",
+      "customer": "Clcire",
+      "placed": "2026-07-25",
+      "value": 36,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "holywood, NIR"
+    },
+    {
+      "id": "NUB-3848",
+      "customer": "Jan Hewett",
+      "placed": "2026-07-25",
+      "value": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Canvey Island, ENG"
+    },
     {
       "id": "NUB-3847",
       "customer": "Flavia",
@@ -945,21 +975,6 @@
       "ship": "2026-06-02",
       "fc": "Tarlu",
       "address": "Newcastle Upon Tyne, ENG"
-    },
-    {
-      "id": "NUB-3784",
-      "customer": "Maryam",
-      "placed": "2026-05-26",
-      "value": 112,
-      "status": "Fulfilled",
-      "items": 3,
-      "courier": "FedEx",
-      "tracking": "874516143675",
-      "delivery": "In transit",
-      "eta": null,
-      "ship": "2026-05-26",
-      "fc": "Tarlu",
-      "address": "Kuwait, KW-HA"
     }
   ],
   "products": [
@@ -1335,7 +1350,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2534,
+      "onHand": 2532,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
