@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-07-28T06:22:51.072Z",
+  "syncedAt": "2026-07-28T09:33:32.513Z",
   "orders": [
     {
       "id": "NUB-3854",
@@ -1342,6 +1342,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "NADVQAQ",
+      "name": "Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+      "onHand": -2,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NLIPD",
       "name": "Nubyen Lip Filá + ULTRA Lip Plumping Scrub",
       "onHand": 987,
@@ -1733,15 +1742,6 @@
       "name": "Nubyen Radiance Flared Tennis Dress",
       "onHand": 5000,
       "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NADVQAQ",
-      "name": "PRE-ORDER Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -2,
-      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
