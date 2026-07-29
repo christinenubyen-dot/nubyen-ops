@@ -16,7 +16,7 @@
 // Location mapping (your Shopify location name -> dashboard fulfillment center)
 // is configured in LOCATION_MAP below.
 
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, readFile, mkdir } from "node:fs/promises";
 
 const STORE = process.env.SHOPIFY_STORE;
 const CLIENT_ID = process.env.SHOPIFY_CLIENT_ID;
@@ -227,17 +227,173 @@ async function main() {
     supplier: p.supplier,
   }));
 
+  // ---- Analytics: order status/value breakdown -----------------------------
+  const statusBreakdown = {};
+  for (const o of orders) {
+    const k = o.status || "Unknown";
+    if (!statusBreakdown[k]) statusBreakdown[k] = { count: 0, value: 0 };
+    statusBreakdown[k].count += 1;
+    statusBreakdown[k].value += o.value || 0;
+  }
+
+  const totalValue = orders.reduce((s, o) => s + (o.value || 0), 0);
+  const unfulfilled = orders.filter((o) => o.status === "Unfulfilled");
+  const unfulfilledValue = unfulfilled.reduce((s, o) => s + (o.value || 0), 0);
+
+  // Revenue by day (from order placed dates present in this pull).
+  const revenueByDay = {};
+  for (const o of orders) {
+    if (!o.placed) continue;
+    revenueByDay[o.placed] = (revenueByDay[o.placed] || 0) + (o.value || 0);
+  }
+
+  // Stock health snapshot.
+  const outCount = productRows.filter((p) => p.onHand <= 0).length;
+  const lowCount = productRows.filter(
+    (p) => p.onHand > 0 && p.onHand < p.reorderPt
+  ).length;
+
+  const analytics = {
+    totalValue,
+    orderCount: orders.length,
+    unfulfilledValue,
+    unfulfilledCount: unfulfilled.length,
+    statusBreakdown,
+    revenueByDay,
+    stockHealth: { out: outCount, low: lowCount, total: productRows.length },
+  };
+
+  // ---- Rule-based "smart" insights (no API/key needed) ---------------------
+  const insights = buildInsights(orders, productRows, analytics);
+
   const data = {
     syncedAt: new Date().toISOString(),
     orders,
     products: productRows,
+    analytics,
+    insights,
   };
 
   await mkdir("public", { recursive: true });
   await writeFile("public/data.json", JSON.stringify(data, null, 2));
+
+  // ---- Append a daily snapshot to history.json (for trends over time) ------
+  await appendHistory({
+    date: new Date().toISOString().slice(0, 10),
+    syncedAt: data.syncedAt,
+    totalValue,
+    orderCount: orders.length,
+    unfulfilledValue,
+    unfulfilledCount: unfulfilled.length,
+    out: outCount,
+    low: lowCount,
+  });
+
   console.log(
-    `Wrote public/data.json \u2014 ${orders.length} orders, ${productRows.length} products.`
+    `Wrote public/data.json \u2014 ${orders.length} orders, ${productRows.length} products, ${insights.length} insights.`
   );
+}
+
+// Append/replace today's snapshot in public/history.json (keeps ~90 days).
+async function appendHistory(snapshot) {
+  const path = "public/history.json";
+  let hist = [];
+  try {
+    const raw = await readFile(path, "utf8");
+    hist = JSON.parse(raw);
+    if (!Array.isArray(hist)) hist = [];
+  } catch {
+    hist = [];
+  }
+  // One row per day: replace today's if it already exists (hourly overwrites).
+  hist = hist.filter((h) => h.date !== snapshot.date);
+  hist.push(snapshot);
+  hist.sort((a, b) => a.date.localeCompare(b.date));
+  if (hist.length > 90) hist = hist.slice(hist.length - 90);
+  await writeFile(path, JSON.stringify(hist, null, 2));
+}
+
+// Generate plain-English insights from the numbers. Deterministic, no LLM.
+function buildInsights(orders, products, a) {
+  const out = [];
+  const money = (n) => "$" + Math.round(n).toLocaleString();
+
+  // Value stuck in unfulfilled.
+  if (a.unfulfilledCount > 0) {
+    out.push({
+      kind: "orders",
+      severity: a.unfulfilledValue > a.totalValue * 0.3 ? "high" : "info",
+      text: `${a.unfulfilledCount} unfulfilled order${a.unfulfilledCount > 1 ? "s" : ""} worth ${money(a.unfulfilledValue)} awaiting fulfillment.`,
+    });
+  }
+
+  // Aged unfulfilled orders (>7 days).
+  const now = Date.now();
+  const aged = orders.filter(
+    (o) =>
+      o.status === "Unfulfilled" &&
+      o.placed &&
+      (now - new Date(o.placed).getTime()) / 86400000 > 7
+  );
+  if (aged.length > 0) {
+    const agedValue = aged.reduce((s, o) => s + (o.value || 0), 0);
+    out.push({
+      kind: "orders",
+      severity: "high",
+      text: `${aged.length} order${aged.length > 1 ? "s have" : " has"} been unfulfilled over 7 days (${money(agedValue)}). Prioritize these.`,
+    });
+  }
+
+  // Oversold / negative stock.
+  const oversold = products.filter((p) => p.onHand < 0);
+  if (oversold.length > 0) {
+    out.push({
+      kind: "stock",
+      severity: "high",
+      text: `${oversold.length} SKU${oversold.length > 1 ? "s are" : " is"} oversold (negative stock): ${oversold.map((p) => p.sku).join(", ")}. Restock urgently.`,
+    });
+  }
+
+  // Out of stock.
+  const outStock = products.filter((p) => p.onHand === 0);
+  if (outStock.length > 0) {
+    out.push({
+      kind: "stock",
+      severity: outStock.length > 3 ? "high" : "info",
+      text: `${outStock.length} product${outStock.length > 1 ? "s are" : " is"} out of stock.`,
+    });
+  }
+
+  // Low stock needing reorder with nothing inbound.
+  const reorder = products.filter(
+    (p) => p.onHand > 0 && p.onHand < p.reorderPt && (p.onOrder || 0) === 0
+  );
+  if (reorder.length > 0) {
+    out.push({
+      kind: "stock",
+      severity: "info",
+      text: `${reorder.length} low-stock item${reorder.length > 1 ? "s have" : " has"} no incoming replenishment.`,
+    });
+  }
+
+  // Fulfillment center split.
+  const byFc = {};
+  for (const o of orders) {
+    if (o.status === "Unfulfilled" && o.fc) byFc[o.fc] = (byFc[o.fc] || 0) + 1;
+  }
+  const fcEntries = Object.entries(byFc).sort((x, y) => y[1] - x[1]);
+  if (fcEntries.length > 0) {
+    out.push({
+      kind: "orders",
+      severity: "info",
+      text: `Unfulfilled load: ${fcEntries.map(([f, n]) => `${f} ${n}`).join(", ")}.`,
+    });
+  }
+
+  if (out.length === 0) {
+    out.push({ kind: "ok", severity: "ok", text: "All clear — no orders aging and no stock issues flagged." });
+  }
+  return out;
 }
 
 main().catch((e) => {
