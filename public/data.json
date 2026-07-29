@@ -1,18 +1,18 @@
 {
-  "syncedAt": "2026-07-29T11:22:17.865Z",
+  "syncedAt": "2026-07-29T14:00:37.074Z",
   "orders": [
     {
       "id": "NUB-3855",
       "customer": "J Heptinstall",
       "placed": "2026-07-29",
       "value": 43,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655942795GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-29",
       "fc": "Tarlu",
       "address": "St Helier, JE"
     },
@@ -21,13 +21,13 @@
       "customer": "Flavia",
       "placed": "2026-07-27",
       "value": 42,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655942800GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-29",
       "fc": "Tarlu",
       "address": "Aylesbury, ENG"
     },
@@ -40,7 +40,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655927467GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-27",
       "fc": "Tarlu",
@@ -85,7 +85,7 @@
       "items": 1,
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655927419GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-27",
       "fc": "Tarlu",
@@ -291,13 +291,13 @@
       "customer": "Colleen Maguire",
       "placed": "2026-07-21",
       "value": 100,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655942760GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-29",
       "fc": "Tarlu",
       "address": "Belfast, NIR"
     },
@@ -1858,16 +1858,16 @@
   "analytics": {
     "totalValue": 2980,
     "orderCount": 70,
-    "unfulfilledValue": 393,
-    "unfulfilledCount": 8,
+    "unfulfilledValue": 208,
+    "unfulfilledCount": 5,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 8,
-        "value": 393
-      },
       "Fulfilled": {
-        "count": 62,
-        "value": 2587
+        "count": 65,
+        "value": 2772
+      },
+      "Unfulfilled": {
+        "count": 5,
+        "value": 208
       }
     },
     "revenueByDay": {
@@ -1917,12 +1917,12 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "8 unfulfilled orders worth $393 awaiting fulfillment."
+      "text": "5 unfulfilled orders worth $208 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "6 orders have been unfulfilled over 7 days ($308). Prioritize these."
+      "text": "5 orders have been unfulfilled over 7 days ($208). Prioritize these."
     },
     {
       "kind": "stock",
@@ -1942,7 +1942,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 8."
+      "text": "Unfulfilled load: Tarlu 5."
     }
   ]
 }
