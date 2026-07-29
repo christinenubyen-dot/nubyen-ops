@@ -158,6 +158,27 @@ function DeliveryTrack({ delivery }) {
   );
 }
 
+function TrendChart({ series }) {
+  const W = 640, H = 180, pad = 30;
+  const vals = series.map((s) => s[1]);
+  const maxV = Math.max(...vals, 1);
+  const minV = Math.min(...vals, 0);
+  const span = maxV - minV || 1;
+  const x = (i) => pad + (i * (W - pad * 2)) / Math.max(1, series.length - 1);
+  const y = (v) => H - pad - ((v - minV) / span) * (H - pad * 2);
+  const pts = series.map((s, i) => `${x(i)},${y(s[1])}`).join(" ");
+  const money2 = (n) => "$" + Math.round(n).toLocaleString();
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="trend">
+      <polyline points={pts} fill="none" stroke="#5b8bb8" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+      {series.map((s, i) => (<circle key={i} cx={x(i)} cy={y(s[1])} r="3" fill="#5b8bb8" />))}
+      <text x={pad} y={16} className="trend-max">{money2(maxV)}</text>
+      <text x={pad} y={H - 8} className="trend-lbl">{series[0][0]}</text>
+      <text x={W - pad} y={H - 8} className="trend-lbl" textAnchor="end">{series[series.length - 1][0]}</text>
+    </svg>
+  );
+}
+
 function AgingReport({ title, rows, valueKey, valueFmt, accent, buckets = BUCKETS, bucketKey = "bucket" }) {
   const summary = buckets.map((b) => {
     const inB = rows.filter((r) => r[bucketKey] === b.label);
@@ -196,6 +217,8 @@ export default function Dashboard() {
   const [PRODUCTS, setProducts] = useState(MOCK_PRODUCTS);
   const [source, setSource] = useState("mock"); // "mock" | "live"
   const [synced, setSynced] = useState(null);
+  const [insights, setInsights] = useState([]);
+  const [history, setHistory] = useState([]);
 
   useEffect(() => {
     const url = `${import.meta.env.BASE_URL}data.json`;
@@ -207,17 +230,61 @@ export default function Dashboard() {
           setProducts(Array.isArray(d.products) ? d.products : MOCK_PRODUCTS);
           setSource("live");
           setSynced(d.syncedAt || null);
+          if (Array.isArray(d.insights)) setInsights(d.insights);
         }
       })
       .catch(() => {
         /* keep mock data — dashboard still renders */
       });
+
+    // History for trend charts (accumulates over time).
+    fetch(`${import.meta.env.BASE_URL}history.json`, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error("no history"))))
+      .then((h) => Array.isArray(h) && setHistory(h))
+      .catch(() => {});
   }, []);
 
   const unfulfilled = useMemo(() => ORDERS.filter((o) => o.status === "Unfulfilled").map((o) => ({ ...o, age: daysSince(o.placed), bucket: bucketOf(daysSince(o.placed)) })).sort((a, b) => b.age - a.age), [ORDERS]);
   // Enrich every product, then derive the "needs attention" subset from it.
   const allStock = useMemo(() => PRODUCTS.map((p) => ({ ...p, age: daysSince(p.lastStocked), bucket: bucketOf(daysSince(p.lastStocked)), shortfallBucket: shortfallBucketOf(p.onHand, p.reorderPt), critical: p.onHand <= 0, low: p.onHand > 0 && p.onHand < p.reorderPt, needsReorder: p.onOrder === 0 && p.onHand < p.reorderPt })).sort((a, b) => a.onHand - b.onHand), [PRODUCTS]);
   const outOfStock = useMemo(() => allStock.filter((p) => p.critical || p.low).sort((a, b) => b.age - a.age), [allStock]);
+
+  // Analytics computed from current orders/stock (works for live and mock).
+  const analytics = useMemo(() => {
+    const statusBreakdown = {};
+    for (const o of ORDERS) {
+      const k = o.status || "Unknown";
+      if (!statusBreakdown[k]) statusBreakdown[k] = { count: 0, value: 0 };
+      statusBreakdown[k].count += 1;
+      statusBreakdown[k].value += o.value || 0;
+    }
+    const revByDay = {};
+    for (const o of ORDERS) {
+      if (!o.placed) continue;
+      revByDay[o.placed] = (revByDay[o.placed] || 0) + (o.value || 0);
+    }
+    const revenueSeries = Object.entries(revByDay).sort((a, b) => a[0].localeCompare(b[0]));
+    return {
+      totalValue: ORDERS.reduce((s, o) => s + (o.value || 0), 0),
+      statusBreakdown,
+      revenueSeries,
+    };
+  }, [ORDERS]);
+
+  // Use live insights if present; otherwise derive basic ones from mock.
+  const shownInsights = useMemo(() => {
+    if (insights.length) return insights;
+    const out = [];
+    const money2 = (n) => "$" + Math.round(n).toLocaleString();
+    const unf = ORDERS.filter((o) => o.status === "Unfulfilled");
+    if (unf.length) out.push({ kind: "orders", severity: "info", text: `${unf.length} unfulfilled orders worth ${money2(unf.reduce((s, o) => s + o.value, 0))}.` });
+    const oversold = PRODUCTS.filter((p) => p.onHand < 0);
+    if (oversold.length) out.push({ kind: "stock", severity: "high", text: `${oversold.length} SKU(s) oversold: ${oversold.map((p) => p.sku).join(", ")}.` });
+    const oos = PRODUCTS.filter((p) => p.onHand === 0);
+    if (oos.length) out.push({ kind: "stock", severity: oos.length > 3 ? "high" : "info", text: `${oos.length} product(s) out of stock.` });
+    if (!out.length) out.push({ kind: "ok", severity: "ok", text: "All clear — no issues flagged." });
+    return out;
+  }, [insights, ORDERS, PRODUCTS]);
 
   const stats = {
     open: unfulfilled.length,
@@ -245,10 +312,27 @@ export default function Dashboard() {
       </header>
 
       <nav className="tabs">
-        {[["orders", "Orders & Delivery"], ["stock", "Stock & Replenishment"], ["aging", "Aging Reports"]].map(([k, l]) => (
+        {[["orders", "Orders & Delivery"], ["stock", "Stock & Replenishment"], ["aging", "Aging Reports"], ["analytics", "Analytics"]].map(([k, l]) => (
           <button key={k} className={tab === k ? "tab on" : "tab"} onClick={() => setTab(k)}>{l}</button>
         ))}
       </nav>
+
+      {shownInsights.length > 0 && (
+        <div className="insights">
+          <div className="insights-head">
+            <span className="insights-title">Smart insights</span>
+            <span className="insights-sub">auto-generated each sync</span>
+          </div>
+          <div className="insights-list">
+            {shownInsights.map((ins, i) => (
+              <div className={`insight sev-${ins.severity}`} key={i}>
+                <span className="insight-dot" />
+                <span className="insight-text">{ins.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {tab === "orders" && (
         <section className="card">
@@ -339,6 +423,44 @@ export default function Dashboard() {
           </div>
         </section>
       )}
+
+      {tab === "analytics" && (
+        <section>
+          <div className="an-kpis">
+            <div className="an-card"><div className="an-n">{money(analytics.totalValue)}</div><div className="an-l">Total order value</div></div>
+            <div className="an-card"><div className="an-n">{ORDERS.length}</div><div className="an-l">Total orders</div></div>
+            <div className="an-card"><div className="an-n">{money(ORDERS.length ? analytics.totalValue / ORDERS.length : 0)}</div><div className="an-l">Avg order value</div></div>
+          </div>
+
+          <div className="card an-block">
+            <h3 className="an-h">Order status breakdown</h3>
+            <div className="an-bars">
+              {Object.entries(analytics.statusBreakdown).sort((a, b) => b[1].value - a[1].value).map(([status, d]) => {
+                const maxV = Math.max(...Object.values(analytics.statusBreakdown).map((x) => x.value), 1);
+                const col = ({ Unfulfilled: "#a9826a", Processing: "#b08968", Shipped: "#5b8bb8", Fulfilled: "#4a8a7b" }[status] || "#8a8275");
+                return (
+                  <div className="an-row" key={status}>
+                    <div className="an-row-label">{status}</div>
+                    <div className="an-row-track"><div className="an-row-fill" style={{ width: `${(d.value / maxV) * 100}%`, background: col }} /></div>
+                    <div className="an-row-val">{money(d.value)} · {d.count}</div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="card an-block">
+            <h3 className="an-h">Revenue trend</h3>
+            {history.length > 1 ? (
+              <TrendChart series={history.map((h) => [h.date, h.totalValue])} />
+            ) : analytics.revenueSeries.length > 1 ? (
+              <TrendChart series={analytics.revenueSeries} />
+            ) : (
+              <div className="an-empty">Trend builds up as daily snapshots accumulate. Check back after a few syncs — each day adds a point.</div>
+            )}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
@@ -389,6 +511,34 @@ tr:last-child td{border-bottom:none;}
 .hint{font-size:12px;color:var(--dim);padding:10px 12px;}
 .stock-head{display:flex;justify-content:flex-start;padding:10px 8px 4px;}
 .seg{display:inline-flex;background:var(--surface-alt);border:1px solid var(--border);border-radius:10px;padding:3px;gap:2px;}
+.seg-btn{background:none;border:none;padding:7px 14px;font-size:12.5px;font-weight:700;color:var(--dim);cursor:pointer;border-radius:8px;transition:all .15s;}
+.seg-btn.on{background:var(--surface);color:var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.06);}
+.insights{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:14px 16px;margin-bottom:18px;}
+.insights-head{display:flex;align-items:baseline;gap:10px;margin-bottom:10px;}
+.insights-title{font-size:13px;font-weight:800;color:var(--text);letter-spacing:-.01em;}
+.insights-sub{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;}
+.insights-list{display:flex;flex-direction:column;gap:8px;}
+.insight{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;color:var(--text);}
+.insight-dot{width:8px;height:8px;border-radius:50%;margin-top:5px;flex-shrink:0;background:var(--dim);}
+.insight.sev-high .insight-dot{background:#a9826a;}
+.insight.sev-info .insight-dot{background:#5b8bb8;}
+.insight.sev-ok .insight-dot{background:#4a8a7b;}
+.an-kpis{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px;}
+.an-card{flex:1;min-width:140px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;}
+.an-n{font-size:24px;font-weight:800;letter-spacing:-.02em;color:var(--text);}
+.an-l{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}
+.an-block{padding:18px;}
+.an-h{margin:0 0 16px;font-size:14px;font-weight:700;color:var(--text);}
+.an-bars{display:flex;flex-direction:column;gap:10px;}
+.an-row{display:flex;align-items:center;gap:12px;}
+.an-row-label{width:90px;font-size:12.5px;font-weight:600;color:var(--text);}
+.an-row-track{flex:1;height:22px;background:var(--surface-alt);border-radius:6px;overflow:hidden;}
+.an-row-fill{height:100%;border-radius:6px;transition:width .4s;}
+.an-row-val{width:130px;text-align:right;font-size:12px;font-weight:600;color:var(--dim);}
+.trend{width:100%;height:auto;}
+.trend-max{fill:var(--dim);font-size:11px;font-weight:700;}
+.trend-lbl{fill:var(--dim);font-size:10px;}
+.an-empty{font-size:13px;color:var(--dim);padding:20px;text-align:center;line-height:1.5;}
 .seg-btn{background:none;border:none;padding:7px 14px;font-size:12.5px;font-weight:700;color:var(--dim);cursor:pointer;border-radius:8px;transition:all .15s;}
 .seg-btn.on{background:var(--surface);color:var(--accent);box-shadow:0 1px 2px rgba(0,0,0,.06);}
 .aging-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
