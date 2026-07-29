@@ -1,9 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// base must match the repo name so assets resolve at
-// https://<user>.github.io/nubyen-ops/
+// Cloudflare Pages serves at the root, so base is "/".
+// (On GitHub Pages this was "/nubyen-ops/". If you ever move back,
+// change it back to "/nubyen-ops/".)
 export default defineConfig({
   plugins: [react()],
-  base: "/nubyen-ops/",
+  base: "/",
 });
