@@ -1,6 +1,36 @@
 {
-  "syncedAt": "2026-07-29T14:00:37.074Z",
+  "syncedAt": "2026-07-29T16:17:58.669Z",
   "orders": [
+    {
+      "id": "NUB-3857",
+      "customer": "Jane",
+      "placed": "2026-07-29",
+      "value": 36,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Corwen, WLS"
+    },
+    {
+      "id": "NUB-3856",
+      "customer": "Angelina Rafferty",
+      "placed": "2026-07-29",
+      "value": 72,
+      "status": "Unfulfilled",
+      "items": 2,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Hamilton, SCT"
+    },
     {
       "id": "NUB-3855",
       "customer": "J Heptinstall",
@@ -1434,7 +1464,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2526,
+      "onHand": 2524,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1569,7 +1599,7 @@
     {
       "sku": "NLPO2",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-      "onHand": 985,
+      "onHand": 984,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1856,22 +1886,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 2980,
-    "orderCount": 70,
-    "unfulfilledValue": 208,
-    "unfulfilledCount": 5,
+    "totalValue": 3088,
+    "orderCount": 72,
+    "unfulfilledValue": 316,
+    "unfulfilledCount": 7,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 7,
+        "value": 316
+      },
       "Fulfilled": {
         "count": 65,
         "value": 2772
-      },
-      "Unfulfilled": {
-        "count": 5,
-        "value": 208
       }
     },
     "revenueByDay": {
-      "2026-07-29": 43,
+      "2026-07-29": 151,
       "2026-07-27": 42,
       "2026-07-26": 144,
       "2026-07-25": 78,
@@ -1917,7 +1947,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "5 unfulfilled orders worth $208 awaiting fulfillment."
+      "text": "7 unfulfilled orders worth $316 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1942,7 +1972,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 5."
+      "text": "Unfulfilled load: Tarlu 7."
     }
   ]
 }
