@@ -4,25 +4,20 @@ on:
   schedule:
     - cron: "0 * * * *" # top of every hour (UTC)
   workflow_dispatch: # manual run from the Actions tab
-  push:
-    branches: [main] # also rebuild when you push code changes
 
-# Needs to commit data.json AND publish to Pages, so it must build+deploy here.
+# Only needs to commit data.json + history.json.
+# Cloudflare Pages watches the repo and auto-deploys on each commit,
+# so there is no build/deploy step here anymore.
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
+  group: "shopify-sync"
   cancel-in-progress: true
 
 jobs:
-  sync-and-deploy:
+  sync:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -31,10 +26,6 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
 
       - name: Fetch Shopify data
         env:
@@ -42,31 +33,15 @@ jobs:
           SHOPIFY_CLIENT_ID: ${{ secrets.SHOPIFY_CLIENT_ID }}
           SHOPIFY_CLIENT_SECRET: ${{ secrets.SHOPIFY_CLIENT_SECRET }}
         run: node scripts/fetch-shopify.mjs
-        continue-on-error: true # if Shopify fails, still deploy last good data
 
-      - name: Commit updated data.json
+      - name: Commit updated data
         run: |
           git config user.name "shopify-sync-bot"
           git config user.email "actions@github.com"
-          git add public/data.json
+          git add public/data.json public/history.json
           if git diff --staged --quiet; then
             echo "No data changes."
           else
             git commit -m "chore: hourly Shopify data sync"
             git push
           fi
-
-      - name: Build
-        run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
