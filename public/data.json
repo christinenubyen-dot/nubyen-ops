@@ -1,18 +1,18 @@
 {
-  "syncedAt": "2026-07-30T11:48:30.116Z",
+  "syncedAt": "2026-07-30T13:49:34.817Z",
   "orders": [
     {
       "id": "NUB-3858",
       "customer": "Andy Nice",
       "placed": "2026-07-30",
       "value": 42,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655945911GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-30",
       "fc": "Tarlu",
       "address": "Chelmsford, ENG"
     },
@@ -21,13 +21,13 @@
       "customer": "Jane",
       "placed": "2026-07-29",
       "value": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655945987GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-30",
       "fc": "Tarlu",
       "address": "Corwen, WLS"
     },
@@ -36,13 +36,13 @@
       "customer": "Angelina Rafferty",
       "placed": "2026-07-29",
       "value": 72,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655945960GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-07-30",
       "fc": "Tarlu",
       "address": "Hamilton, SCT"
     },
@@ -1903,16 +1903,16 @@
   "analytics": {
     "totalValue": 3130,
     "orderCount": 73,
-    "unfulfilledValue": 358,
-    "unfulfilledCount": 8,
+    "unfulfilledValue": 208,
+    "unfulfilledCount": 5,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 8,
-        "value": 358
-      },
       "Fulfilled": {
-        "count": 65,
-        "value": 2772
+        "count": 68,
+        "value": 2922
+      },
+      "Unfulfilled": {
+        "count": 5,
+        "value": 208
       }
     },
     "revenueByDay": {
@@ -1963,7 +1963,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "8 unfulfilled orders worth $358 awaiting fulfillment."
+      "text": "5 unfulfilled orders worth $208 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1988,7 +1988,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 8."
+      "text": "Unfulfilled load: Tarlu 5."
     }
   ]
 }
