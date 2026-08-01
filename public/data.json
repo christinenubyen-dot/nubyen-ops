@@ -1,6 +1,21 @@
 {
-  "syncedAt": "2026-08-01T03:23:25.177Z",
+  "syncedAt": "2026-08-01T06:25:02.834Z",
   "orders": [
+    {
+      "id": "NUB-3860",
+      "customer": "HAYLEY SYKES",
+      "placed": "2026-08-01",
+      "value": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Manchester, ENG"
+    },
     {
       "id": "NUB-3859",
       "customer": "Sandra",
@@ -1494,7 +1509,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2522,
+      "onHand": 2521,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1916,14 +1931,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3168,
-    "orderCount": 74,
-    "unfulfilledValue": 246,
-    "unfulfilledCount": 6,
+    "totalValue": 3210,
+    "orderCount": 75,
+    "unfulfilledValue": 288,
+    "unfulfilledCount": 7,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 6,
-        "value": 246
+        "count": 7,
+        "value": 288
       },
       "Fulfilled": {
         "count": 68,
@@ -1931,6 +1946,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-01": 42,
       "2026-07-31": 38,
       "2026-07-30": 42,
       "2026-07-29": 151,
@@ -1979,7 +1995,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "6 unfulfilled orders worth $246 awaiting fulfillment."
+      "text": "7 unfulfilled orders worth $288 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2004,7 +2020,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 6."
+      "text": "Unfulfilled load: Tarlu 7."
     }
   ]
 }
