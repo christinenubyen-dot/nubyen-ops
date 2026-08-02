@@ -1,6 +1,36 @@
 {
-  "syncedAt": "2026-08-02T17:58:08.650Z",
+  "syncedAt": "2026-08-02T19:16:07.788Z",
   "orders": [
+    {
+      "id": "NUB-3865",
+      "customer": "Jennifer Nelson",
+      "placed": "2026-08-02",
+      "value": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Antrim, NIR"
+    },
+    {
+      "id": "NUB-3864",
+      "customer": "Rachel",
+      "placed": "2026-08-02",
+      "value": 36,
+      "status": "Unfulfilled",
+      "items": 1,
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Aingers Green Great Bentley, ENG"
+    },
     {
       "id": "NUB-3863",
       "customer": "Samantha Charlton",
@@ -1554,7 +1584,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2518,
+      "onHand": 2516,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1976,14 +2006,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3324,
-    "orderCount": 78,
-    "unfulfilledValue": 402,
-    "unfulfilledCount": 10,
+    "totalValue": 3402,
+    "orderCount": 80,
+    "unfulfilledValue": 480,
+    "unfulfilledCount": 12,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 10,
-        "value": 402
+        "count": 12,
+        "value": 480
       },
       "Fulfilled": {
         "count": 68,
@@ -1991,7 +2021,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-02": 72,
+      "2026-08-02": 150,
       "2026-08-01": 84,
       "2026-07-31": 38,
       "2026-07-30": 42,
@@ -2041,7 +2071,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "10 unfulfilled orders worth $402 awaiting fulfillment."
+      "text": "12 unfulfilled orders worth $480 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2066,7 +2096,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 10."
+      "text": "Unfulfilled load: Tarlu 12."
     }
   ]
 }
