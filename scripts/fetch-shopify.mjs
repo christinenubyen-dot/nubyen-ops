@@ -137,15 +137,42 @@ function mapOrder(o, locationName) {
   const ship = o.shipping_address;
   const addr = ship ? [ship.city, ship.province_code || ship.country_code].filter(Boolean).join(", ") : "\u2014";
 
+  // Financials for gross/net analytics.
+  const gross = parseFloat(o.subtotal_price || o.total_line_items_price || o.total_price || "0");
+  const discounts = parseFloat(o.total_discounts || "0");
+  const refunds = (o.refunds || []).reduce((s, r) => {
+    const tx = (r.transactions || []).reduce((t, x) => t + parseFloat(x.amount || "0"), 0);
+    return s + tx;
+  }, 0);
+  const net = parseFloat(o.total_price || "0") - refunds;
+
+  // Line items for top-products (with product type for category split).
+  const lineItems = (o.line_items || []).map((li) => ({
+    title: li.title,
+    sku: li.sku || null,
+    qty: li.quantity || 0,
+    revenue: Math.round(parseFloat(li.price || "0") * (li.quantity || 0)),
+    type: (li.product_type || "").trim() || "Other",
+  }));
+
   return {
     id: o.name || `#${o.order_number}`,
     customer: o.customer
       ? `${o.customer.first_name || ""} ${o.customer.last_name || ""}`.trim() || "Guest"
       : "Guest",
+    customerId: o.customer?.id ?? null,
+    customerOrders: o.customer?.orders_count ?? null, // 1 = new, >1 = returning
     placed: fmtDate(o.created_at),
     value: Math.round(parseFloat(o.total_price || "0")),
+    gross: Math.round(gross),
+    discounts: Math.round(discounts),
+    refunds: Math.round(refunds),
+    net: Math.round(net),
     status,
     items,
+    lineItems,
+    region: ship ? (ship.province || ship.country || "Unknown") : "Unknown",
+    country: ship?.country_code || null,
     courier: f?.tracking_company || null,
     tracking: f?.tracking_number || null,
     delivery,
