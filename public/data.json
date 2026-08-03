@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-03T13:37:41.262Z",
+  "syncedAt": "2026-08-03T16:19:52.838Z",
   "orders": [
     {
       "id": "NUB-3867",
@@ -44,7 +44,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 42,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -57,11 +57,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655961738GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Croydon, ENG"
     },
@@ -108,7 +108,7 @@
       "discounts": 6,
       "refunds": 0,
       "net": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -121,11 +121,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655961715GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Aingers Green Great Bentley, ENG"
     },
@@ -172,7 +172,7 @@
       "discounts": 6,
       "refunds": 0,
       "net": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -185,11 +185,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655961707GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Solihull, ENG"
     },
@@ -204,7 +204,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 42,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -217,11 +217,11 @@
       ],
       "region": "Scotland",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655961698GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Banff, SCT"
     },
@@ -236,7 +236,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 42,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -249,11 +249,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655961579GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Manchester, ENG"
     },
@@ -268,7 +268,7 @@
       "discounts": 4,
       "refunds": 0,
       "net": 38,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -281,11 +281,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655961548GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Peterborough, ENG"
     },
@@ -418,7 +418,7 @@
       "country": "JE",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655942795GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-29",
       "fc": "Tarlu",
@@ -3442,16 +3442,16 @@
   "analytics": {
     "totalValue": 3408,
     "orderCount": 81,
-    "unfulfilledValue": 564,
-    "unfulfilledCount": 14,
+    "unfulfilledValue": 328,
+    "unfulfilledCount": 8,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 14,
-        "value": 564
+        "count": 8,
+        "value": 328
       },
       "Fulfilled": {
-        "count": 67,
-        "value": 2844
+        "count": 73,
+        "value": 3080
       }
     },
     "revenueByDay": {
@@ -3505,7 +3505,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "14 unfulfilled orders worth $564 awaiting fulfillment."
+      "text": "8 unfulfilled orders worth $328 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3530,7 +3530,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 14."
+      "text": "Unfulfilled load: Tarlu 8."
     }
   ]
 }
