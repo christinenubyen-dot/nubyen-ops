@@ -1,11 +1,11 @@
 [
   {
     "date": "2026-08-03",
-    "syncedAt": "2026-08-03T10:38:42.758Z",
-    "totalValue": 3444,
+    "syncedAt": "2026-08-03T13:37:41.262Z",
+    "totalValue": 3408,
     "orderCount": 81,
-    "unfulfilledValue": 522,
-    "unfulfilledCount": 13,
+    "unfulfilledValue": 564,
+    "unfulfilledCount": 14,
     "out": 2,
     "low": 5
   }

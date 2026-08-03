@@ -1,6 +1,38 @@
 {
-  "syncedAt": "2026-08-03T10:38:42.758Z",
+  "syncedAt": "2026-08-03T13:37:41.262Z",
   "orders": [
+    {
+      "id": "NUB-3867",
+      "customer": "Amanda Parkin",
+      "customerId": 25447393591682,
+      "customerOrders": null,
+      "placed": "2026-08-03",
+      "value": 42,
+      "gross": 38,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 38,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Belper, ENG"
+    },
     {
       "id": "NUB-3866",
       "customer": "Guna Lagzda",
@@ -1001,7 +1033,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655942760GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-07-29",
       "fc": "Tarlu",
@@ -2602,52 +2634,6 @@
       "ship": "2026-06-08",
       "fc": "Tarlu",
       "address": "Winter Garden, FL"
-    },
-    {
-      "id": "NUB-3786",
-      "customer": "Cristina Querubin Querubin",
-      "customerId": 6555584626747,
-      "customerOrders": null,
-      "placed": "2026-06-04",
-      "value": 78,
-      "gross": 73,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 78,
-      "status": "Fulfilled",
-      "items": 3,
-      "lineItems": [
-        {
-          "title": "Nubyen Muse Highlighter Face Brush",
-          "sku": "NMHB1",
-          "qty": 1,
-          "revenue": 15,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Glow Highlighter Powder (Muse)",
-          "sku": "NMUS2",
-          "qty": 1,
-          "revenue": 29,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Glow Highlighter Powder (Muse)",
-          "sku": "NMUS1",
-          "qty": 1,
-          "revenue": 29,
-          "type": "Other"
-        }
-      ],
-      "region": "Singapore",
-      "country": "SG",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-06-05",
-      "fc": "Tarlu",
-      "address": "Singapore, SG"
     }
   ],
   "products": [
@@ -3032,7 +3018,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2515,
+      "onHand": 2514,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3454,22 +3440,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 3444,
+    "totalValue": 3408,
     "orderCount": 81,
-    "unfulfilledValue": 522,
-    "unfulfilledCount": 13,
+    "unfulfilledValue": 564,
+    "unfulfilledCount": 14,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 13,
-        "value": 522
+        "count": 14,
+        "value": 564
       },
       "Fulfilled": {
-        "count": 68,
-        "value": 2922
+        "count": 67,
+        "value": 2844
       }
     },
     "revenueByDay": {
-      "2026-08-03": 42,
+      "2026-08-03": 84,
       "2026-08-02": 150,
       "2026-08-01": 84,
       "2026-07-31": 38,
@@ -3507,8 +3493,7 @@
       "2026-06-24": 39,
       "2026-06-19": 42,
       "2026-06-14": 73,
-      "2026-06-05": 38,
-      "2026-06-04": 78
+      "2026-06-05": 38
     },
     "stockHealth": {
       "out": 2,
@@ -3520,7 +3505,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "13 unfulfilled orders worth $522 awaiting fulfillment."
+      "text": "14 unfulfilled orders worth $564 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3545,7 +3530,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 13."
+      "text": "Unfulfilled load: Tarlu 14."
     }
   ]
 }
