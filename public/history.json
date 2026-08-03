@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "date": "2026-08-03",
+    "syncedAt": "2026-08-03T10:03:38.340Z",
+    "totalValue": 3444,
+    "orderCount": 81,
+    "unfulfilledValue": 522,
+    "unfulfilledCount": 13,
+    "out": 2,
+    "low": 5
+  }
+]
