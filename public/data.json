@@ -1,6 +1,38 @@
 {
-  "syncedAt": "2026-08-05T06:28:39.877Z",
+  "syncedAt": "2026-08-05T09:33:44.593Z",
   "orders": [
+    {
+      "id": "NUB-3869",
+      "customer": "Karen Bradbury",
+      "customerId": 24302962442626,
+      "customerOrders": null,
+      "placed": "2026-08-05",
+      "value": 42,
+      "gross": 38,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 38,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Collingbourne Ducis, Wiltshire, ENG"
+    },
     {
       "id": "NUB-3868",
       "customer": "Rana McCarty",
@@ -155,7 +187,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655961715GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-08-03",
       "fc": "Tarlu",
@@ -219,7 +251,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655961707GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-08-03",
       "fc": "Tarlu",
@@ -283,7 +315,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655961579GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-08-03",
       "fc": "Tarlu",
@@ -315,7 +347,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655961548GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-08-03",
       "fc": "Tarlu",
@@ -2926,15 +2958,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NADVQAQ",
-      "name": "Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -4,
-      "reorderPt": 1,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NLIPD",
       "name": "Nubyen Lip Filá + ULTRA Lip Plumping Scrub",
       "onHand": 987,
@@ -3018,7 +3041,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2514,
+      "onHand": 2513,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3331,6 +3354,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "NADVQAQ",
+      "name": "PRE ORDER - Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+      "onHand": -4,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NM4N1",
       "name": "The Minimalist- Nubyen Vegan 3 in 1 Face Brush",
       "onHand": 986,
@@ -3440,14 +3472,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3468,
-    "orderCount": 81,
-    "unfulfilledValue": 306,
-    "unfulfilledCount": 6,
+    "totalValue": 3510,
+    "orderCount": 82,
+    "unfulfilledValue": 348,
+    "unfulfilledCount": 7,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 6,
-        "value": 306
+        "count": 7,
+        "value": 348
       },
       "Fulfilled": {
         "count": 75,
@@ -3455,7 +3487,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-05": 98,
+      "2026-08-05": 140,
       "2026-08-03": 84,
       "2026-08-02": 150,
       "2026-08-01": 84,
@@ -3505,7 +3537,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "6 unfulfilled orders worth $306 awaiting fulfillment."
+      "text": "7 unfulfilled orders worth $348 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3530,7 +3562,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 6."
+      "text": "Unfulfilled load: Tarlu 7."
     }
   ]
 }
