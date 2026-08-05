@@ -1,6 +1,38 @@
 {
-  "syncedAt": "2026-08-05T20:23:01.484Z",
+  "syncedAt": "2026-08-05T22:08:39.459Z",
   "orders": [
+    {
+      "id": "NUB-3870",
+      "customer": "Victoria Watkinson-Schenk",
+      "customerId": 24340360266114,
+      "customerOrders": null,
+      "placed": "2026-08-05",
+      "value": 36,
+      "gross": 32,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 36,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
+          "sku": "NNUDE1",
+          "qty": 1,
+          "revenue": 32,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Brighton, ENG"
+    },
     {
       "id": "NUB-3869",
       "customer": "Karen Bradbury",
@@ -2951,7 +2983,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 793,
+      "onHand": 792,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3472,14 +3504,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3510,
-    "orderCount": 82,
-    "unfulfilledValue": 348,
-    "unfulfilledCount": 7,
+    "totalValue": 3546,
+    "orderCount": 83,
+    "unfulfilledValue": 384,
+    "unfulfilledCount": 8,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 7,
-        "value": 348
+        "count": 8,
+        "value": 384
       },
       "Fulfilled": {
         "count": 75,
@@ -3487,7 +3519,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-05": 140,
+      "2026-08-05": 176,
       "2026-08-03": 84,
       "2026-08-02": 150,
       "2026-08-01": 84,
@@ -3537,7 +3569,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "7 unfulfilled orders worth $348 awaiting fulfillment."
+      "text": "8 unfulfilled orders worth $384 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3562,7 +3594,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 7."
+      "text": "Unfulfilled load: Tarlu 8."
     }
   ]
 }
