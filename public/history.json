@@ -31,11 +31,11 @@
   },
   {
     "date": "2026-08-06",
-    "syncedAt": "2026-08-06T11:18:51.066Z",
+    "syncedAt": "2026-08-06T13:56:34.205Z",
     "totalValue": 3546,
     "orderCount": 83,
-    "unfulfilledValue": 384,
-    "unfulfilledCount": 8,
+    "unfulfilledValue": 342,
+    "unfulfilledCount": 7,
     "out": 2,
     "low": 5
   }
