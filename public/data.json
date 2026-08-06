@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-06T08:28:22.019Z",
+  "syncedAt": "2026-08-06T11:18:51.066Z",
   "orders": [
     {
       "id": "NUB-3870",
@@ -251,7 +251,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655967608GB",
-      "delivery": "In transit",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-08-04",
       "fc": "Tarlu",
