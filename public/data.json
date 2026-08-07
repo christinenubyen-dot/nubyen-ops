@@ -1,6 +1,38 @@
 {
-  "syncedAt": "2026-08-06T13:56:34.205Z",
+  "syncedAt": "2026-08-07T00:39:05.306Z",
   "orders": [
+    {
+      "id": "NUB-3871",
+      "customer": "John j Gurin",
+      "customerId": 24845363184002,
+      "customerOrders": null,
+      "placed": "2026-08-07",
+      "value": 38,
+      "gross": 33,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 38,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
+          "sku": "NNUDE1",
+          "qty": 1,
+          "revenue": 33,
+          "type": "Other"
+        }
+      ],
+      "region": "Michigan",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Clinton twp, MI"
+    },
     {
       "id": "NUB-3870",
       "customer": "Victoria Watkinson-Schenk",
@@ -347,7 +379,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "YT655961579GB",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-08-03",
       "fc": "Tarlu",
@@ -2983,7 +3015,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 792,
+      "onHand": 791,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3459,7 +3491,7 @@
     },
     {
       "sku": "NLIPFIL-1",
-      "name": "Nubyén's Lip Plumping & Lash Growth Bundle Set",
+      "name": "Nubyén's Lip Plumping & Lash Growth Peptide Bundle Set",
       "onHand": 2756,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3468,7 +3500,7 @@
     },
     {
       "sku": "NLIPFIL-2",
-      "name": "Nubyén's Lip Plumping & Lash Growth Bundle Set",
+      "name": "Nubyén's Lip Plumping & Lash Growth Peptide Bundle Set",
       "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3477,7 +3509,7 @@
     },
     {
       "sku": "NLIPFIL-3",
-      "name": "Nubyén's Lip Plumping & Lash Growth Bundle Set",
+      "name": "Nubyén's Lip Plumping & Lash Growth Peptide Bundle Set",
       "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3486,7 +3518,7 @@
     },
     {
       "sku": "NLIPFIL-5",
-      "name": "Nubyén's Lip Plumping & Lash Growth Bundle Set",
+      "name": "Nubyén's Lip Plumping & Lash Growth Peptide Bundle Set",
       "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3504,14 +3536,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3546,
-    "orderCount": 83,
-    "unfulfilledValue": 342,
-    "unfulfilledCount": 7,
+    "totalValue": 3584,
+    "orderCount": 84,
+    "unfulfilledValue": 380,
+    "unfulfilledCount": 8,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 7,
-        "value": 342
+        "count": 8,
+        "value": 380
       },
       "Fulfilled": {
         "count": 76,
@@ -3519,6 +3551,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-07": 38,
       "2026-08-05": 176,
       "2026-08-03": 84,
       "2026-08-02": 150,
@@ -3569,7 +3602,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "7 unfulfilled orders worth $342 awaiting fulfillment."
+      "text": "8 unfulfilled orders worth $380 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3594,7 +3627,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 7."
+      "text": "Unfulfilled load: Tarlu 8."
     }
   ]
 }
