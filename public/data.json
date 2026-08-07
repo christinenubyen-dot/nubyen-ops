@@ -1,6 +1,38 @@
 {
-  "syncedAt": "2026-08-07T19:49:42.666Z",
+  "syncedAt": "2026-08-07T20:35:58.148Z",
   "orders": [
+    {
+      "id": "NUB-3872",
+      "customer": "Carmen Chamberlain",
+      "customerId": 5559999440,
+      "customerOrders": null,
+      "placed": "2026-08-07",
+      "value": 48,
+      "gross": 41,
+      "discounts": 7,
+      "refunds": 0,
+      "net": 48,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
+          "sku": "NLIPFILG",
+          "qty": 1,
+          "revenue": 48,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Hull, ENG"
+    },
     {
       "id": "NUB-3871",
       "customer": "John j Gurin",
@@ -3483,7 +3515,7 @@
     {
       "sku": "NLIPFILG",
       "name": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
-      "onHand": 9,
+      "onHand": 8,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3536,14 +3568,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3584,
-    "orderCount": 84,
-    "unfulfilledValue": 380,
-    "unfulfilledCount": 8,
+    "totalValue": 3632,
+    "orderCount": 85,
+    "unfulfilledValue": 428,
+    "unfulfilledCount": 9,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 8,
-        "value": 380
+        "count": 9,
+        "value": 428
       },
       "Fulfilled": {
         "count": 76,
@@ -3551,7 +3583,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-07": 38,
+      "2026-08-07": 86,
       "2026-08-05": 176,
       "2026-08-03": 84,
       "2026-08-02": 150,
@@ -3602,7 +3634,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "8 unfulfilled orders worth $380 awaiting fulfillment."
+      "text": "9 unfulfilled orders worth $428 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3627,7 +3659,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 8."
+      "text": "Unfulfilled load: Tarlu 9."
     }
   ]
 }
