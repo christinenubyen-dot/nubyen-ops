@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-10T09:14:48.576Z",
+  "syncedAt": "2026-08-10T11:03:56.482Z",
   "orders": [
     {
       "id": "NUB-3873",
@@ -3597,6 +3597,15 @@
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
+    },
+    {
+      "sku": "pre-order-nubyen-lip-flip-peptide",
+      "name": "PRE ORDER - Nubyen Lip Flip Peptide",
+      "onHand": 0,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
     }
   ],
   "analytics": {
@@ -3658,9 +3667,9 @@
       "2026-06-14": 73
     },
     "stockHealth": {
-      "out": 2,
+      "out": 3,
       "low": 5,
-      "total": 89
+      "total": 90
     }
   },
   "insights": [
@@ -3682,7 +3691,7 @@
     {
       "kind": "stock",
       "severity": "info",
-      "text": "1 product is out of stock."
+      "text": "2 products are out of stock."
     },
     {
       "kind": "stock",
