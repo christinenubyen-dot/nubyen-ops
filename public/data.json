@@ -1,6 +1,59 @@
 {
-  "syncedAt": "2026-08-10T22:32:42.436Z",
+  "syncedAt": "2026-08-10T23:30:51.936Z",
   "orders": [
+    {
+      "id": "NUB-3874",
+      "customer": "Anita",
+      "customerId": 25497618547074,
+      "customerOrders": null,
+      "placed": "2026-08-11",
+      "value": 126,
+      "gross": 119,
+      "discounts": 21,
+      "refunds": 0,
+      "net": 126,
+      "status": "Unfulfilled",
+      "items": 4,
+      "lineItems": [
+        {
+          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
+          "sku": "NLPO3",
+          "qty": 1,
+          "revenue": 34,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 38,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
+          "sku": "NLPO5",
+          "qty": 1,
+          "revenue": 34,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
+          "sku": "NLPO4",
+          "qty": 1,
+          "revenue": 34,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Hemel Hempstead, ENG"
+    },
     {
       "id": "NUB-3873",
       "customer": "Judith Coombes",
@@ -3169,7 +3222,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2513,
+      "onHand": 2512,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3187,7 +3240,7 @@
     {
       "sku": "NLPO3",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-      "onHand": 991,
+      "onHand": 990,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3196,7 +3249,7 @@
     {
       "sku": "NLPO4",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-      "onHand": 992,
+      "onHand": 991,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3286,7 +3339,7 @@
     {
       "sku": "NLPO5",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-      "onHand": 994,
+      "onHand": 993,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3609,14 +3662,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3677,
-    "orderCount": 86,
-    "unfulfilledValue": 473,
-    "unfulfilledCount": 10,
+    "totalValue": 3803,
+    "orderCount": 87,
+    "unfulfilledValue": 599,
+    "unfulfilledCount": 11,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 10,
-        "value": 473
+        "count": 11,
+        "value": 599
       },
       "Fulfilled": {
         "count": 76,
@@ -3624,6 +3677,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-11": 126,
       "2026-08-08": 45,
       "2026-08-07": 86,
       "2026-08-05": 176,
@@ -3676,7 +3730,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "10 unfulfilled orders worth $473 awaiting fulfillment."
+      "text": "11 unfulfilled orders worth $599 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3701,7 +3755,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 10."
+      "text": "Unfulfilled load: Tarlu 11."
     }
   ]
 }
