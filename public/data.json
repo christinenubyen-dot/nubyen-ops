@@ -1,6 +1,45 @@
 {
-  "syncedAt": "2026-08-11T21:41:44.485Z",
+  "syncedAt": "2026-08-11T22:36:45.748Z",
   "orders": [
+    {
+      "id": "NUB-3877",
+      "customer": "Colleen Bergin",
+      "customerId": 25501381296514,
+      "customerOrders": null,
+      "placed": "2026-08-11",
+      "value": 83,
+      "gross": 83,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 83,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
+          "sku": "NNUDE1",
+          "qty": 1,
+          "revenue": 33,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
+          "sku": "NCHEEK",
+          "qty": 1,
+          "revenue": 50,
+          "type": "Other"
+        }
+      ],
+      "region": "Michigan",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Howell, MI"
+    },
     {
       "id": "NUB-3876",
       "customer": "Nicole Byer",
@@ -3070,7 +3109,7 @@
     {
       "sku": "NCHEEK",
       "name": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
-      "onHand": 966,
+      "onHand": 965,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3196,7 +3235,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
-      "onHand": 790,
+      "onHand": 789,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3726,14 +3765,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3885,
-    "orderCount": 89,
-    "unfulfilledValue": 511,
-    "unfulfilledCount": 11,
+    "totalValue": 3968,
+    "orderCount": 90,
+    "unfulfilledValue": 594,
+    "unfulfilledCount": 12,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 11,
-        "value": 511
+        "count": 12,
+        "value": 594
       },
       "Fulfilled": {
         "count": 78,
@@ -3741,7 +3780,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-11": 208,
+      "2026-08-11": 291,
       "2026-08-08": 45,
       "2026-08-07": 86,
       "2026-08-05": 176,
@@ -3794,7 +3833,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "11 unfulfilled orders worth $511 awaiting fulfillment."
+      "text": "12 unfulfilled orders worth $594 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3819,7 +3858,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 11."
+      "text": "Unfulfilled load: Tarlu 12."
     }
   ]
 }
