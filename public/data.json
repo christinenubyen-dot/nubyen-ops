@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-11T11:40:23.314Z",
+  "syncedAt": "2026-08-11T12:54:06.183Z",
   "orders": [
     {
       "id": "NUB-3876",
@@ -76,7 +76,7 @@
       "discounts": 21,
       "refunds": 0,
       "net": 126,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 4,
       "lineItems": [
         {
@@ -110,11 +110,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "YT655997689GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-11",
       "fc": "Tarlu",
       "address": "Hemel Hempstead, ENG"
     },
@@ -3728,16 +3728,16 @@
   "analytics": {
     "totalValue": 3885,
     "orderCount": 89,
-    "unfulfilledValue": 681,
-    "unfulfilledCount": 13,
+    "unfulfilledValue": 555,
+    "unfulfilledCount": 12,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 13,
-        "value": 681
+        "count": 12,
+        "value": 555
       },
       "Fulfilled": {
-        "count": 76,
-        "value": 3204
+        "count": 77,
+        "value": 3330
       }
     },
     "revenueByDay": {
@@ -3794,7 +3794,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "13 unfulfilled orders worth $681 awaiting fulfillment."
+      "text": "12 unfulfilled orders worth $555 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3819,7 +3819,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 13."
+      "text": "Unfulfilled load: Tarlu 12."
     }
   ]
 }
