@@ -1,6 +1,38 @@
 {
-  "syncedAt": "2026-08-11T23:35:06.496Z",
+  "syncedAt": "2026-08-12T01:28:52.732Z",
   "orders": [
+    {
+      "id": "NUB-3878",
+      "customer": "DeEtte Doerr",
+      "customerId": 25501670998402,
+      "customerOrders": null,
+      "placed": "2026-08-12",
+      "value": 44,
+      "gross": 39,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 44,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 39,
+          "type": "Other"
+        }
+      ],
+      "region": "Oklahoma",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Tulsa, OK"
+    },
     {
       "id": "NUB-3877",
       "customer": "Colleen Bergin",
@@ -3325,7 +3357,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2511,
+      "onHand": 2510,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3765,14 +3797,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3968,
-    "orderCount": 90,
-    "unfulfilledValue": 594,
-    "unfulfilledCount": 12,
+    "totalValue": 4012,
+    "orderCount": 91,
+    "unfulfilledValue": 638,
+    "unfulfilledCount": 13,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 12,
-        "value": 594
+        "count": 13,
+        "value": 638
       },
       "Fulfilled": {
         "count": 78,
@@ -3780,6 +3812,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-12": 44,
       "2026-08-11": 291,
       "2026-08-08": 45,
       "2026-08-07": 86,
@@ -3833,12 +3866,12 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "12 unfulfilled orders worth $594 awaiting fulfillment."
+      "text": "13 unfulfilled orders worth $638 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "5 orders have been unfulfilled over 7 days ($208). Prioritize these."
+      "text": "7 orders have been unfulfilled over 7 days ($342). Prioritize these."
     },
     {
       "kind": "stock",
@@ -3858,7 +3891,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 12."
+      "text": "Unfulfilled load: Tarlu 13."
     }
   ]
 }
