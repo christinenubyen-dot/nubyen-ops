@@ -1,0 +1,430 @@
+// scripts/fetch-shopify.mjs
+// Pulls orders, products, and inventory from the Shopify Admin API and writes
+// public/data.json in the exact shape the dashboard expects.
+//
+// Runs in GitHub Actions (hourly). Reads secrets from env:
+//   SHOPIFY_STORE          e.g. "nubyen.myshopify.com"
+//   SHOPIFY_CLIENT_ID      Dev Dashboard app client ID
+//   SHOPIFY_CLIENT_SECRET  Dev Dashboard app client secret
+//
+// As of Jan 1, 2026 Shopify no longer issues permanent shpat_ tokens for
+// custom apps. Apps made in the Dev Dashboard expose a client ID + secret,
+// which we exchange for a short-lived Admin API token via the
+// client_credentials grant on each run. (Requires the app and store to be in
+// the same organization, and the app to be installed on the store.)
+//
+// Location mapping (your Shopify location name -> dashboard fulfillment center)
+// is configured in LOCATION_MAP below.
+
+import { writeFile, readFile, mkdir } from "node:fs/promises";
+
+const STORE = process.env.SHOPIFY_STORE;
+const CLIENT_ID = process.env.SHOPIFY_CLIENT_ID;
+const CLIENT_SECRET = process.env.SHOPIFY_CLIENT_SECRET;
+const API_VERSION = "2025-01";
+
+// ---- EDIT THIS: map real Shopify location names to your two centers --------
+const LOCATION_MAP = {
+  // "Exact Shopify location name": "Tarlu" | "Launchpad"
+  "Tarlu": "Tarlu",
+  "Launchpad": "Launchpad",
+  // Add aliases if your Shopify locations are named differently, e.g.:
+  // "Nubyen Main Warehouse": "Tarlu",
+  // "3PL - Launchpad Logistics": "Launchpad",
+};
+const DEFAULT_FC = "Tarlu"; // used when a location name isn't in the map
+
+// Per-SKU reorder points, sourced from the inventory sheet's LowStockAlertLevel.
+// Anything not listed falls back to DEFAULT_REORDER.
+const REORDER_POINTS = {
+  NNUDE1: 10, NLIPFIL: 10, NLIPD: 10, NLIPA2: 10, NLIPA1: 10, NLIPA3: 10,
+  NLIPA4: 10, NFIRM: 10, NNUDE2: 10, NUBMB: 10, NPRO3: 10, NBTLED: 10,
+  NLASHFLY: 10, NTRIR: 10, NTRIE: 10, NTRIG: 10, NDERM: 10,
+  NCHEEK: 10, NLPO1: 10, NLPO2: 10, NLPO3: 10, NLPO4: 10, NLPO5: 10,
+  NLIPFILBOX: 10, NADVQAQ: 1, POSTPOST: 1, NM4N1: 1, NBEAU: 1, NMHB1: 1,
+  MUSEH1: 1, MUSEH2: 1, MUSEH3: 1, MUSEH4: 1, MUSEH5: 1,
+  NMUS1: 1, NMUS2: 1,
+};
+const DEFAULT_REORDER = 10;
+
+if (!STORE || !CLIENT_ID || !CLIENT_SECRET) {
+  console.error(
+    "Missing env vars. Need SHOPIFY_STORE, SHOPIFY_CLIENT_ID, SHOPIFY_CLIENT_SECRET."
+  );
+  process.exit(1);
+}
+
+const base = `https://${STORE}/admin/api/${API_VERSION}`;
+
+// Exchange client ID + secret for a short-lived Admin API access token.
+async function getAccessToken() {
+  const res = await fetch(`https://${STORE}/admin/oauth/access_token`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      client_id: CLIENT_ID,
+      client_secret: CLIENT_SECRET,
+      grant_type: "client_credentials",
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(
+      `Token exchange failed (${res.status}). ${body}\n` +
+        "Common cause: the app isn't installed on this store, or the app and " +
+        "store are in different organizations (client_credentials only works " +
+        "same-org)."
+    );
+  }
+  const json = await res.json();
+  if (!json.access_token) throw new Error("No access_token in token response.");
+  return json.access_token;
+}
+
+// Set once getAccessToken() resolves in main().
+let headers = { "Content-Type": "application/json" };
+
+// ---- Helpers ---------------------------------------------------------------
+
+// Follow Shopify's Link-header cursor pagination.
+async function getAll(path, key) {
+  let url = `${base}/${path}`;
+  const out = [];
+  while (url) {
+    const res = await fetch(url, { headers });
+    if (!res.ok) {
+      throw new Error(`${path} -> ${res.status} ${await res.text()}`);
+    }
+    const json = await res.json();
+    out.push(...(json[key] || []));
+    const link = res.headers.get("link") || "";
+    const next = link.split(",").find((p) => p.includes('rel="next"'));
+    url = next ? next.slice(next.indexOf("<") + 1, next.indexOf(">")) : null;
+  }
+  return out;
+}
+
+const fmtDate = (iso) => (iso ? iso.slice(0, 10) : null);
+
+// Map Shopify order -> dashboard order row.
+function mapOrder(o, locationName) {
+  const fulfillments = o.fulfillments || [];
+  const f = fulfillments[0] || null;
+
+  // Delivery stage from fulfillment + shipment status.
+  let delivery = "Awaiting pick";
+  if (o.cancelled_at) delivery = "Backordered";
+  else if (!o.fulfillment_status && !f) delivery = "Awaiting pick";
+  else if (f) {
+    const st = (f.shipment_status || "").toLowerCase();
+    if (st.includes("delivered")) delivery = "Delivered";
+    else if (st.includes("out_for_delivery")) delivery = "Out for delivery";
+    else if (st.includes("in_transit") || st.includes("confirmed")) delivery = "In transit";
+    else if (f.tracking_number) delivery = "In transit";
+    else delivery = "Label created";
+  } else if (o.fulfillment_status === "fulfilled") {
+    delivery = "Delivered";
+  }
+
+  // Top-level status column.
+  let status = "Unfulfilled";
+  if (o.fulfillment_status === "fulfilled") status = "Fulfilled";
+  else if (o.fulfillment_status === "partial") status = "Processing";
+  else if (f) status = "Shipped";
+
+  const items = (o.line_items || []).reduce((s, li) => s + (li.quantity || 0), 0);
+
+  const ship = o.shipping_address;
+  const addr = ship ? [ship.city, ship.province_code || ship.country_code].filter(Boolean).join(", ") : "\u2014";
+
+  // Financials for gross/net analytics.
+  const gross = parseFloat(o.subtotal_price || o.total_line_items_price || o.total_price || "0");
+  const discounts = parseFloat(o.total_discounts || "0");
+  const refunds = (o.refunds || []).reduce((s, r) => {
+    const tx = (r.transactions || []).reduce((t, x) => t + parseFloat(x.amount || "0"), 0);
+    return s + tx;
+  }, 0);
+  const net = parseFloat(o.total_price || "0") - refunds;
+
+  // Line items for top-products (with product type for category split).
+  const lineItems = (o.line_items || []).map((li) => ({
+    title: li.title,
+    sku: li.sku || null,
+    qty: li.quantity || 0,
+    revenue: Math.round(parseFloat(li.price || "0") * (li.quantity || 0)),
+    type: (li.product_type || "").trim() || "Other",
+  }));
+
+  return {
+    id: o.name || `#${o.order_number}`,
+    customer: o.customer
+      ? `${o.customer.first_name || ""} ${o.customer.last_name || ""}`.trim() || "Guest"
+      : "Guest",
+    customerId: o.customer?.id ?? null,
+    email: o.email || o.customer?.email || null,
+    customerOrders: o.customer?.orders_count ?? null, // 1 = new, >1 = returning
+    placed: fmtDate(o.created_at),
+    value: Math.round(parseFloat(o.total_price || "0")),
+    gross: Math.round(gross),
+    discounts: Math.round(discounts),
+    refunds: Math.round(refunds),
+    net: Math.round(net),
+    status,
+    items,
+    lineItems,
+    region: ship ? (ship.province || ship.country || "Unknown") : "Unknown",
+    country: ship?.country_code || null,
+    courier: f?.tracking_company || null,
+    tracking: f?.tracking_number || null,
+    delivery,
+    eta: f?.estimated_delivery_at ? fmtDate(f.estimated_delivery_at) : null,
+    ship: f?.created_at ? fmtDate(f.created_at) : null,
+    fc: LOCATION_MAP[locationName] || DEFAULT_FC,
+    address: addr,
+  };
+}
+
+// ---- Main ------------------------------------------------------------------
+async function main() {
+  // 1. Get a fresh short-lived Admin API token from client credentials.
+  const token = await getAccessToken();
+  headers = { "X-Shopify-Access-Token": token, "Content-Type": "application/json" };
+  console.log("Obtained short-lived Admin API token.");
+
+  // Locations: id -> name, so we can label each order's fulfillment center.
+  const locations = await getAll("locations.json", "locations");
+  const locById = Object.fromEntries(locations.map((l) => [l.id, l.name]));
+
+  // Orders (open + recently closed). Adjust status/limit as needed.
+  const rawOrders = await getAll(
+    "orders.json?status=any&limit=250&order=created_at+desc",
+    "orders"
+  );
+
+  const orders = rawOrders.map((o) => {
+    const locName = locById[o.location_id] || null;
+    return mapOrder(o, locName);
+  });
+
+  // Products + inventory.
+  const products = await getAll("products.json?limit=250", "products");
+  const invItemIds = [];
+  const variantMeta = {};
+  for (const p of products) {
+    for (const v of p.variants || []) {
+      if (v.inventory_item_id) {
+        invItemIds.push(v.inventory_item_id);
+        variantMeta[v.inventory_item_id] = {
+          sku: v.sku || p.handle,
+          name: p.title,
+        };
+      }
+    }
+  }
+
+  // Inventory levels (batched by 50 ids per Shopify limits).
+  const levels = [];
+  for (let i = 0; i < invItemIds.length; i += 50) {
+    const batch = invItemIds.slice(i, i + 50).join(",");
+    const part = await getAll(
+      `inventory_levels.json?inventory_item_ids=${batch}&limit=250`,
+      "inventory_levels"
+    );
+    levels.push(...part);
+  }
+
+  // Sum on-hand per SKU across locations; pick a representative source location.
+  const bySku = {};
+  for (const lvl of levels) {
+    const meta = variantMeta[lvl.inventory_item_id];
+    if (!meta) continue;
+    const fc = LOCATION_MAP[locById[lvl.location_id]] || DEFAULT_FC;
+    if (!bySku[meta.sku]) {
+      bySku[meta.sku] = { sku: meta.sku, name: meta.name, onHand: 0, supplier: fc };
+    }
+    bySku[meta.sku].onHand += lvl.available || 0;
+  }
+
+  const productRows = Object.values(bySku).map((p) => ({
+    sku: p.sku,
+    name: p.name,
+    onHand: p.onHand,
+    reorderPt: REORDER_POINTS[p.sku] ?? DEFAULT_REORDER,
+    onOrder: 0, // Shopify has no native "on order" for POs; left 0 unless you track it
+    lastStocked: null,
+    supplier: p.supplier,
+  }));
+
+  // ---- Analytics: order status/value breakdown -----------------------------
+  const statusBreakdown = {};
+  for (const o of orders) {
+    const k = o.status || "Unknown";
+    if (!statusBreakdown[k]) statusBreakdown[k] = { count: 0, value: 0 };
+    statusBreakdown[k].count += 1;
+    statusBreakdown[k].value += o.value || 0;
+  }
+
+  const totalValue = orders.reduce((s, o) => s + (o.value || 0), 0);
+  const unfulfilled = orders.filter((o) => o.status === "Unfulfilled");
+  const unfulfilledValue = unfulfilled.reduce((s, o) => s + (o.value || 0), 0);
+
+  // Revenue by day (from order placed dates present in this pull).
+  const revenueByDay = {};
+  for (const o of orders) {
+    if (!o.placed) continue;
+    revenueByDay[o.placed] = (revenueByDay[o.placed] || 0) + (o.value || 0);
+  }
+
+  // Stock health snapshot.
+  const outCount = productRows.filter((p) => p.onHand <= 0).length;
+  const lowCount = productRows.filter(
+    (p) => p.onHand > 0 && p.onHand < p.reorderPt
+  ).length;
+
+  const analytics = {
+    totalValue,
+    orderCount: orders.length,
+    unfulfilledValue,
+    unfulfilledCount: unfulfilled.length,
+    statusBreakdown,
+    revenueByDay,
+    stockHealth: { out: outCount, low: lowCount, total: productRows.length },
+  };
+
+  // ---- Rule-based "smart" insights (no API/key needed) ---------------------
+  const insights = buildInsights(orders, productRows, analytics);
+
+  const data = {
+    syncedAt: new Date().toISOString(),
+    orders,
+    products: productRows,
+    analytics,
+    insights,
+  };
+
+  await mkdir("public", { recursive: true });
+  await writeFile("public/data.json", JSON.stringify(data, null, 2));
+
+  // ---- Append a daily snapshot to history.json (for trends over time) ------
+  await appendHistory({
+    date: new Date().toISOString().slice(0, 10),
+    syncedAt: data.syncedAt,
+    totalValue,
+    orderCount: orders.length,
+    unfulfilledValue,
+    unfulfilledCount: unfulfilled.length,
+    out: outCount,
+    low: lowCount,
+  });
+
+  console.log(
+    `Wrote public/data.json \u2014 ${orders.length} orders, ${productRows.length} products, ${insights.length} insights.`
+  );
+}
+
+// Append/replace today's snapshot in public/history.json (keeps ~90 days).
+async function appendHistory(snapshot) {
+  const path = "public/history.json";
+  let hist = [];
+  try {
+    const raw = await readFile(path, "utf8");
+    hist = JSON.parse(raw);
+    if (!Array.isArray(hist)) hist = [];
+  } catch {
+    hist = [];
+  }
+  // One row per day: replace today's if it already exists (hourly overwrites).
+  hist = hist.filter((h) => h.date !== snapshot.date);
+  hist.push(snapshot);
+  hist.sort((a, b) => a.date.localeCompare(b.date));
+  if (hist.length > 90) hist = hist.slice(hist.length - 90);
+  await writeFile(path, JSON.stringify(hist, null, 2));
+}
+
+// Generate plain-English insights from the numbers. Deterministic, no LLM.
+function buildInsights(orders, products, a) {
+  const out = [];
+  const money = (n) => "$" + Math.round(n).toLocaleString();
+
+  // Value stuck in unfulfilled.
+  if (a.unfulfilledCount > 0) {
+    out.push({
+      kind: "orders",
+      severity: a.unfulfilledValue > a.totalValue * 0.3 ? "high" : "info",
+      text: `${a.unfulfilledCount} unfulfilled order${a.unfulfilledCount > 1 ? "s" : ""} worth ${money(a.unfulfilledValue)} awaiting fulfillment.`,
+    });
+  }
+
+  // Aged unfulfilled orders (>7 days).
+  const now = Date.now();
+  const aged = orders.filter(
+    (o) =>
+      o.status === "Unfulfilled" &&
+      o.placed &&
+      (now - new Date(o.placed).getTime()) / 86400000 > 7
+  );
+  if (aged.length > 0) {
+    const agedValue = aged.reduce((s, o) => s + (o.value || 0), 0);
+    out.push({
+      kind: "orders",
+      severity: "high",
+      text: `${aged.length} order${aged.length > 1 ? "s have" : " has"} been unfulfilled over 7 days (${money(agedValue)}). Prioritize these.`,
+    });
+  }
+
+  // Oversold / negative stock.
+  const oversold = products.filter((p) => p.onHand < 0);
+  if (oversold.length > 0) {
+    out.push({
+      kind: "stock",
+      severity: "high",
+      text: `${oversold.length} SKU${oversold.length > 1 ? "s are" : " is"} oversold (negative stock): ${oversold.map((p) => p.sku).join(", ")}. Restock urgently.`,
+    });
+  }
+
+  // Out of stock.
+  const outStock = products.filter((p) => p.onHand === 0);
+  if (outStock.length > 0) {
+    out.push({
+      kind: "stock",
+      severity: outStock.length > 3 ? "high" : "info",
+      text: `${outStock.length} product${outStock.length > 1 ? "s are" : " is"} out of stock.`,
+    });
+  }
+
+  // Low stock needing reorder with nothing inbound.
+  const reorder = products.filter(
+    (p) => p.onHand > 0 && p.onHand < p.reorderPt && (p.onOrder || 0) === 0
+  );
+  if (reorder.length > 0) {
+    out.push({
+      kind: "stock",
+      severity: "info",
+      text: `${reorder.length} low-stock item${reorder.length > 1 ? "s have" : " has"} no incoming replenishment.`,
+    });
+  }
+
+  // Fulfillment center split.
+  const byFc = {};
+  for (const o of orders) {
+    if (o.status === "Unfulfilled" && o.fc) byFc[o.fc] = (byFc[o.fc] || 0) + 1;
+  }
+  const fcEntries = Object.entries(byFc).sort((x, y) => y[1] - x[1]);
+  if (fcEntries.length > 0) {
+    out.push({
+      kind: "orders",
+      severity: "info",
+      text: `Unfulfilled load: ${fcEntries.map(([f, n]) => `${f} ${n}`).join(", ")}.`,
+    });
+  }
+
+  if (out.length === 0) {
+    out.push({ kind: "ok", severity: "ok", text: "All clear — no orders aging and no stock issues flagged." });
+  }
+  return out;
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
