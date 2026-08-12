@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Node
         uses: actions/setup-node@v5
@@ -43,5 +45,11 @@ jobs:
             echo "No data changes."
           else
             git commit -m "chore: hourly Shopify data sync"
-            git push
+            # Integrate any commits pushed since checkout, then push.
+            # Retry a few times in case the repo moves again mid-push.
+            for i in 1 2 3 4 5; do
+              git pull --rebase origin main && git push origin main && break
+              echo "Push attempt $i failed; retrying after pull --rebase..."
+              sleep 5
+            done
           fi
