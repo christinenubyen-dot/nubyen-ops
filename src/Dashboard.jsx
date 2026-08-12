@@ -683,7 +683,21 @@ export default function Dashboard() {
                   <td className="muted nowrap">{o.placed}</td>
                   <td className="nowrap">{o.customer}</td>
                   <td className="small">{o.email || <span className="muted">—</span>}</td>
-                  <td className="small">{o.items} item{o.items !== 1 ? "s" : ""} · {money(o.value)}</td>
+                  <td className="small">
+                    {o.lineItems && o.lineItems.length ? (
+                      <div className="li-list">
+                        {o.lineItems.map((li, idx) => (
+                          <div className="li-row" key={idx}>
+                            <span className="li-qty">{li.qty}×</span>
+                            <span className="li-name">{li.title}</span>
+                          </div>
+                        ))}
+                        <div className="li-total">{o.items} item{o.items !== 1 ? "s" : ""} · {money(o.value)}</div>
+                      </div>
+                    ) : (
+                      <span>{o.items} item{o.items !== 1 ? "s" : ""} · {money(o.value)}</span>
+                    )}
+                  </td>
                   <td className="small">{o.address || <span className="muted">—</span>}</td>
                   <td className="r"><span className="pill" style={{ color: o.age > 7 ? "#a9826a" : "#8a8275", borderColor: o.age > 7 ? "#a9826a" : "#d8d2c8" }}>{o.age == null ? "—" : o.age + "d"}</span></td>
                 </tr>
@@ -843,6 +857,11 @@ tr:last-child td{border-bottom:none;}
 .unf-count{font-size:12px;color:var(--dim);margin-left:10px;}
 .unf-sheet-btn{font-size:12.5px;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:9px;background:var(--accent);color:#fff;}
 .unf-sheet-note{font-size:11.5px;color:var(--dim);font-style:italic;}
+.li-list{display:flex;flex-direction:column;gap:2px;}
+.li-row{display:flex;gap:6px;align-items:baseline;}
+.li-qty{font-weight:700;color:var(--accent);font-size:11.5px;min-width:22px;}
+.li-name{color:var(--text);}
+.li-total{margin-top:3px;padding-top:3px;border-top:1px solid var(--border);color:var(--dim);font-size:11.5px;font-weight:600;}
 .stock-head{display:flex;justify-content:flex-start;padding:10px 8px 4px;}
 .seg{display:inline-flex;background:var(--surface-alt);border:1px solid var(--border);border-radius:10px;padding:3px;gap:2px;}
 .seg-btn{background:none;border:none;padding:7px 14px;font-size:12.5px;font-weight:700;color:var(--dim);cursor:pointer;border-radius:8px;transition:all .15s;}
