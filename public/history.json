@@ -98,5 +98,15 @@
     "unfulfilledCount": 12,
     "out": 3,
     "low": 5
+  },
+  {
+    "date": "2026-08-13",
+    "syncedAt": "2026-08-13T01:39:15.270Z",
+    "totalValue": 4012,
+    "orderCount": 91,
+    "unfulfilledValue": 594,
+    "unfulfilledCount": 12,
+    "out": 3,
+    "low": 5
   }
 ]
