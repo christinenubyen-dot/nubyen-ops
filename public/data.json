@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-13T20:38:21.808Z",
+  "syncedAt": "2026-08-13T21:39:48.926Z",
   "orders": [
     {
       "id": "NUB-3878",
@@ -3033,46 +3033,6 @@
       "ship": "2026-06-23",
       "fc": "Tarlu",
       "address": "London, ENG"
-    },
-    {
-      "id": "NUB-3788",
-      "customer": "Roshni Lal",
-      "customerId": 25215928074626,
-      "email": "roshnilal21@outlook.com",
-      "customerOrders": null,
-      "placed": "2026-06-14",
-      "value": 73,
-      "gross": 73,
-      "discounts": 13,
-      "refunds": 0,
-      "net": 73,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm",
-          "sku": "NLIPA4",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
-          "sku": "NCHEEK",
-          "qty": 1,
-          "revenue": 48,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-06-16",
-      "fc": "Tarlu",
-      "address": "Leicestershire, ENG"
     }
   ],
   "products": [
@@ -3888,14 +3848,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4012,
-    "orderCount": 91,
+    "totalValue": 3939,
+    "orderCount": 90,
     "unfulfilledValue": 594,
     "unfulfilledCount": 12,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 79,
-        "value": 3418
+        "count": 78,
+        "value": 3345
       },
       "Unfulfilled": {
         "count": 12,
@@ -3944,8 +3904,7 @@
       "2026-06-26": 42,
       "2026-06-25": 115,
       "2026-06-24": 39,
-      "2026-06-19": 42,
-      "2026-06-14": 73
+      "2026-06-19": 42
     },
     "stockHealth": {
       "out": 3,
