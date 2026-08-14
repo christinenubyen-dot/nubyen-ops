@@ -1,6 +1,53 @@
 {
-  "syncedAt": "2026-08-14T12:56:13.990Z",
+  "syncedAt": "2026-08-14T14:14:45.875Z",
   "orders": [
+    {
+      "id": "NUB-3879",
+      "customer": "Wendy",
+      "customerId": 25511779205506,
+      "email": "wendy@familyhorowitz.com",
+      "customerOrders": null,
+      "placed": "2026-08-14",
+      "value": 105,
+      "gross": 105,
+      "discounts": 19,
+      "refunds": 0,
+      "net": 105,
+      "status": "Unfulfilled",
+      "items": 3,
+      "lineItems": [
+        {
+          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
+          "sku": "NLPO1",
+          "qty": 1,
+          "revenue": 35,
+          "type": "Other"
+        },
+        {
+          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NADVQAQ",
+          "qty": 1,
+          "revenue": 49,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 39,
+          "type": "Other"
+        }
+      ],
+      "region": "New Jersey",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Englewood Cliffs, NJ"
+    },
     {
       "id": "NUB-3878",
       "customer": "DeEtte Doerr",
@@ -3408,7 +3455,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2510,
+      "onHand": 2509,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3417,7 +3464,7 @@
     {
       "sku": "NLPO1",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-      "onHand": 971,
+      "onHand": 970,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3723,7 +3770,7 @@
     {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -4,
+      "onHand": -5,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
@@ -3848,21 +3895,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 3939,
-    "orderCount": 90,
-    "unfulfilledValue": 594,
-    "unfulfilledCount": 12,
+    "totalValue": 4044,
+    "orderCount": 91,
+    "unfulfilledValue": 699,
+    "unfulfilledCount": 13,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 13,
+        "value": 699
+      },
       "Fulfilled": {
         "count": 78,
         "value": 3345
-      },
-      "Unfulfilled": {
-        "count": 12,
-        "value": 594
       }
     },
     "revenueByDay": {
+      "2026-08-14": 105,
       "2026-08-12": 44,
       "2026-08-11": 291,
       "2026-08-08": 45,
@@ -3916,7 +3964,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "12 unfulfilled orders worth $594 awaiting fulfillment."
+      "text": "13 unfulfilled orders worth $699 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3941,7 +3989,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 12."
+      "text": "Unfulfilled load: Tarlu 13."
     }
   ]
 }
