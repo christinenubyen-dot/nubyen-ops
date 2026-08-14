@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-14T10:56:20.412Z",
+  "syncedAt": "2026-08-14T11:42:05.379Z",
   "orders": [
     {
       "id": "NUB-3878",
@@ -2747,8 +2747,8 @@
       "value": 53,
       "gross": 48,
       "discounts": 0,
-      "refunds": 0,
-      "net": 53,
+      "refunds": 53,
+      "net": 0,
       "status": "Unfulfilled",
       "items": 1,
       "lineItems": [
@@ -3723,7 +3723,7 @@
     {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -5,
+      "onHand": -4,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
