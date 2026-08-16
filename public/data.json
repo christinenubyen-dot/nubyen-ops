@@ -1,6 +1,46 @@
 {
-  "syncedAt": "2026-08-16T15:17:15.689Z",
+  "syncedAt": "2026-08-16T16:19:05.500Z",
   "orders": [
+    {
+      "id": "NUB-3883",
+      "customer": "Maggie",
+      "customerId": 25499577647490,
+      "email": "maggie_logan@aol.com",
+      "customerOrders": null,
+      "placed": "2026-08-16",
+      "value": 198,
+      "gross": 198,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 198,
+      "status": "Unfulfilled",
+      "items": 4,
+      "lineItems": [
+        {
+          "title": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
+          "sku": "NLIPFILG",
+          "qty": 2,
+          "revenue": 99,
+          "type": "Other"
+        },
+        {
+          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NADVQAQ",
+          "qty": 2,
+          "revenue": 99,
+          "type": "Other"
+        }
+      ],
+      "region": "Pennsylvania",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Beaver, PA"
+    },
     {
       "id": "NUB-3882",
       "customer": "Deborah Aitchison",
@@ -3869,7 +3909,7 @@
     {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -6,
+      "onHand": -8,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
@@ -3932,7 +3972,7 @@
     {
       "sku": "NLIPFILG",
       "name": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
-      "onHand": 8,
+      "onHand": 6,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3994,14 +4034,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4229,
-    "orderCount": 94,
-    "unfulfilledValue": 884,
-    "unfulfilledCount": 16,
+    "totalValue": 4427,
+    "orderCount": 95,
+    "unfulfilledValue": 1082,
+    "unfulfilledCount": 17,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 16,
-        "value": 884
+        "count": 17,
+        "value": 1082
       },
       "Fulfilled": {
         "count": 78,
@@ -4009,6 +4049,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-16": 198,
       "2026-08-15": 137,
       "2026-08-14": 153,
       "2026-08-12": 44,
@@ -4064,7 +4105,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "16 unfulfilled orders worth $884 awaiting fulfillment."
+      "text": "17 unfulfilled orders worth $1,082 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4089,7 +4130,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 16."
+      "text": "Unfulfilled load: Tarlu 17."
     }
   ]
 }
