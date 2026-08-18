@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-18T09:27:54.471Z",
+  "syncedAt": "2026-08-18T10:23:34.624Z",
   "orders": [
     {
       "id": "NUB-3885",
@@ -3973,6 +3973,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
+      "name": "Nubyén ULTIMATE +++ Peptide Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 2483,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
       "onHand": -8,
@@ -4166,7 +4175,7 @@
     "stockHealth": {
       "out": 3,
       "low": 5,
-      "total": 90
+      "total": 91
     }
   },
   "insights": [
