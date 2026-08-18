@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-18T12:36:42.502Z",
+  "syncedAt": "2026-08-18T13:38:16.910Z",
   "orders": [
     {
       "id": "NUB-3885",
@@ -3442,6 +3442,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-advanced-silk-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
+      "name": "Nubyén ADVANCED +++ SILK Peptide Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 2483,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NCHEEK",
       "name": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
       "onHand": 965,
@@ -3919,15 +3928,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "mystery-gift-box-self-care",
-      "name": "Nubyen Wellness  'Self Care' Mystery Gift Box",
-      "onHand": 5996,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "sleepless-in-seattle-trench-coat-in-burgundy",
       "name": "Nubyen Sleepless in Seattle Trench Coat in Burgundy",
       "onHand": 311,
@@ -4048,6 +4048,15 @@
       "sku": "NUB-11241",
       "name": "Romy Knit Top",
       "onHand": 9,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "mystery-gift-box-self-care",
+      "name": "Nubyen Wellness  'Self Care' Mystery Gift Box",
+      "onHand": 5996,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4184,7 +4193,7 @@
     "stockHealth": {
       "out": 3,
       "low": 5,
-      "total": 92
+      "total": 93
     }
   },
   "insights": [
