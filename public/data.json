@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-18T11:20:51.832Z",
+  "syncedAt": "2026-08-18T12:36:42.502Z",
   "orders": [
     {
       "id": "NUB-3885",
@@ -3415,15 +3415,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "unshaken-v-waist-pleated-mini-skort",
-      "name": "Nubyen By Erin Unshaken V-Waist Pleated Mini Skort",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "unshaken-v-neck-polo-crop-top",
       "name": "Nubyen By Erin Unshaken V-Neck Polo Crop Top",
       "onHand": 5000,
@@ -3436,6 +3427,15 @@
       "sku": "triumph-v-neck-low-back-mini-dress",
       "name": "Nubyen 'The Triumph' Mini Dress (Low Back, V Neck)",
       "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
+      "name": "Nubyén ADAPTOGEN +++ Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 4000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3552,6 +3552,15 @@
     {
       "sku": "fearless-leopard-mini-dress",
       "name": "Nubyen Fearless Leopard Mini Dress",
+      "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "unshaken-v-waist-pleated-mini-skort",
+      "name": "Nubyen By Erin Unshaken V-Waist Pleated Mini Skort",
       "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3697,15 +3706,6 @@
       "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
       "name": "Nubyen Optimist Contrast Bra Top (Cori)",
       "onHand": 1000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-optimistthe-cori-micro-skort",
-      "name": "Nubyen Optimist The Cori Micro Skort",
-      "onHand": 4000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3895,6 +3895,15 @@
       "sku": "nubyen-the-minimalist-boxy-vegan-leather-jacket",
       "name": "Nubyen The Minimalist Boxy Vegan Leather Jacket",
       "onHand": 2999,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-optimistthe-cori-micro-skort",
+      "name": "Nubyen Optimist The Cori Micro Skort",
+      "onHand": 4000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4175,7 +4184,7 @@
     "stockHealth": {
       "out": 3,
       "low": 5,
-      "total": 91
+      "total": 92
     }
   },
   "insights": [
