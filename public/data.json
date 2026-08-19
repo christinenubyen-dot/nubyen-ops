@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-19T18:28:03.284Z",
+  "syncedAt": "2026-08-19T19:21:04.175Z",
   "orders": [
+    {
+      "id": "NUB-3887",
+      "customer": "Jeff",
+      "customerId": 25533337436546,
+      "email": "1jeffhue@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-08-19",
+      "value": 95,
+      "gross": 95,
+      "discounts": 17,
+      "refunds": 0,
+      "net": 95,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén ULTIMATE +++ Peptide Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 112,
+          "type": "Other"
+        }
+      ],
+      "region": "Florida",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Winter Garden, FL"
+    },
     {
       "id": "NUB-3886",
       "customer": "Carmen Orozco",
@@ -3984,7 +4017,7 @@
     {
       "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
       "name": "Nubyén ULTIMATE +++ Peptide Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2483,
+      "onHand": 2482,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4127,22 +4160,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 4629,
-    "orderCount": 97,
-    "unfulfilledValue": 1282,
-    "unfulfilledCount": 19,
+    "totalValue": 4724,
+    "orderCount": 98,
+    "unfulfilledValue": 1377,
+    "unfulfilledCount": 20,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 20,
+        "value": 1377
+      },
       "Fulfilled": {
         "count": 78,
         "value": 3347
-      },
-      "Unfulfilled": {
-        "count": 19,
-        "value": 1282
       }
     },
     "revenueByDay": {
-      "2026-08-19": 44,
+      "2026-08-19": 139,
       "2026-08-18": 100,
       "2026-08-17": 100,
       "2026-08-16": 198,
@@ -4200,7 +4233,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "19 unfulfilled orders worth $1,282 awaiting fulfillment."
+      "text": "20 unfulfilled orders worth $1,377 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4225,7 +4258,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 19."
+      "text": "Unfulfilled load: Tarlu 20."
     }
   ]
 }
