@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-21T13:41:21.539Z",
+  "syncedAt": "2026-08-21T14:30:04.488Z",
   "orders": [
+    {
+      "id": "NUB-3888",
+      "customer": "Polina Lutsik-Artemenko",
+      "customerId": 25541403607426,
+      "email": "pollylutsik@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-08-21",
+      "value": 90,
+      "gross": 90,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 90,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyen Abundance High Rise Tie Up Legging (Alicante Vigo)",
+          "sku": null,
+          "qty": 1,
+          "revenue": 90,
+          "type": "Other"
+        }
+      ],
+      "region": "Florida",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Miami, FL"
+    },
     {
       "id": "NUB-3887",
       "customer": "Jeff",
@@ -3396,7 +3429,7 @@
     {
       "sku": "nubyen-alicante-vigo-high-rise-tie-up-legging",
       "name": "Nubyen Abundance High Rise Tie Up Legging (Alicante Vigo)",
-      "onHand": 3930,
+      "onHand": 3929,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4160,14 +4193,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4724,
-    "orderCount": 98,
-    "unfulfilledValue": 1377,
-    "unfulfilledCount": 20,
+    "totalValue": 4814,
+    "orderCount": 99,
+    "unfulfilledValue": 1467,
+    "unfulfilledCount": 21,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 20,
-        "value": 1377
+        "count": 21,
+        "value": 1467
       },
       "Fulfilled": {
         "count": 78,
@@ -4175,6 +4208,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-21": 90,
       "2026-08-19": 139,
       "2026-08-18": 100,
       "2026-08-17": 100,
@@ -4232,8 +4266,8 @@
   "insights": [
     {
       "kind": "orders",
-      "severity": "info",
-      "text": "20 unfulfilled orders worth $1,377 awaiting fulfillment."
+      "severity": "high",
+      "text": "21 unfulfilled orders worth $1,467 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4258,7 +4292,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 20."
+      "text": "Unfulfilled load: Tarlu 21."
     }
   ]
 }
