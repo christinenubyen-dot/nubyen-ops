@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-23T06:33:29.210Z",
+  "syncedAt": "2026-08-23T07:30:06.893Z",
   "orders": [
     {
       "id": "NUB-3889",
@@ -3358,39 +3358,6 @@
       "ship": "2026-06-26",
       "fc": "Tarlu",
       "address": "Clinton twp, MI"
-    },
-    {
-      "id": "NUB-3790",
-      "customer": "Kerry",
-      "customerId": 25255250624898,
-      "email": "kerryw0276@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-06-24",
-      "value": 39,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 39,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén's Plumping Lip Filá Balm",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628333319GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-26",
-      "fc": "Tarlu",
-      "address": "Sheffield, ENG"
     }
   ],
   "products": [
@@ -4233,8 +4200,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 4902,
-    "orderCount": 100,
+    "totalValue": 4863,
+    "orderCount": 99,
     "unfulfilledValue": 1555,
     "unfulfilledCount": 22,
     "statusBreakdown": {
@@ -4243,8 +4210,8 @@
         "value": 1555
       },
       "Fulfilled": {
-        "count": 78,
-        "value": 3347
+        "count": 77,
+        "value": 3308
       }
     },
     "revenueByDay": {
@@ -4294,8 +4261,7 @@
       "2026-06-29": 126,
       "2026-06-28": 42,
       "2026-06-26": 42,
-      "2026-06-25": 115,
-      "2026-06-24": 39
+      "2026-06-25": 115
     },
     "stockHealth": {
       "out": 3,
