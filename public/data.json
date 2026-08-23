@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-23T03:53:17.215Z",
+  "syncedAt": "2026-08-23T04:32:19.967Z",
   "orders": [
     {
       "id": "NUB-3889",
@@ -134,7 +134,7 @@
       "country": "US",
       "courier": "EasyPost - USPS Ground Advantage",
       "tracking": "9434636208303527454156",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-08-19",
       "fc": "Tarlu",
