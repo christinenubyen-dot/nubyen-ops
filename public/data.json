@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-23T13:28:27.193Z",
+  "syncedAt": "2026-08-23T14:18:25.746Z",
   "orders": [
+    {
+      "id": "NUB-3890",
+      "customer": "43 timber trail Heredos",
+      "customerId": 25548464783746,
+      "email": "kthformby@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-08-23",
+      "value": 100,
+      "gross": 100,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 100,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén ADAPTOGEN +++ Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 100,
+          "type": "Other"
+        }
+      ],
+      "region": "New York",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "East hampton, NY"
+    },
     {
       "id": "NUB-3889",
       "customer": "Dana Maier",
@@ -3508,7 +3541,7 @@
     {
       "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
       "name": "Nubyén ADAPTOGEN +++ Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4000,
+      "onHand": 3999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4200,14 +4233,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4863,
-    "orderCount": 99,
-    "unfulfilledValue": 1555,
-    "unfulfilledCount": 22,
+    "totalValue": 4963,
+    "orderCount": 100,
+    "unfulfilledValue": 1655,
+    "unfulfilledCount": 23,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 22,
-        "value": 1555
+        "count": 23,
+        "value": 1655
       },
       "Fulfilled": {
         "count": 77,
@@ -4215,6 +4248,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-23": 100,
       "2026-08-21": 178,
       "2026-08-19": 139,
       "2026-08-18": 100,
@@ -4273,7 +4307,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "22 unfulfilled orders worth $1,555 awaiting fulfillment."
+      "text": "23 unfulfilled orders worth $1,655 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4298,7 +4332,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 22."
+      "text": "Unfulfilled load: Tarlu 23."
     }
   ]
 }
