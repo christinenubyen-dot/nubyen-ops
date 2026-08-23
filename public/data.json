@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-23T22:16:46.249Z",
+  "syncedAt": "2026-08-23T23:16:27.016Z",
   "orders": [
+    {
+      "id": "NUB-3891",
+      "customer": "Erika",
+      "customerId": 25549968572802,
+      "email": "ortizerika272@yahoo.com",
+      "customerOrders": null,
+      "placed": "2026-08-23",
+      "value": 64,
+      "gross": 59,
+      "discounts": 10,
+      "refunds": 0,
+      "net": 64,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyen 'Botox' alternative- Vegan Beautox Skin Beautifying Elixir",
+          "sku": "NBEAU",
+          "qty": 1,
+          "revenue": 70,
+          "type": "Other"
+        }
+      ],
+      "region": "New York",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "New York, NY"
+    },
     {
       "id": "NUB-3890",
       "customer": "43 timber trail Heredos",
@@ -3406,7 +3439,7 @@
     {
       "sku": "NBEAU",
       "name": "Nubyen 'Botox' alternative- Vegan Beautox Skin Beautifying Elixir",
-      "onHand": 1030,
+      "onHand": 1029,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
@@ -4233,14 +4266,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4963,
-    "orderCount": 100,
-    "unfulfilledValue": 1655,
-    "unfulfilledCount": 23,
+    "totalValue": 5027,
+    "orderCount": 101,
+    "unfulfilledValue": 1719,
+    "unfulfilledCount": 24,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 23,
-        "value": 1655
+        "count": 24,
+        "value": 1719
       },
       "Fulfilled": {
         "count": 77,
@@ -4248,7 +4281,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-23": 100,
+      "2026-08-23": 164,
       "2026-08-21": 178,
       "2026-08-19": 139,
       "2026-08-18": 100,
@@ -4307,7 +4340,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "23 unfulfilled orders worth $1,655 awaiting fulfillment."
+      "text": "24 unfulfilled orders worth $1,719 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4332,7 +4365,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 23."
+      "text": "Unfulfilled load: Tarlu 24."
     }
   ]
 }
