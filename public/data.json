@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-24T01:01:44.624Z",
+  "syncedAt": "2026-08-24T02:58:53.099Z",
   "orders": [
     {
       "id": "NUB-3891",
@@ -3358,72 +3358,6 @@
       "ship": "2026-06-26",
       "fc": "Tarlu",
       "address": "Ammanford, WLS"
-    },
-    {
-      "id": "NUB-3792",
-      "customer": "John j Gurin",
-      "customerId": 24845363184002,
-      "email": "gurinchristine@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-06-25",
-      "value": 38,
-      "gross": 33,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 38,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
-          "sku": "NNUDE1",
-          "qty": 1,
-          "revenue": 33,
-          "type": "Other"
-        }
-      ],
-      "region": "Michigan",
-      "country": "US",
-      "courier": "FedEx International Connect Plus (DDU)",
-      "tracking": "382271033373",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-26",
-      "fc": "Tarlu",
-      "address": "Clinton twp, MI"
-    },
-    {
-      "id": "NUB-3791",
-      "customer": "John j Gurin",
-      "customerId": 24845363184002,
-      "email": "gurinchristine@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-06-25",
-      "value": 40,
-      "gross": 35,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 40,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-          "sku": "NLPO1",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        }
-      ],
-      "region": "Michigan",
-      "country": "US",
-      "courier": "FedEx International Connect Plus (DDU)",
-      "tracking": "382270988183",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-26",
-      "fc": "Tarlu",
-      "address": "Clinton twp, MI"
     }
   ],
   "products": [
@@ -4266,8 +4200,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 5027,
-    "orderCount": 101,
+    "totalValue": 4949,
+    "orderCount": 99,
     "unfulfilledValue": 1719,
     "unfulfilledCount": 24,
     "statusBreakdown": {
@@ -4276,8 +4210,8 @@
         "value": 1719
       },
       "Fulfilled": {
-        "count": 77,
-        "value": 3308
+        "count": 75,
+        "value": 3230
       }
     },
     "revenueByDay": {
@@ -4328,7 +4262,7 @@
       "2026-06-29": 126,
       "2026-06-28": 42,
       "2026-06-26": 42,
-      "2026-06-25": 115
+      "2026-06-25": 37
     },
     "stockHealth": {
       "out": 3,
