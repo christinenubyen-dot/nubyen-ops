@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-24T14:37:15.804Z",
+  "syncedAt": "2026-08-24T15:34:43.937Z",
   "orders": [
     {
       "id": "NUB-3891",
@@ -3554,15 +3554,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "higher-dominion-capsule-sculpt-jacket-copy",
-      "name": "Nubyen Higher Dominion Capsule Sculpt Legging",
-      "onHand": 10000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NMUS1",
       "name": "Nubyen Glow Highlighter Powder (Muse)",
       "onHand": 999,
@@ -3619,6 +3610,15 @@
     {
       "sku": "nubyen-joy-two-tone-chain-cuff-ring-copy",
       "name": "Nubyen Dominion Double Dome Ring",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "pre-order-nubyen-lip-flip-peptide",
+      "name": "Nubyén Extreme Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3752,15 +3752,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
-      "name": "Nubyen Optimist Contrast Bra Top (Cori)",
-      "onHand": 1000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "nubyen-marylebone-low-back-flare-dress",
       "name": "Nubyén Marylebone Low Back Flare Dress",
       "onHand": 3999,
@@ -3809,6 +3800,15 @@
       "sku": "NUB-72304",
       "name": "Nubyén Non-Conformist Bodysuit",
       "onHand": 10,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "higher-dominion-capsule-sculpt-jacket-copy",
+      "name": "Nubyen Higher Dominion Capsule Sculpt Legging",
+      "onHand": 10000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3944,6 +3944,15 @@
       "sku": "nubyen-the-minimalist-boxy-vegan-leather-jacket",
       "name": "Nubyen The Minimalist Boxy Vegan Leather Jacket",
       "onHand": 2999,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
+      "name": "Nubyen Optimist Contrast Bra Top (Cori)",
+      "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4155,15 +4164,6 @@
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
-    },
-    {
-      "sku": "pre-order-nubyen-lip-flip-peptide",
-      "name": "PRE ORDER - Nubyen Lip Flip Peptide",
-      "onHand": 0,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
     }
   ],
   "analytics": {
@@ -4231,7 +4231,7 @@
       "2026-06-26": 42
     },
     "stockHealth": {
-      "out": 3,
+      "out": 2,
       "low": 5,
       "total": 93
     }
@@ -4255,7 +4255,7 @@
     {
       "kind": "stock",
       "severity": "info",
-      "text": "2 products are out of stock."
+      "text": "1 product is out of stock."
     },
     {
       "kind": "stock",
