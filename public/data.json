@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-24T19:24:56.160Z",
+  "syncedAt": "2026-08-24T20:24:43.040Z",
   "orders": [
     {
       "id": "NUB-3892",
@@ -13,7 +13,7 @@
       "discounts": 6,
       "refunds": 0,
       "net": 38,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -26,11 +26,11 @@
       ],
       "region": "Utah",
       "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "EasyPost - USPS Ground Advantage",
+      "tracking": "9434636208303536097832",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-08-24",
       "fc": "Tarlu",
       "address": "St. George, UT"
     },
@@ -4202,16 +4202,16 @@
   "analytics": {
     "totalValue": 4950,
     "orderCount": 99,
-    "unfulfilledValue": 1757,
-    "unfulfilledCount": 25,
+    "unfulfilledValue": 1719,
+    "unfulfilledCount": 24,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 25,
-        "value": 1757
-      },
       "Fulfilled": {
-        "count": 74,
-        "value": 3193
+        "count": 75,
+        "value": 3231
+      },
+      "Unfulfilled": {
+        "count": 24,
+        "value": 1719
       }
     },
     "revenueByDay": {
@@ -4274,7 +4274,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "25 unfulfilled orders worth $1,757 awaiting fulfillment."
+      "text": "24 unfulfilled orders worth $1,719 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4299,7 +4299,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 25."
+      "text": "Unfulfilled load: Tarlu 24."
     }
   ]
 }
