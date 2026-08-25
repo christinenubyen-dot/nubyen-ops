@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-25T09:30:58.775Z",
+  "syncedAt": "2026-08-25T12:39:01.480Z",
   "orders": [
     {
       "id": "NUB-3892",
@@ -3237,8 +3237,8 @@
       "value": 53,
       "gross": 48,
       "discounts": 0,
-      "refunds": 53,
-      "net": 0,
+      "refunds": 106,
+      "net": -53,
       "status": "Unfulfilled",
       "items": 1,
       "lineItems": [
