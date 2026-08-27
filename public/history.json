@@ -241,9 +241,9 @@
   },
   {
     "date": "2026-08-27",
-    "syncedAt": "2026-08-27T13:40:58.290Z",
-    "totalValue": 5000,
-    "orderCount": 100,
+    "syncedAt": "2026-08-27T23:31:44.452Z",
+    "totalValue": 4958,
+    "orderCount": 99,
     "unfulfilledValue": 1811,
     "unfulfilledCount": 26,
     "out": 2,
