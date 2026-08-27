@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-26T21:36:42.452Z",
+  "syncedAt": "2026-08-27T02:50:37.843Z",
   "orders": [
+    {
+      "id": "NUB-3894",
+      "customer": "Debra Atkin",
+      "customerId": 24604339044738,
+      "email": "debz8877@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-08-27",
+      "value": 45,
+      "gross": 41,
+      "discounts": 7,
+      "refunds": 0,
+      "net": 45,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NADVQAQ",
+          "qty": 1,
+          "revenue": 48,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Oldham, ENG"
+    },
     {
       "id": "NUB-3893",
       "customer": "Amy",
@@ -4075,7 +4108,7 @@
     {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -10,
+      "onHand": -11,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
@@ -4200,14 +4233,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4955,
-    "orderCount": 99,
-    "unfulfilledValue": 1766,
-    "unfulfilledCount": 25,
+    "totalValue": 5000,
+    "orderCount": 100,
+    "unfulfilledValue": 1811,
+    "unfulfilledCount": 26,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 25,
-        "value": 1766
+        "count": 26,
+        "value": 1811
       },
       "Fulfilled": {
         "count": 74,
@@ -4215,6 +4248,7 @@
       }
     },
     "revenueByDay": {
+      "2026-08-27": 45,
       "2026-08-25": 47,
       "2026-08-24": 38,
       "2026-08-23": 164,
@@ -4274,7 +4308,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "25 unfulfilled orders worth $1,766 awaiting fulfillment."
+      "text": "26 unfulfilled orders worth $1,811 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4299,7 +4333,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 25."
+      "text": "Unfulfilled load: Tarlu 26."
     }
   ]
 }
