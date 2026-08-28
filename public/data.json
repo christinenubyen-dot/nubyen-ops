@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-27T23:31:44.452Z",
+  "syncedAt": "2026-08-28T08:48:24.756Z",
   "orders": [
+    {
+      "id": "NUB-3895",
+      "customer": "Laura Blair",
+      "customerId": 25566794613122,
+      "email": "lblair001@comcast.net",
+      "customerOrders": null,
+      "placed": "2026-08-28",
+      "value": 100,
+      "gross": 100,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 100,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "Trio1",
+          "qty": 1,
+          "revenue": 100,
+          "type": "Other"
+        }
+      ],
+      "region": "Pennsylvania",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Ambler, PA"
+    },
     {
       "id": "NUB-3894",
       "customer": "Debra Atkin",
@@ -3259,105 +3292,6 @@
       "ship": null,
       "fc": "Tarlu",
       "address": "Edinburgh , Scotland, SCT"
-    },
-    {
-      "id": "NUB-3798",
-      "customer": "Samantha Sturch",
-      "customerId": 25277660856706,
-      "email": "lee.sturch@btinternet.com",
-      "customerOrders": null,
-      "placed": "2026-06-29",
-      "value": 37,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 37,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén's Plumping Lip Filá Balm",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628348185GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-29",
-      "fc": "Tarlu",
-      "address": "Gillingham, ENG"
-    },
-    {
-      "id": "NUB-3797",
-      "customer": "Sharon Foster",
-      "customerId": 25277513236866,
-      "email": "sharon.foster67@outlook.com",
-      "customerOrders": null,
-      "placed": "2026-06-29",
-      "value": 53,
-      "gross": 48,
-      "discounts": 0,
-      "refunds": 106,
-      "net": -53,
-      "status": "Unfulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 1,
-          "revenue": 48,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
-      "eta": null,
-      "ship": null,
-      "fc": "Tarlu",
-      "address": "York, ENG"
-    },
-    {
-      "id": "NUB-3796",
-      "customer": "Vanessa",
-      "customerId": 25277359358338,
-      "email": "ness.roberts@yahoo.co.uk",
-      "customerOrders": null,
-      "placed": "2026-06-29",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén's Plumping Lip Filá Balm",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628347658GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-29",
-      "fc": "Tarlu",
-      "address": "Northallerton, ENG"
     }
   ],
   "products": [
@@ -3931,7 +3865,7 @@
     {
       "sku": "Trio1",
       "name": "Nubyén Plumping Peptides Lip Filá Balm Trio-  Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4968,
+      "onHand": 4967,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4200,21 +4134,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 4958,
-    "orderCount": 99,
-    "unfulfilledValue": 1811,
+    "totalValue": 4932,
+    "orderCount": 97,
+    "unfulfilledValue": 1858,
     "unfulfilledCount": 26,
     "statusBreakdown": {
       "Unfulfilled": {
         "count": 26,
-        "value": 1811
+        "value": 1858
       },
       "Fulfilled": {
-        "count": 73,
-        "value": 3147
+        "count": 71,
+        "value": 3074
       }
     },
     "revenueByDay": {
+      "2026-08-28": 100,
       "2026-08-27": 45,
       "2026-08-25": 47,
       "2026-08-24": 38,
@@ -4261,8 +4196,7 @@
       "2026-07-04": 73,
       "2026-07-03": 140,
       "2026-07-02": 36,
-      "2026-06-30": 165,
-      "2026-06-29": 126
+      "2026-06-30": 165
     },
     "stockHealth": {
       "out": 2,
@@ -4274,12 +4208,12 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "26 unfulfilled orders worth $1,811 awaiting fulfillment."
+      "text": "26 unfulfilled orders worth $1,858 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "20 orders have been unfulfilled over 7 days ($1,377). Prioritize these."
+      "text": "21 orders have been unfulfilled over 7 days ($1,502). Prioritize these."
     },
     {
       "kind": "stock",
