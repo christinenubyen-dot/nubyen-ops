@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-08-28T08:48:24.756Z",
+  "syncedAt": "2026-08-28T20:39:20.018Z",
   "orders": [
+    {
+      "id": "NUB-3896",
+      "customer": "Christine Wall",
+      "customerId": 25568940687746,
+      "email": "Wallc7822@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-08-28",
+      "value": 72,
+      "gross": 67,
+      "discounts": 12,
+      "refunds": 0,
+      "net": 72,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "NLIPA1",
+          "qty": 2,
+          "revenue": 78,
+          "type": "Other"
+        }
+      ],
+      "region": "Massachusetts",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Holyoke, MA"
+    },
     {
       "id": "NUB-3895",
       "customer": "Laura Blair",
@@ -3449,9 +3482,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-advanced-silk-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
-      "name": "Nubyén ADVANCED Plumping +++ SILK Peptide Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2483,
+      "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
+      "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 2482,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3864,7 +3897,7 @@
     },
     {
       "sku": "Trio1",
-      "name": "Nubyén Plumping Peptides Lip Filá Balm Trio-  Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Plumping Peptides Lip Filá Balm Trio| Starter Kit| Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 4967,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3892,7 +3925,7 @@
     {
       "sku": "NLIPA1",
       "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 991,
+      "onHand": 989,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3945,7 +3978,7 @@
     },
     {
       "sku": "nubyen-nude-duo-set-of-two",
-      "name": "Nubyen Plumping  Lip Fila Duo - Set of Two. Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyen Plumping Lip Filá MIRACLE Kit. Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 1999,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3989,18 +4022,18 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
-      "name": "Nubyén ULTIMATE Plumping +++ Peptide Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2482,
+      "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
+      "name": "Nubyén Plumping +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 3999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
-      "name": "Nubyén Plumping +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 3999,
+      "sku": "nubyen-advanced-silk-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
+      "name": "Nubyén POWER & INTENSITY Plumping +++ SILK Peptide Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 2483,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4134,14 +4167,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4932,
-    "orderCount": 97,
-    "unfulfilledValue": 1858,
-    "unfulfilledCount": 26,
+    "totalValue": 5004,
+    "orderCount": 98,
+    "unfulfilledValue": 1930,
+    "unfulfilledCount": 27,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 26,
-        "value": 1858
+        "count": 27,
+        "value": 1930
       },
       "Fulfilled": {
         "count": 71,
@@ -4149,7 +4182,7 @@
       }
     },
     "revenueByDay": {
-      "2026-08-28": 100,
+      "2026-08-28": 172,
       "2026-08-27": 45,
       "2026-08-25": 47,
       "2026-08-24": 38,
@@ -4208,7 +4241,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "26 unfulfilled orders worth $1,858 awaiting fulfillment."
+      "text": "27 unfulfilled orders worth $1,930 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4233,7 +4266,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 26."
+      "text": "Unfulfilled load: Tarlu 27."
     }
   ]
 }
