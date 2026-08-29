@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-29T03:02:29.609Z",
+  "syncedAt": "2026-08-29T10:42:21.092Z",
   "orders": [
     {
       "id": "NUB-3896",
@@ -3226,72 +3226,6 @@
       "ship": "2026-06-30",
       "fc": "Tarlu",
       "address": "Pembroke, WLS"
-    },
-    {
-      "id": "NUB-3801",
-      "customer": "Alison Hulme",
-      "customerId": 25282169143682,
-      "email": "ajhulme66@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-06-30",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén's Plumping Lip Filá Balm",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628350745GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-30",
-      "fc": "Tarlu",
-      "address": "Norfolk, ENG"
-    },
-    {
-      "id": "NUB-3800",
-      "customer": "Vivienne V G ROSE",
-      "customerId": 25282056520066,
-      "email": "vivienne.rose@hotmail.co.uk",
-      "customerOrders": null,
-      "placed": "2026-06-30",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén's Plumping Lip Filá Balm",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628350731GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-06-30",
-      "fc": "Tarlu",
-      "address": "London, ENG"
     }
   ],
   "products": [
@@ -4134,8 +4068,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 4959,
-    "orderCount": 97,
+    "totalValue": 4881,
+    "orderCount": 95,
     "unfulfilledValue": 1885,
     "unfulfilledCount": 26,
     "statusBreakdown": {
@@ -4144,8 +4078,8 @@
         "value": 1885
       },
       "Fulfilled": {
-        "count": 71,
-        "value": 3074
+        "count": 69,
+        "value": 2996
       }
     },
     "revenueByDay": {
@@ -4196,7 +4130,7 @@
       "2026-07-04": 73,
       "2026-07-03": 140,
       "2026-07-02": 36,
-      "2026-06-30": 120
+      "2026-06-30": 42
     },
     "stockHealth": {
       "out": 2,
