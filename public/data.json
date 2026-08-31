@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-31T10:26:06.403Z",
+  "syncedAt": "2026-08-31T17:49:27.912Z",
   "orders": [
     {
       "id": "NUB-3897",
@@ -3193,39 +3193,6 @@
       "ship": "2026-07-03",
       "fc": "Tarlu",
       "address": "Paisley, SCT"
-    },
-    {
-      "id": "NUB-3803",
-      "customer": "Lisa",
-      "customerId": 24907162943874,
-      "email": "lisa.allingan@outlook.com",
-      "customerOrders": null,
-      "placed": "2026-07-02",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628369066GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-03",
-      "fc": "Tarlu",
-      "address": "Oldham, ENG"
     }
   ],
   "products": [
@@ -3518,15 +3485,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-joy-two-tone-chain-cuff-ring-copy",
-      "name": "Nubyen Dominion Double Dome Ring",
-      "onHand": 1000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "pre-order-nubyen-lip-flip-peptide",
       "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 1000,
@@ -3662,6 +3620,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-optimistthe-cori-micro-skort",
+      "name": "Nubyen Optimist The Cori Micro Skort",
+      "onHand": 4000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "nubyen-marylebone-low-back-flare-dress",
       "name": "Nubyén Marylebone Low Back Flare Dress",
       "onHand": 3999,
@@ -3762,7 +3729,7 @@
     },
     {
       "sku": "nubyen-abundance-visor",
-      "name": "Nubyén Motivate Visor",
+      "name": "Nubyén Motivate & Go Visor",
       "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3798,7 +3765,7 @@
     },
     {
       "sku": "Trio1",
-      "name": "Nubyén Plumping Peptides Lip Filá Balm Trio| Starter Kit| Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Starter Kit |Plumping Peptides Lip Filá Balm Trio| Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 4967,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3845,15 +3812,6 @@
       "sku": "nubyen-the-minimalist-boxy-vegan-leather-jacket",
       "name": "Nubyen The Minimalist Boxy Vegan Leather Jacket",
       "onHand": 2999,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-optimistthe-cori-micro-skort",
-      "name": "Nubyen Optimist The Cori Micro Skort",
-      "onHand": 4000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3923,8 +3881,17 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-joy-two-tone-chain-cuff-ring-copy",
+      "name": "Nubyen Ring Dominion Double Dome",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
-      "name": "Nubyén Plumping +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 3999,
       "reorderPt": 10,
       "onOrder": 0,
@@ -3933,7 +3900,7 @@
     },
     {
       "sku": "nubyen-advanced-silk-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
-      "name": "Nubyén POWER & INTENSITY Plumping +++ SILK Peptide Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Peptide Plumping INTENSITY +++ Silk Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 2483,
       "reorderPt": 10,
       "onOrder": 0,
@@ -4068,8 +4035,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 4879,
-    "orderCount": 95,
+    "totalValue": 4843,
+    "orderCount": 94,
     "unfulfilledValue": 1835,
     "unfulfilledCount": 26,
     "statusBreakdown": {
@@ -4078,8 +4045,8 @@
         "value": 1835
       },
       "Fulfilled": {
-        "count": 69,
-        "value": 3044
+        "count": 68,
+        "value": 3008
       }
     },
     "revenueByDay": {
@@ -4129,8 +4096,7 @@
       "2026-07-07": 78,
       "2026-07-05": 117,
       "2026-07-04": 73,
-      "2026-07-03": 140,
-      "2026-07-02": 36
+      "2026-07-03": 140
     },
     "stockHealth": {
       "out": 2,
