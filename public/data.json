@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-08-31T22:21:22.968Z",
+  "syncedAt": "2026-09-01T01:34:59.491Z",
   "orders": [
     {
       "id": "NUB-3897",
@@ -3160,39 +3160,6 @@
       "ship": "2026-07-06",
       "fc": "Tarlu",
       "address": "Clinton twp, MI"
-    },
-    {
-      "id": "NUB-3804",
-      "customer": "alison allison",
-      "customerId": 25296469459330,
-      "email": "allison100@ntlworld.com",
-      "customerOrders": null,
-      "placed": "2026-07-03",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "Scotland",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628369070GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-03",
-      "fc": "Tarlu",
-      "address": "Paisley, SCT"
     }
   ],
   "products": [
@@ -4035,8 +4002,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 4843,
-    "orderCount": 94,
+    "totalValue": 4801,
+    "orderCount": 93,
     "unfulfilledValue": 1835,
     "unfulfilledCount": 26,
     "statusBreakdown": {
@@ -4045,8 +4012,8 @@
         "value": 1835
       },
       "Fulfilled": {
-        "count": 68,
-        "value": 3008
+        "count": 67,
+        "value": 2966
       }
     },
     "revenueByDay": {
@@ -4096,7 +4063,7 @@
       "2026-07-07": 78,
       "2026-07-05": 117,
       "2026-07-04": 73,
-      "2026-07-03": 140
+      "2026-07-03": 98
     },
     "stockHealth": {
       "out": 2,
@@ -4113,7 +4080,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "21 orders have been unfulfilled over 7 days ($1,531). Prioritize these."
+      "text": "22 orders have been unfulfilled over 7 days ($1,578). Prioritize these."
     },
     {
       "kind": "stock",
