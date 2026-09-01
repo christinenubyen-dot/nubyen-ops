@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-01T01:34:59.491Z",
+  "syncedAt": "2026-09-01T07:09:48.821Z",
   "orders": [
     {
       "id": "NUB-3897",
@@ -3127,39 +3127,6 @@
       "ship": "2026-07-06",
       "fc": "Tarlu",
       "address": "Lytham St Annes, ENG"
-    },
-    {
-      "id": "NUB-3805",
-      "customer": "John j Gurin",
-      "customerId": 24845363184002,
-      "email": "gurinchristine@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-03",
-      "value": 38,
-      "gross": 33,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 38,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
-          "sku": "NNUDE1",
-          "qty": 1,
-          "revenue": 33,
-          "type": "Other"
-        }
-      ],
-      "region": "Michigan",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-07-06",
-      "fc": "Tarlu",
-      "address": "Clinton twp, MI"
     }
   ],
   "products": [
@@ -4002,8 +3969,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 4801,
-    "orderCount": 93,
+    "totalValue": 4763,
+    "orderCount": 92,
     "unfulfilledValue": 1835,
     "unfulfilledCount": 26,
     "statusBreakdown": {
@@ -4012,8 +3979,8 @@
         "value": 1835
       },
       "Fulfilled": {
-        "count": 67,
-        "value": 2966
+        "count": 66,
+        "value": 2928
       }
     },
     "revenueByDay": {
@@ -4063,7 +4030,7 @@
       "2026-07-07": 78,
       "2026-07-05": 117,
       "2026-07-04": 73,
-      "2026-07-03": 98
+      "2026-07-03": 60
     },
     "stockHealth": {
       "out": 2,
