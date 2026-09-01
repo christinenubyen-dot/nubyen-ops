@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-01T13:01:01.924Z",
+  "syncedAt": "2026-09-01T17:32:56.489Z",
   "orders": [
     {
       "id": "NUB-3897",
@@ -3356,6 +3356,69 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "NMUS1",
+      "name": "Nubyen Glow Highlighter Powder (Muse)",
+      "onHand": 999,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NMUS2",
+      "name": "Nubyen Glow Highlighter Powder (Muse)",
+      "onHand": 995,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "fearless-leopard-mini-dress",
+      "name": "Nubyen Fearless Leopard Mini Dress",
+      "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "pre-order-nubyen-lip-flip-peptide",
+      "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-clifto",
+      "name": "Nubyen Clifton Capri Legging",
+      "onHand": 10000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-clifton-fold-over-wide-leg-pant",
+      "name": "Nubyen Clifton Fold Over Wide Leg Pant",
+      "onHand": 10000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-clifton-halter-neck-top",
+      "name": "Nubyen Clifton Halter Neck Top",
+      "onHand": 3998,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "higher-dominion-capsule-sculpt-jacket",
       "name": "Nubyen Higher Dominion Capsule Sculpt Full Zip Jacket",
       "onHand": 9100,
@@ -3374,19 +3437,19 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NMUS1",
-      "name": "Nubyen Glow Highlighter Powder (Muse)",
-      "onHand": 999,
-      "reorderPt": 1,
+      "sku": "nubyen-higher-powers-set",
+      "name": "Nubyen Higher Powers Cap Sleeve Top",
+      "onHand": 5000,
+      "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NMUS2",
-      "name": "Nubyen Glow Highlighter Powder (Muse)",
-      "onHand": 995,
-      "reorderPt": 1,
+      "sku": "nubyen-higher-powers-skirt",
+      "name": "Nubyen Higher Powers Skirt",
+      "onHand": 5000,
+      "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -3410,18 +3473,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "fearless-leopard-mini-dress",
-      "name": "Nubyen Fearless Leopard Mini Dress",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "pre-order-nubyen-lip-flip-peptide",
-      "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 1000,
+      "sku": "nubyen-higher-dominion-capsule-sculpt-legging-copy",
+      "name": "Nubyen Higher Dominion Capsule Sculpt Legging (Copy)",
+      "onHand": 10000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3617,27 +3671,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-higher-powers-set",
-      "name": "Nubyen Higher Powers Cap Sleeve Top",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NLPO5",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 993,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-higher-powers-skirt",
-      "name": "Nubyen Higher Powers Skirt",
-      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3665,6 +3701,24 @@
       "sku": "nubyen-abundance-visor",
       "name": "Nubyén Motivate & Go Visor",
       "onHand": 2000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-mindful-fold-over-wide-leg-pant",
+      "name": "Nubyen Mindful Fold Over Wide Leg Pant",
+      "onHand": 10000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-mindful-halter-neck-top",
+      "name": "Nubyen Mindful Halter Neck Top",
+      "onHand": 3998,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3779,15 +3833,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-manifesting-set",
-      "name": "Nubyen Velour Manifesting Top",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "nubyen-velour-manifesting-shorts",
       "name": "Nubyen Velour Manifesting Shorts",
       "onHand": 5000,
@@ -3836,6 +3881,15 @@
       "sku": "nubyen-advanced-silk-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
       "name": "Nubyén Peptide Plumping INTENSITY +++ Silk Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 2483,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-soho-2-0-fold-over-capri-legging",
+      "name": "Nubyen Soho 2.0 Fold Over Capri Legging",
+      "onHand": 10000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3917,6 +3971,15 @@
       "sku": "NLIPFILG",
       "name": "PRE-ORDER Nubyén Plumping +++ Lip Filá Max Silk Gloss | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 6,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-manifesting-set",
+      "name": "Nubyen Velour Manifesting Top",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -4035,7 +4098,7 @@
     "stockHealth": {
       "out": 2,
       "low": 5,
-      "total": 93
+      "total": 100
     }
   },
   "insights": [
