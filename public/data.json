@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-01T17:32:56.489Z",
+  "syncedAt": "2026-09-01T20:28:00.907Z",
   "orders": [
     {
       "id": "NUB-3897",
@@ -3087,46 +3087,6 @@
       "ship": "2026-07-06",
       "fc": "Tarlu",
       "address": "Chelmsford, ENG"
-    },
-    {
-      "id": "NUB-3806",
-      "customer": "Rachel",
-      "customerId": 25295856501122,
-      "email": "Rach_willi73@yahoo.co.uk",
-      "customerOrders": null,
-      "placed": "2026-07-03",
-      "value": 60,
-      "gross": 60,
-      "discounts": 11,
-      "refunds": 0,
-      "net": 60,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
-          "sku": "NNUDE1",
-          "qty": 1,
-          "revenue": 32,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628377819GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-06",
-      "fc": "Tarlu",
-      "address": "Lytham St Annes, ENG"
     }
   ],
   "products": [
@@ -4032,8 +3992,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 4763,
-    "orderCount": 92,
+    "totalValue": 4703,
+    "orderCount": 91,
     "unfulfilledValue": 1835,
     "unfulfilledCount": 26,
     "statusBreakdown": {
@@ -4042,8 +4002,8 @@
         "value": 1835
       },
       "Fulfilled": {
-        "count": 66,
-        "value": 2928
+        "count": 65,
+        "value": 2868
       }
     },
     "revenueByDay": {
@@ -4092,8 +4052,7 @@
       "2026-07-08": 42,
       "2026-07-07": 78,
       "2026-07-05": 117,
-      "2026-07-04": 73,
-      "2026-07-03": 60
+      "2026-07-04": 73
     },
     "stockHealth": {
       "out": 2,
