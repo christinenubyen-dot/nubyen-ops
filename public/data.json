@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-09-02T00:53:05.838Z",
+  "syncedAt": "2026-09-02T05:24:01.535Z",
   "orders": [
+    {
+      "id": "NUB-3898",
+      "customer": "Claudia Lifton",
+      "customerId": 25586909217154,
+      "email": "claudialiftonschwerner@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-09-02",
+      "value": 44,
+      "gross": 39,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 44,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "NLIPA3",
+          "qty": 1,
+          "revenue": 39,
+          "type": "Other"
+        }
+      ],
+      "region": "Colorado",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Denver, CO"
+    },
     {
       "id": "NUB-3897",
       "customer": "Tiffany Smith",
@@ -3750,7 +3783,7 @@
     {
       "sku": "NLIPA3",
       "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 984,
+      "onHand": 983,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3992,14 +4025,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4703,
-    "orderCount": 91,
-    "unfulfilledValue": 1835,
-    "unfulfilledCount": 26,
+    "totalValue": 4747,
+    "orderCount": 92,
+    "unfulfilledValue": 1879,
+    "unfulfilledCount": 27,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 26,
-        "value": 1835
+        "count": 27,
+        "value": 1879
       },
       "Fulfilled": {
         "count": 65,
@@ -4007,6 +4040,7 @@
       }
     },
     "revenueByDay": {
+      "2026-09-02": 44,
       "2026-08-30": 40,
       "2026-08-28": 172,
       "2026-08-27": 45,
@@ -4064,7 +4098,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "26 unfulfilled orders worth $1,835 awaiting fulfillment."
+      "text": "27 unfulfilled orders worth $1,879 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4089,7 +4123,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 26."
+      "text": "Unfulfilled load: Tarlu 27."
     }
   ]
 }

@@ -301,11 +301,11 @@
   },
   {
     "date": "2026-09-02",
-    "syncedAt": "2026-09-02T00:53:05.838Z",
-    "totalValue": 4703,
-    "orderCount": 91,
-    "unfulfilledValue": 1835,
-    "unfulfilledCount": 26,
+    "syncedAt": "2026-09-02T05:24:01.535Z",
+    "totalValue": 4747,
+    "orderCount": 92,
+    "unfulfilledValue": 1879,
+    "unfulfilledCount": 27,
     "out": 2,
     "low": 5
   }
