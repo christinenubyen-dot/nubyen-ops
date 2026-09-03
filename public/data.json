@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-03T07:42:24.919Z",
+  "syncedAt": "2026-09-03T12:32:07.038Z",
   "orders": [
     {
       "id": "NUB-3898",
@@ -3021,39 +3021,6 @@
       "ship": "2026-07-06",
       "fc": "Tarlu",
       "address": "New Milton, ENG"
-    },
-    {
-      "id": "NUB-3809",
-      "customer": "Jacqueline",
-      "customerId": 24892543533442,
-      "email": "jaxbox1@mac.com",
-      "customerOrders": null,
-      "placed": "2026-07-05",
-      "value": 45,
-      "gross": 41,
-      "discounts": 7,
-      "refunds": 0,
-      "net": 45,
-      "status": "Unfulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "PRE-ORDER Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 1,
-          "revenue": 48,
-          "type": "Other"
-        }
-      ],
-      "region": "Scotland",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
-      "eta": null,
-      "ship": null,
-      "fc": "Tarlu",
-      "address": "Ayr, SCT"
     }
   ],
   "products": [
@@ -3959,14 +3926,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4674,
-    "orderCount": 90,
-    "unfulfilledValue": 1879,
-    "unfulfilledCount": 27,
+    "totalValue": 4629,
+    "orderCount": 89,
+    "unfulfilledValue": 1834,
+    "unfulfilledCount": 26,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 27,
-        "value": 1879
+        "count": 26,
+        "value": 1834
       },
       "Fulfilled": {
         "count": 63,
@@ -4019,7 +3986,7 @@
       "2026-07-09": 36,
       "2026-07-08": 42,
       "2026-07-07": 78,
-      "2026-07-05": 117
+      "2026-07-05": 72
     },
     "stockHealth": {
       "out": 2,
@@ -4031,12 +3998,12 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "27 unfulfilled orders worth $1,879 awaiting fulfillment."
+      "text": "26 unfulfilled orders worth $1,834 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "23 orders have been unfulfilled over 7 days ($1,623). Prioritize these."
+      "text": "22 orders have been unfulfilled over 7 days ($1,578). Prioritize these."
     },
     {
       "kind": "stock",
@@ -4056,7 +4023,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 27."
+      "text": "Unfulfilled load: Tarlu 26."
     }
   ]
 }

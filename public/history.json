@@ -311,11 +311,11 @@
   },
   {
     "date": "2026-09-03",
-    "syncedAt": "2026-09-03T07:42:24.919Z",
-    "totalValue": 4674,
-    "orderCount": 90,
-    "unfulfilledValue": 1879,
-    "unfulfilledCount": 27,
+    "syncedAt": "2026-09-03T12:32:07.038Z",
+    "totalValue": 4629,
+    "orderCount": 89,
+    "unfulfilledValue": 1834,
+    "unfulfilledCount": 26,
     "out": 2,
     "low": 5
   }
