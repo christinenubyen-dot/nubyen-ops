@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-09-03T12:32:07.038Z",
+  "syncedAt": "2026-09-03T16:53:06.975Z",
   "orders": [
+    {
+      "id": "NUB-3899",
+      "customer": "John j Gurin",
+      "customerId": 24845363184002,
+      "email": "gurinchristine@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-09-03",
+      "value": 89,
+      "gross": 80,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 89,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Collagen EXTREME +++ Nubyen Nude Lip Plumping Gloss | Lip Boosting & Hydrating | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "NNUDE2",
+          "qty": 1,
+          "revenue": 80,
+          "type": "Other"
+        }
+      ],
+      "region": "Michigan",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Clinton twp, MI"
+    },
     {
       "id": "NUB-3898",
       "customer": "Claudia Lifton",
@@ -2955,79 +2988,13 @@
       "ship": "2026-07-08",
       "fc": "Tarlu",
       "address": "Manchester, ENG"
-    },
-    {
-      "id": "NUB-3811",
-      "customer": "heather keevill",
-      "customerId": 25308506128770,
-      "email": "heatherkeevill@hotmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-05",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628377663GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-06",
-      "fc": "Tarlu",
-      "address": "Cookham dean, ENG"
-    },
-    {
-      "id": "NUB-3810",
-      "customer": "Jill Keyworth",
-      "customerId": 24286384685442,
-      "email": "jillytheowl@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-05",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá AMPLIFIED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT628377650GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-06",
-      "fc": "Tarlu",
-      "address": "New Milton, ENG"
     }
   ],
   "products": [
     {
       "sku": "NNUDE2",
       "name": "Collagen EXTREME +++ Nubyen Nude Lip Plumping Gloss | Lip Boosting & Hydrating | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 994,
+      "onHand": 993,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3926,21 +3893,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 4629,
-    "orderCount": 89,
-    "unfulfilledValue": 1834,
-    "unfulfilledCount": 26,
+    "totalValue": 4646,
+    "orderCount": 88,
+    "unfulfilledValue": 1923,
+    "unfulfilledCount": 27,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 26,
-        "value": 1834
+        "count": 27,
+        "value": 1923
       },
       "Fulfilled": {
-        "count": 63,
-        "value": 2795
+        "count": 61,
+        "value": 2723
       }
     },
     "revenueByDay": {
+      "2026-09-03": 89,
       "2026-09-02": 44,
       "2026-08-30": 40,
       "2026-08-28": 172,
@@ -3985,8 +3953,7 @@
       "2026-07-11": 84,
       "2026-07-09": 36,
       "2026-07-08": 42,
-      "2026-07-07": 78,
-      "2026-07-05": 72
+      "2026-07-07": 78
     },
     "stockHealth": {
       "out": 2,
@@ -3998,7 +3965,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "26 unfulfilled orders worth $1,834 awaiting fulfillment."
+      "text": "27 unfulfilled orders worth $1,923 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -4023,7 +3990,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 26."
+      "text": "Unfulfilled load: Tarlu 27."
     }
   ]
 }
