@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-03T22:12:15.626Z",
+  "syncedAt": "2026-09-04T00:41:32.671Z",
   "orders": [
     {
       "id": "NUB-3899",
@@ -3970,7 +3970,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "22 orders have been unfulfilled over 7 days ($1,578). Prioritize these."
+      "text": "24 orders have been unfulfilled over 7 days ($1,750). Prioritize these."
     },
     {
       "kind": "stock",
