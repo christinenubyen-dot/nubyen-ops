@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-09-07T07:51:21.253Z",
+  "syncedAt": "2026-09-07T13:55:17.071Z",
   "orders": [
+    {
+      "id": "NUB-3900",
+      "customer": "Hanna Osunsami",
+      "customerId": 1692962127931,
+      "email": "info@nubyen.com",
+      "customerOrders": null,
+      "placed": "2026-09-07",
+      "value": 0,
+      "gross": 0,
+      "discounts": 117,
+      "refunds": 0,
+      "net": 0,
+      "status": "Fulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 112,
+          "type": "Other"
+        }
+      ],
+      "region": "New York",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Label created",
+      "eta": null,
+      "ship": "2026-09-07",
+      "fc": "Tarlu",
+      "address": "New york, NY"
+    },
     {
       "id": "NUB-3899",
       "customer": "John j Gurin",
@@ -13,7 +46,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 89,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -28,9 +61,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-07",
       "fc": "Tarlu",
       "address": "Clinton twp, MI"
     },
@@ -3015,7 +3048,7 @@
     {
       "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
       "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2482,
+      "onHand": 2481,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -3762,20 +3795,21 @@
   ],
   "analytics": {
     "totalValue": 4490,
-    "orderCount": 84,
-    "unfulfilledValue": 1923,
-    "unfulfilledCount": 27,
+    "orderCount": 85,
+    "unfulfilledValue": 1834,
+    "unfulfilledCount": 26,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 27,
-        "value": 1923
-      },
       "Fulfilled": {
-        "count": 57,
-        "value": 2567
+        "count": 59,
+        "value": 2656
+      },
+      "Unfulfilled": {
+        "count": 26,
+        "value": 1834
       }
     },
     "revenueByDay": {
+      "2026-09-07": 0,
       "2026-09-03": 89,
       "2026-09-02": 44,
       "2026-08-30": 40,
@@ -3830,7 +3864,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "27 unfulfilled orders worth $1,923 awaiting fulfillment."
+      "text": "26 unfulfilled orders worth $1,834 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -3855,7 +3889,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 27."
+      "text": "Unfulfilled load: Tarlu 26."
     }
   ]
 }
