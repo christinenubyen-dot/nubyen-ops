@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-13T22:49:13.521Z",
+  "syncedAt": "2026-09-14T00:39:31.759Z",
   "orders": [
     {
       "id": "NUB-3900",
@@ -2552,46 +2552,6 @@
       "ship": "2026-07-17",
       "fc": "Tarlu",
       "address": "Cleveland, ENG"
-    },
-    {
-      "id": "NUB-3825",
-      "customer": "Hannah  Clark",
-      "customerId": 5699597140027,
-      "email": "esmee9eden@yahoo.co.uk",
-      "customerOrders": null,
-      "placed": "2026-07-16",
-      "value": 108,
-      "gross": 108,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 108,
-      "status": "Fulfilled",
-      "items": 3,
-      "lineItems": [
-        {
-          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
-          "sku": "NNUDE1",
-          "qty": 1,
-          "revenue": 32,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Lash + Brow Growth Enhancement Serum (Lash Prósperity)",
-          "sku": "NPRO3",
-          "qty": 2,
-          "revenue": 76,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655926339GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-24",
-      "fc": "Tarlu",
-      "address": "Newcastle Upon Tyne, ENG"
     }
   ],
   "products": [
@@ -3497,14 +3457,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 4139,
-    "orderCount": 76,
+    "totalValue": 4031,
+    "orderCount": 75,
     "unfulfilledValue": 1834,
     "unfulfilledCount": 26,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 50,
-        "value": 2305
+        "count": 49,
+        "value": 2197
       },
       "Unfulfilled": {
         "count": 26,
@@ -3550,7 +3510,7 @@
       "2026-07-19": 79,
       "2026-07-18": 74,
       "2026-07-17": 72,
-      "2026-07-16": 219
+      "2026-07-16": 111
     },
     "stockHealth": {
       "out": 2,
