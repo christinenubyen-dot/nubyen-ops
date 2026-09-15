@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-14T21:22:47.427Z",
+  "syncedAt": "2026-09-15T00:12:43.624Z",
   "orders": [
     {
       "id": "NUB-3900",
@@ -2479,46 +2479,6 @@
       "ship": "2026-07-17",
       "fc": "Tarlu",
       "address": "Gloustershire, ENG"
-    },
-    {
-      "id": "NUB-3827",
-      "customer": "Asahi Pompey",
-      "customerId": 25359014035842,
-      "email": "asahi.pompey@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-16",
-      "value": 75,
-      "gross": 70,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 75,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Plumping Matte Prosperity  Lipstick",
-          "sku": "NTRIE",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Lip Plumping Matte Prosperity  Lipstick",
-          "sku": "NTRIR",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        }
-      ],
-      "region": "New York",
-      "country": "US",
-      "courier": "FedEx",
-      "tracking": "8745 1598 9065",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-17",
-      "fc": "Tarlu",
-      "address": "New York, NY"
     }
   ],
   "products": [
@@ -3424,14 +3384,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3995,
-    "orderCount": 74,
+    "totalValue": 3920,
+    "orderCount": 73,
     "unfulfilledValue": 1834,
     "unfulfilledCount": 26,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 48,
-        "value": 2161
+        "count": 47,
+        "value": 2086
       },
       "Unfulfilled": {
         "count": 26,
@@ -3476,8 +3436,7 @@
       "2026-07-20": 42,
       "2026-07-19": 79,
       "2026-07-18": 74,
-      "2026-07-17": 72,
-      "2026-07-16": 75
+      "2026-07-17": 72
     },
     "stockHealth": {
       "out": 2,
