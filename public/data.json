@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-15T15:27:59.498Z",
+  "syncedAt": "2026-09-15T19:28:44.452Z",
   "orders": [
     {
       "id": "NUB-3900",
@@ -112,7 +112,7 @@
       "discounts": 4,
       "refunds": 0,
       "net": 40,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -125,11 +125,11 @@
       ],
       "region": "Colorado",
       "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "EasyPost - USPS Ground Advantage",
+      "tracking": "9434636208192280997396",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-15",
       "fc": "Tarlu",
       "address": "Longmont, CO"
     },
@@ -3320,16 +3320,16 @@
   "analytics": {
     "totalValue": 3848,
     "orderCount": 71,
-    "unfulfilledValue": 1834,
-    "unfulfilledCount": 26,
+    "unfulfilledValue": 1794,
+    "unfulfilledCount": 25,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 45,
-        "value": 2014
+        "count": 46,
+        "value": 2054
       },
       "Unfulfilled": {
-        "count": 26,
-        "value": 1834
+        "count": 25,
+        "value": 1794
       }
     },
     "revenueByDay": {
@@ -3381,12 +3381,12 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "26 unfulfilled orders worth $1,834 awaiting fulfillment."
+      "text": "25 unfulfilled orders worth $1,794 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "26 orders have been unfulfilled over 7 days ($1,834). Prioritize these."
+      "text": "25 orders have been unfulfilled over 7 days ($1,794). Prioritize these."
     },
     {
       "kind": "stock",
@@ -3406,7 +3406,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 26."
+      "text": "Unfulfilled load: Tarlu 25."
     }
   ]
 }
