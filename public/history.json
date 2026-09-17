@@ -451,11 +451,11 @@
   },
   {
     "date": "2026-09-17",
-    "syncedAt": "2026-09-17T14:37:37.923Z",
-    "totalValue": 3700,
-    "orderCount": 67,
-    "unfulfilledValue": 1794,
-    "unfulfilledCount": 25,
+    "syncedAt": "2026-09-17T18:45:53.510Z",
+    "totalValue": 3695,
+    "orderCount": 66,
+    "unfulfilledValue": 1789,
+    "unfulfilledCount": 24,
     "out": 2,
     "low": 5
   }
