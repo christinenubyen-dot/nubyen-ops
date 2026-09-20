@@ -481,11 +481,11 @@
   },
   {
     "date": "2026-09-20",
-    "syncedAt": "2026-09-20T13:54:00.836Z",
-    "totalValue": 3511,
-    "orderCount": 63,
-    "unfulfilledValue": 1725,
-    "unfulfilledCount": 23,
+    "syncedAt": "2026-09-20T17:15:22.282Z",
+    "totalValue": 3375,
+    "orderCount": 60,
+    "unfulfilledValue": 1665,
+    "unfulfilledCount": 22,
     "out": 2,
     "low": 5
   }
