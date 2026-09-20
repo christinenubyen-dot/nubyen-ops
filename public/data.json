@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-20T03:08:21.947Z",
+  "syncedAt": "2026-09-20T09:00:16.061Z",
   "orders": [
     {
       "id": "NUB-3900",
@@ -310,7 +310,7 @@
       "discounts": 10,
       "refunds": 0,
       "net": 64,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -323,11 +323,11 @@
       ],
       "region": "New York",
       "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "FedEx",
+      "tracking": "877467226878",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-20",
       "fc": "Tarlu",
       "address": "New York, NY"
     },
@@ -2149,39 +2149,6 @@
       "ship": "2026-07-23",
       "fc": "Tarlu",
       "address": "Malmesbury, ENG"
-    },
-    {
-      "id": "NUB-3837",
-      "customer": "Sally Harrington",
-      "customerId": 25383031964034,
-      "email": "sj.harrington66@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-22",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655916186GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-22",
-      "fc": "Tarlu",
-      "address": "Colchester, ENG"
     }
   ],
   "products": [
@@ -3087,18 +3054,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3553,
-    "orderCount": 64,
-    "unfulfilledValue": 1789,
-    "unfulfilledCount": 24,
+    "totalValue": 3511,
+    "orderCount": 63,
+    "unfulfilledValue": 1725,
+    "unfulfilledCount": 23,
     "statusBreakdown": {
       "Fulfilled": {
         "count": 40,
-        "value": 1764
+        "value": 1786
       },
       "Unfulfilled": {
-        "count": 24,
-        "value": 1789
+        "count": 23,
+        "value": 1725
       }
     },
     "revenueByDay": {
@@ -3134,7 +3101,7 @@
       "2026-07-25": 78,
       "2026-07-24": 114,
       "2026-07-23": 120,
-      "2026-07-22": 220
+      "2026-07-22": 178
     },
     "stockHealth": {
       "out": 2,
@@ -3146,12 +3113,12 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "24 unfulfilled orders worth $1,789 awaiting fulfillment."
+      "text": "23 unfulfilled orders worth $1,725 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "24 orders have been unfulfilled over 7 days ($1,789). Prioritize these."
+      "text": "23 orders have been unfulfilled over 7 days ($1,725). Prioritize these."
     },
     {
       "kind": "stock",
@@ -3171,7 +3138,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 24."
+      "text": "Unfulfilled load: Tarlu 23."
     }
   ]
 }
