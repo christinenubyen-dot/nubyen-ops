@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-21T17:46:20.955Z",
+  "syncedAt": "2026-09-21T21:38:40.344Z",
   "orders": [
     {
       "id": "NUB-3900",
@@ -720,7 +720,7 @@
       "discounts": 19,
       "refunds": 0,
       "net": 105,
-      "status": "Unfulfilled",
+      "status": "Processing",
       "items": 3,
       "lineItems": [
         {
@@ -747,11 +747,11 @@
       ],
       "region": "New Jersey",
       "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "EasyPost - USPS Ground Advantage",
+      "tracking": "9434636208192283295086",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-21",
       "fc": "Tarlu",
       "address": "Englewood Cliffs, NJ"
     },
@@ -1911,72 +1911,6 @@
       "ship": "2026-07-24",
       "fc": "Tarlu",
       "address": "Aberdeenshire, SCT"
-    },
-    {
-      "id": "NUB-3844",
-      "customer": "Jayne Satchwell",
-      "customerId": 25389300547970,
-      "email": "jayne.satchwell@esl1.co.uk",
-      "customerOrders": null,
-      "placed": "2026-07-23",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655926152GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-24",
-      "fc": "Tarlu",
-      "address": "Leicestershire, ENG"
-    },
-    {
-      "id": "NUB-3843",
-      "customer": "Helen Sweeney",
-      "customerId": 25389091881346,
-      "email": "helensweeney1967@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-23",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655926135GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-24",
-      "fc": "Tarlu",
-      "address": "Ossett, ENG"
     }
   ],
   "products": [
@@ -2882,18 +2816,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 3297,
-    "orderCount": 58,
-    "unfulfilledValue": 1665,
-    "unfulfilledCount": 22,
+    "totalValue": 3213,
+    "orderCount": 56,
+    "unfulfilledValue": 1560,
+    "unfulfilledCount": 21,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 36,
-        "value": 1632
+        "count": 34,
+        "value": 1548
       },
       "Unfulfilled": {
-        "count": 22,
-        "value": 1665
+        "count": 21,
+        "value": 1560
+      },
+      "Processing": {
+        "count": 1,
+        "value": 105
       }
     },
     "revenueByDay": {
@@ -2927,8 +2865,7 @@
       "2026-07-27": 42,
       "2026-07-26": 144,
       "2026-07-25": 78,
-      "2026-07-24": 114,
-      "2026-07-23": 84
+      "2026-07-24": 114
     },
     "stockHealth": {
       "out": 2,
@@ -2940,12 +2877,12 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "22 unfulfilled orders worth $1,665 awaiting fulfillment."
+      "text": "21 unfulfilled orders worth $1,560 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "22 orders have been unfulfilled over 7 days ($1,665). Prioritize these."
+      "text": "21 orders have been unfulfilled over 7 days ($1,560). Prioritize these."
     },
     {
       "kind": "stock",
@@ -2965,7 +2902,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 22."
+      "text": "Unfulfilled load: Tarlu 21."
     }
   ]
 }
