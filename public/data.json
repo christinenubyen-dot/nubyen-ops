@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-09-23T01:12:05.183Z",
+  "syncedAt": "2026-09-23T07:15:27.069Z",
   "orders": [
+    {
+      "id": "NUB-3901",
+      "customer": "Sarah",
+      "customerId": 25702135071106,
+      "email": "Sarahmcgarl@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-09-23",
+      "value": 224,
+      "gross": 224,
+      "discounts": 39,
+      "refunds": 0,
+      "net": 224,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyen Sleepless in Seattle Trench Coat in Burgundy",
+          "sku": null,
+          "qty": 1,
+          "revenue": 263,
+          "type": "Other"
+        }
+      ],
+      "region": "Georgia",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Alpharetta, GA"
+    },
     {
       "id": "NUB-3900",
       "customer": "Hanna Osunsami",
@@ -2502,7 +2535,7 @@
     {
       "sku": "sleepless-in-seattle-trench-coat-in-burgundy",
       "name": "Nubyen Sleepless in Seattle Trench Coat in Burgundy",
-      "onHand": 311,
+      "onHand": 310,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2717,18 +2750,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3099,
-    "orderCount": 53,
-    "unfulfilledValue": 1560,
-    "unfulfilledCount": 21,
+    "totalValue": 3323,
+    "orderCount": 54,
+    "unfulfilledValue": 1784,
+    "unfulfilledCount": 22,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 22,
+        "value": 1784
+      },
       "Fulfilled": {
         "count": 31,
         "value": 1434
-      },
-      "Unfulfilled": {
-        "count": 21,
-        "value": 1560
       },
       "Processing": {
         "count": 1,
@@ -2736,6 +2769,7 @@
       }
     },
     "revenueByDay": {
+      "2026-09-23": 224,
       "2026-09-07": 0,
       "2026-09-03": 89,
       "2026-09-02": 44,
@@ -2777,7 +2811,7 @@
     {
       "kind": "orders",
       "severity": "high",
-      "text": "21 unfulfilled orders worth $1,560 awaiting fulfillment."
+      "text": "22 unfulfilled orders worth $1,784 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2802,7 +2836,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 21."
+      "text": "Unfulfilled load: Tarlu 22."
     }
   ]
 }
