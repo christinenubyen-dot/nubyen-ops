@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-23T07:15:27.069Z",
+  "syncedAt": "2026-09-23T13:17:46.397Z",
   "orders": [
     {
       "id": "NUB-3901",
@@ -1779,72 +1779,6 @@
       "ship": "2026-07-27",
       "fc": "Tarlu",
       "address": "Wimbish, ENG"
-    },
-    {
-      "id": "NUB-3849",
-      "customer": "Clcire",
-      "customerId": 25396613120386,
-      "email": "Claireod69@icloud.com",
-      "customerOrders": null,
-      "placed": "2026-07-25",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "Northern Ireland",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655927379GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-27",
-      "fc": "Tarlu",
-      "address": "holywood, NIR"
-    },
-    {
-      "id": "NUB-3848",
-      "customer": "Jan Hewett",
-      "customerId": 25396570751362,
-      "email": "primrosecleaning@yahoo.com",
-      "customerOrders": null,
-      "placed": "2026-07-25",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655927365GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-27",
-      "fc": "Tarlu",
-      "address": "Canvey Island, ENG"
     }
   ],
   "products": [
@@ -2038,72 +1972,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLIPD",
-      "name": "Nubyen EXTREME + Plumping Lip Filá Peptide Scrub",
-      "onHand": 987,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-muse-papaya-fruit-illuminating-highlighter",
-      "name": "Nubyén Glass-Skin Highlighter (Brightening Muse Papaya Skincare)",
-      "onHand": 3987,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-columbia-flower-market-skort-dress-1",
-      "name": "Nubyén Flower Market Dress Pear Sorbet",
-      "onHand": 4000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "clarity-abundance-top",
       "name": "Nubyen Clarity & Abundance Top",
       "onHand": 12998,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NMUS1",
-      "name": "Nubyen Glow Highlighter Powder (Muse)",
-      "onHand": 999,
-      "reorderPt": 1,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NMUS2",
-      "name": "Nubyen Glow Highlighter Powder (Muse)",
-      "onHand": 995,
-      "reorderPt": 1,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "fearless-leopard-mini-dress",
-      "name": "Nubyen Fearless Leopard Mini Dress",
-      "onHand": 5000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "pre-order-nubyen-lip-flip-peptide",
-      "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2137,6 +2008,78 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-sleepless-in-seattle-trench-coat-in-burgundy-copy",
+      "name": "Nubyen Cropped Trench Coat in Cashmere Grey",
+      "onHand": 310,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-cropped-trench-coat-in-cashmere-grey-copy",
+      "name": "Nubyen Cropped Fringe Jacket in Green",
+      "onHand": 310,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-cropped-trench-coat-in-cashmere-grey-copy-1",
+      "name": "Nubyen Cropped Collared Jacket in Black",
+      "onHand": 310,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-cropped-collared-jacket-in-black-copy",
+      "name": "Nubyen Erewhon Jacket in Olive",
+      "onHand": 310,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-sleepless-in-seattle-trench-coat-in-burgundy-copy-1",
+      "name": "Nubyen Contrast Fur Collar Trench Coat in Black",
+      "onHand": 310,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPD",
+      "name": "Nubyen EXTREME + Plumping Lip Filá Peptide Scrub",
+      "onHand": 987,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-muse-papaya-fruit-illuminating-highlighter",
+      "name": "Nubyén Glass-Skin Highlighter (Brightening Muse Papaya Skincare)",
+      "onHand": 3987,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-columbia-flower-market-skort-dress-1",
+      "name": "Nubyén Flower Market Dress Pear Sorbet",
+      "onHand": 4000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "higher-dominion-capsule-sculpt-jacket",
       "name": "Nubyen Higher Dominion Capsule Sculpt Full Zip Jacket",
       "onHand": 9100,
@@ -2155,19 +2098,19 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-higher-powers-set",
-      "name": "Nubyen Higher Powers Cap Sleeve Top",
-      "onHand": 5000,
-      "reorderPt": 10,
+      "sku": "NMUS1",
+      "name": "Nubyen Glow Highlighter Powder (Muse)",
+      "onHand": 999,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-higher-powers-skirt",
-      "name": "Nubyen Higher Powers Skirt",
-      "onHand": 5000,
-      "reorderPt": 10,
+      "sku": "NMUS2",
+      "name": "Nubyen Glow Highlighter Powder (Muse)",
+      "onHand": 995,
+      "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -2191,18 +2134,18 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-higher-dominion-capsule-sculpt-legging-copy",
-      "name": "Nubyen Higher Dominion Capsule Sculpt Legging (Copy)",
-      "onHand": 10000,
+      "sku": "fearless-leopard-mini-dress",
+      "name": "Nubyen Fearless Leopard Mini Dress",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NNUDE1",
-      "name": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 788,
+      "sku": "pre-order-nubyen-lip-flip-peptide",
+      "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2245,42 +2188,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NBTLED",
-      "name": "Nubyen Muse Skin Beautifying Renewal Light Emitting Diode Device | Cheekbone & Jawline Enhancer",
-      "onHand": 999,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NMHB1",
-      "name": "Nubyen Muse Highlighter Face Brush",
-      "onHand": 1016,
-      "reorderPt": 1,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NBTLM",
-      "name": "Nubyen Muse - Beauty Inheritance electric 24k Gold Skin Device",
-      "onHand": 0,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NMHB2",
-      "name": "Nubyen Muse Highlighter Body & Face Brush",
-      "onHand": 998,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE Plumping +++ Lip Adaptogen Elixir",
       "onHand": 2506,
@@ -2317,24 +2224,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
-      "name": "Nubyen Optimist Contrast Bra Top (Cori)",
-      "onHand": 1000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-optimistthe-cori-micro-skort",
-      "name": "Nubyen Optimist The Cori Micro Skort",
-      "onHand": 4000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "nubyen-marylebone-low-back-flare-dress",
       "name": "Nubyén Marylebone Low Back Flare Dress",
       "onHand": 3999,
@@ -2353,36 +2242,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NUB-72301",
-      "name": "Nubyén Non-Conformist Bodysuit",
-      "onHand": 10,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NUB-72302",
-      "name": "Nubyén Non-Conformist Bodysuit",
-      "onHand": 1000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NUB-72303",
-      "name": "Nubyén Non-Conformist Bodysuit",
-      "onHand": 4,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NUB-72304",
-      "name": "Nubyén Non-Conformist Bodysuit",
-      "onHand": 10,
+      "sku": "nubyen-higher-powers-set",
+      "name": "Nubyen Higher Powers Cap Sleeve Top",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2392,6 +2254,15 @@
       "sku": "NLPO5",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 993,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-higher-powers-skirt",
+      "name": "Nubyen Higher Powers Skirt",
+      "onHand": 5000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2416,9 +2287,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-abundance-visor",
-      "name": "Nubyén Motivate & Go Visor",
-      "onHand": 2000,
+      "sku": "nubyen-higher-dominion-capsule-sculpt-legging-copy",
+      "name": "Nubyen Higher Dominion Capsule Sculpt Legging (Copy)",
+      "onHand": 10000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2443,36 +2314,45 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NFIRM",
-      "name": "Nubyen Val-î-date Lipid (Fat) Freeze AHA Peppermint Body Firming Treatment",
-      "onHand": 994,
+      "sku": "NNUDE1",
+      "name": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 788,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NDEEL",
-      "name": "Nubyen Val-î-date Eucalyptus & Lavender Deep Tissue Dream Cream",
-      "onHand": 1002,
+      "sku": "NBTLED",
+      "name": "Nubyen Muse Skin Beautifying Renewal Light Emitting Diode Device | Cheekbone & Jawline Enhancer",
+      "onHand": 999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLUM",
-      "name": "Nubyén Val-î-date Blushing Bright Vitamin C Illuminating Body Cream",
-      "onHand": 997,
+      "sku": "NMHB1",
+      "name": "Nubyen Muse Highlighter Face Brush",
+      "onHand": 1016,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NBTLM",
+      "name": "Nubyen Muse - Beauty Inheritance electric 24k Gold Skin Device",
+      "onHand": 0,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "Trio1",
-      "name": "Nubyén Starter Kit |Plumping Peptides Lip Filá Balm Trio| Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4967,
+      "sku": "NMHB2",
+      "name": "Nubyen Muse Highlighter Body & Face Brush",
+      "onHand": 998,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2515,9 +2395,54 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-the-minimalist-boxy-vegan-leather-jacket",
-      "name": "Nubyen The Minimalist Boxy Vegan Leather Jacket",
-      "onHand": 2999,
+      "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
+      "name": "Nubyen Optimist Contrast Bra Top (Cori)",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-optimistthe-cori-micro-skort",
+      "name": "Nubyen Optimist The Cori Micro Skort",
+      "onHand": 4000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NUB-72301",
+      "name": "Nubyén Non-Conformist Bodysuit",
+      "onHand": 10,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NUB-72302",
+      "name": "Nubyén Non-Conformist Bodysuit",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NUB-72303",
+      "name": "Nubyén Non-Conformist Bodysuit",
+      "onHand": 4,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NUB-72304",
+      "name": "Nubyén Non-Conformist Bodysuit",
+      "onHand": 10,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2551,9 +2476,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-velour-manifesting-shorts",
-      "name": "Nubyen Velour Manifesting Shorts",
-      "onHand": 5000,
+      "sku": "Trio1",
+      "name": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 4967,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2587,6 +2512,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-abundance-visor",
+      "name": "Nubyén Motivate & Go Visor",
+      "onHand": 2000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
       "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 3999,
@@ -2605,19 +2539,37 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-soho-2-0-fold-over-capri-legging",
-      "name": "Nubyen Soho 2.0 Fold Over Capri Legging",
-      "onHand": 10000,
+      "sku": "NADVQAQ",
+      "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+      "onHand": -11,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NFIRM",
+      "name": "Nubyen Val-î-date Lipid (Fat) Freeze AHA Peppermint Body Firming Treatment",
+      "onHand": 994,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NADVQAQ",
-      "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -11,
-      "reorderPt": 1,
+      "sku": "NDEEL",
+      "name": "Nubyen Val-î-date Eucalyptus & Lavender Deep Tissue Dream Cream",
+      "onHand": 1002,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLUM",
+      "name": "Nubyén Val-î-date Blushing Bright Vitamin C Illuminating Body Cream",
+      "onHand": 997,
+      "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -2635,6 +2587,15 @@
       "sku": "the-minimalist-skin-brightening-adaptogen-mask",
       "name": "The Minimalist Skin Brightening Adaptogen Mask",
       "onHand": 999,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-the-minimalist-boxy-vegan-leather-jacket",
+      "name": "Nubyen The Minimalist Boxy Vegan Leather Jacket",
+      "onHand": 2999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2704,6 +2665,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-velour-manifesting-shorts",
+      "name": "Nubyen Velour Manifesting Shorts",
+      "onHand": 5000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NLIPFIL-1",
       "name": "Nubyén's Lip Plumping & Lash Growth Peptide Bundle Set",
       "onHand": 2756,
@@ -2747,11 +2717,20 @@
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
+    },
+    {
+      "sku": "nubyen-soho-2-0-fold-over-capri-legging",
+      "name": "Nubyen Soho 2.0 Fold Over Capri Legging",
+      "onHand": 10000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
     }
   ],
   "analytics": {
-    "totalValue": 3323,
-    "orderCount": 54,
+    "totalValue": 3245,
+    "orderCount": 52,
     "unfulfilledValue": 1784,
     "unfulfilledCount": 22,
     "statusBreakdown": {
@@ -2760,8 +2739,8 @@
         "value": 1784
       },
       "Fulfilled": {
-        "count": 31,
-        "value": 1434
+        "count": 29,
+        "value": 1356
       },
       "Processing": {
         "count": 1,
@@ -2798,13 +2777,12 @@
       "2026-07-30": 42,
       "2026-07-29": 151,
       "2026-07-27": 42,
-      "2026-07-26": 144,
-      "2026-07-25": 78
+      "2026-07-26": 144
     },
     "stockHealth": {
       "out": 2,
       "low": 5,
-      "total": 100
+      "total": 105
     }
   },
   "insights": [
