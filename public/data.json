@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-25T14:57:32.210Z",
+  "syncedAt": "2026-09-25T19:09:40.439Z",
   "orders": [
     {
       "id": "NUB-3902",
@@ -2145,15 +2145,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLIPFIL",
-      "name": "Nubyén Lip Filá ULTIMATE Plumping +++ Lip Adaptogen Elixir",
-      "onHand": 2506,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NLPO1",
       "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 970,
@@ -2310,6 +2301,15 @@
       "sku": "NMHB2",
       "name": "Nubyen Muse Highlighter Body & Face Brush",
       "onHand": 998,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPFIL",
+      "name": "NUBYÉN PLUMPING LIP FILÁ BALM",
+      "onHand": 2506,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
