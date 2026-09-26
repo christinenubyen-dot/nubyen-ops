@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-26T18:15:38.029Z",
+  "syncedAt": "2026-09-26T21:46:20.053Z",
   "orders": [
     {
       "id": "NUB-3902",
@@ -201,7 +201,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 44,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -216,9 +216,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Denver, CO"
     },
@@ -267,7 +267,7 @@
       "discounts": 12,
       "refunds": 0,
       "net": 72,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -282,9 +282,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Holyoke, MA"
     },
@@ -300,7 +300,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 100,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -315,9 +315,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Ambler, PA"
     },
@@ -333,7 +333,7 @@
       "discounts": 7,
       "refunds": 0,
       "net": 45,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -348,9 +348,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Oldham, ENG"
     },
@@ -366,7 +366,7 @@
       "discounts": 7,
       "refunds": 0,
       "net": 47,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -381,9 +381,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Durango, CO"
     },
@@ -465,7 +465,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 100,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -480,9 +480,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "East hampton, NY"
     },
@@ -498,7 +498,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 88,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -520,9 +520,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Manhattan Beach, CA"
     },
@@ -571,7 +571,7 @@
       "discounts": 17,
       "refunds": 0,
       "net": 95,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -586,9 +586,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Winter Garden, FL"
     },
@@ -637,7 +637,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 100,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -652,9 +652,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Amherst, NH"
     },
@@ -670,7 +670,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 100,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -685,9 +685,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Alapaha, GA"
     },
@@ -703,7 +703,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 198,
-      "status": "Unfulfilled",
+      "status": "Processing",
       "items": 4,
       "lineItems": [
         {
@@ -725,9 +725,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Beaver, PA"
     },
@@ -743,7 +743,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 52,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -758,9 +758,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Margate, ENG"
     },
@@ -776,7 +776,7 @@
       "discounts": 15,
       "refunds": 0,
       "net": 85,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -791,9 +791,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Charleston, SC"
     },
@@ -809,7 +809,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 48,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -824,9 +824,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Oxford, NC"
     },
@@ -871,7 +871,7 @@
       "country": "US",
       "courier": "EasyPost - USPS Ground Advantage",
       "tracking": "9434636208192283295086",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-09-21",
       "fc": "Tarlu",
@@ -922,7 +922,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 83,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -944,9 +944,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Howell, MI"
     },
@@ -962,7 +962,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 38,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -977,9 +977,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Redwood City, CA"
     },
@@ -1082,7 +1082,7 @@
       "discounts": 7,
       "refunds": 0,
       "net": 45,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -1097,9 +1097,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "HALESWORTH, ENG"
     },
@@ -1181,7 +1181,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -1196,9 +1196,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Brighton, ENG"
     },
@@ -1247,7 +1247,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 98,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -1262,9 +1262,9 @@
       "country": "US",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Bayfield, CO"
     },
@@ -2655,20 +2655,20 @@
   "analytics": {
     "totalValue": 3465,
     "orderCount": 48,
-    "unfulfilledValue": 1928,
-    "unfulfilledCount": 21,
+    "unfulfilledValue": 454,
+    "unfulfilledCount": 2,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 21,
-        "value": 1928
+        "count": 2,
+        "value": 454
       },
       "Fulfilled": {
-        "count": 26,
-        "value": 1432
+        "count": 44,
+        "value": 2708
       },
       "Processing": {
-        "count": 1,
-        "value": 105
+        "count": 2,
+        "value": 303
       }
     },
     "revenueByDay": {
@@ -2711,13 +2711,13 @@
   "insights": [
     {
       "kind": "orders",
-      "severity": "high",
-      "text": "21 unfulfilled orders worth $1,928 awaiting fulfillment."
+      "severity": "info",
+      "text": "2 unfulfilled orders worth $454 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "20 orders have been unfulfilled over 7 days ($1,522). Prioritize these."
+      "text": "1 order has been unfulfilled over 7 days ($48). Prioritize these."
     },
     {
       "kind": "stock",
@@ -2737,7 +2737,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 21."
+      "text": "Unfulfilled load: Tarlu 2."
     }
   ]
 }
