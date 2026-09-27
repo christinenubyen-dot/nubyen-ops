@@ -551,11 +551,11 @@
   },
   {
     "date": "2026-09-27",
-    "syncedAt": "2026-09-27T12:40:49.181Z",
-    "totalValue": 3422,
-    "orderCount": 47,
-    "unfulfilledValue": 454,
-    "unfulfilledCount": 2,
+    "syncedAt": "2026-09-27T17:25:47.123Z",
+    "totalValue": 3423,
+    "orderCount": 46,
+    "unfulfilledValue": 563,
+    "unfulfilledCount": 3,
     "out": 2,
     "low": 5
   }

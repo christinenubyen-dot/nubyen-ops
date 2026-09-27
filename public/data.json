@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-09-27T12:40:49.181Z",
+  "syncedAt": "2026-09-27T17:25:47.123Z",
   "orders": [
+    {
+      "id": "NUB-3903",
+      "customer": "Jacki",
+      "customerId": 24908859605378,
+      "email": "jackicastelli@mac.com",
+      "customerOrders": null,
+      "placed": "2026-09-27",
+      "value": 109,
+      "gross": 109,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 109,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 109,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "London, ENG"
+    },
     {
       "id": "NUB-3902",
       "customer": "Sultana AL FAISAL",
@@ -1597,79 +1630,6 @@
       "ship": "2026-07-30",
       "fc": "Tarlu",
       "address": "Chelmsford, ENG"
-    },
-    {
-      "id": "NUB-3857",
-      "customer": "Jane",
-      "customerId": 25426257314178,
-      "email": "jane.donnelly@me.com",
-      "customerOrders": null,
-      "placed": "2026-07-29",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "Wales",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655945987GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-30",
-      "fc": "Tarlu",
-      "address": "Corwen, WLS"
-    },
-    {
-      "id": "NUB-3856",
-      "customer": "Angelina Rafferty",
-      "customerId": 25426196169090,
-      "email": "angelinarafferty@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-07-29",
-      "value": 72,
-      "gross": 72,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 72,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-          "sku": "NLPO2",
-          "qty": 1,
-          "revenue": 34,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "Scotland",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655945960GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-07-30",
-      "fc": "Tarlu",
-      "address": "Hamilton, SCT"
     }
   ],
   "products": [
@@ -1829,7 +1789,7 @@
     {
       "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
       "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2480,
+      "onHand": 2479,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2620,18 +2580,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3422,
-    "orderCount": 47,
-    "unfulfilledValue": 454,
-    "unfulfilledCount": 2,
+    "totalValue": 3423,
+    "orderCount": 46,
+    "unfulfilledValue": 563,
+    "unfulfilledCount": 3,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 2,
-        "value": 454
+        "count": 3,
+        "value": 563
       },
       "Fulfilled": {
-        "count": 43,
-        "value": 2665
+        "count": 41,
+        "value": 2557
       },
       "Processing": {
         "count": 2,
@@ -2639,6 +2599,7 @@
       }
     },
     "revenueByDay": {
+      "2026-09-27": 109,
       "2026-09-24": 406,
       "2026-09-23": 224,
       "2026-09-07": 0,
@@ -2666,8 +2627,7 @@
       "2026-08-02": 150,
       "2026-08-01": 84,
       "2026-07-31": 38,
-      "2026-07-30": 42,
-      "2026-07-29": 108
+      "2026-07-30": 42
     },
     "stockHealth": {
       "out": 2,
@@ -2679,7 +2639,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "2 unfulfilled orders worth $454 awaiting fulfillment."
+      "text": "3 unfulfilled orders worth $563 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2704,7 +2664,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 2."
+      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }
