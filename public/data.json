@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-29T03:58:23.477Z",
+  "syncedAt": "2026-09-29T10:30:54.602Z",
   "orders": [
     {
       "id": "NUB-3903",
@@ -13,7 +13,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 109,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -28,9 +28,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-29",
       "fc": "Tarlu",
       "address": "London, ENG"
     },
@@ -46,7 +46,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 406,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 9,
       "lineItems": [
         {
@@ -117,9 +117,9 @@
       "country": "SA",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-09-29",
       "fc": "Tarlu",
       "address": "Jeddah, SA"
     },
@@ -2549,20 +2549,20 @@
   "analytics": {
     "totalValue": 3381,
     "orderCount": 45,
-    "unfulfilledValue": 563,
-    "unfulfilledCount": 3,
+    "unfulfilledValue": 48,
+    "unfulfilledCount": 1,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 3,
-        "value": 563
-      },
       "Fulfilled": {
-        "count": 40,
-        "value": 2515
+        "count": 42,
+        "value": 3030
       },
       "Processing": {
         "count": 2,
         "value": 303
+      },
+      "Unfulfilled": {
+        "count": 1,
+        "value": 48
       }
     },
     "revenueByDay": {
@@ -2605,7 +2605,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "3 unfulfilled orders worth $563 awaiting fulfillment."
+      "text": "1 unfulfilled order worth $48 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2630,7 +2630,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 3."
+      "text": "Unfulfilled load: Tarlu 1."
     }
   ]
 }

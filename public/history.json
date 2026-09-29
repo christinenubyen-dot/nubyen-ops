@@ -571,11 +571,11 @@
   },
   {
     "date": "2026-09-29",
-    "syncedAt": "2026-09-29T03:58:23.477Z",
+    "syncedAt": "2026-09-29T10:30:54.602Z",
     "totalValue": 3381,
     "orderCount": 45,
-    "unfulfilledValue": 563,
-    "unfulfilledCount": 3,
+    "unfulfilledValue": 48,
+    "unfulfilledCount": 1,
     "out": 2,
     "low": 5
   }
