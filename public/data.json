@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-09-30T13:18:08.903Z",
+  "syncedAt": "2026-09-30T18:48:05.948Z",
   "orders": [
     {
       "id": "NUB-3904",
@@ -1531,39 +1531,6 @@
       "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Solihull, ENG"
-    },
-    {
-      "id": "NUB-3861",
-      "customer": "Kim Milburn",
-      "customerId": 25439515836802,
-      "email": "lakotacelt1@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-01",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "Scotland",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655961698GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-03",
-      "fc": "Tarlu",
-      "address": "Banff, SCT"
     }
   ],
   "products": [
@@ -2514,8 +2481,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 3430,
-    "orderCount": 44,
+    "totalValue": 3388,
+    "orderCount": 43,
     "unfulfilledValue": 177,
     "unfulfilledCount": 2,
     "statusBreakdown": {
@@ -2524,8 +2491,8 @@
         "value": 177
       },
       "Fulfilled": {
-        "count": 40,
-        "value": 2950
+        "count": 39,
+        "value": 2908
       },
       "Processing": {
         "count": 2,
@@ -2559,8 +2526,7 @@
       "2026-08-07": 86,
       "2026-08-05": 176,
       "2026-08-03": 84,
-      "2026-08-02": 150,
-      "2026-08-01": 42
+      "2026-08-02": 150
     },
     "stockHealth": {
       "out": 2,
