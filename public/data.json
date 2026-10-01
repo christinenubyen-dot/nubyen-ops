@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-01T15:57:43.573Z",
+  "syncedAt": "2026-10-01T20:52:15.332Z",
   "orders": [
     {
       "id": "NUB-3904",
@@ -1399,138 +1399,6 @@
       "ship": "2026-08-03",
       "fc": "Tarlu",
       "address": "Croydon, ENG"
-    },
-    {
-      "id": "NUB-3865",
-      "customer": "Jennifer Nelson",
-      "customerId": 25443827483010,
-      "email": "jennifer.nelson62@yahoo.com",
-      "customerOrders": null,
-      "placed": "2026-08-02",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "Northern Ireland",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655966678GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-04",
-      "fc": "Tarlu",
-      "address": "Antrim, NIR"
-    },
-    {
-      "id": "NUB-3864",
-      "customer": "Rachel",
-      "customerId": 25443574841730,
-      "email": "bridgemanbookkeeping@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-02",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655961715GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-03",
-      "fc": "Tarlu",
-      "address": "Aingers Green Great Bentley, ENG"
-    },
-    {
-      "id": "NUB-3863",
-      "customer": "Samantha Charlton",
-      "customerId": 25442083766658,
-      "email": "charlton2014@icloud.com",
-      "customerOrders": null,
-      "placed": "2026-08-02",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655967608GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-04",
-      "fc": "Tarlu",
-      "address": "Rye, ENG"
-    },
-    {
-      "id": "NUB-3862",
-      "customer": "Lizzy flower",
-      "customerId": 25443284255106,
-      "email": "lizzy1.flower@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-02",
-      "value": 36,
-      "gross": 32,
-      "discounts": 6,
-      "refunds": 0,
-      "net": 36,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655961707GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-03",
-      "fc": "Tarlu",
-      "address": "Solihull, ENG"
     }
   ],
   "products": [
@@ -2481,8 +2349,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 3388,
-    "orderCount": 43,
+    "totalValue": 3238,
+    "orderCount": 39,
     "unfulfilledValue": 177,
     "unfulfilledCount": 2,
     "statusBreakdown": {
@@ -2491,8 +2359,8 @@
         "value": 177
       },
       "Fulfilled": {
-        "count": 39,
-        "value": 2908
+        "count": 35,
+        "value": 2758
       },
       "Processing": {
         "count": 2,
@@ -2525,8 +2393,7 @@
       "2026-08-08": 45,
       "2026-08-07": 86,
       "2026-08-05": 176,
-      "2026-08-03": 84,
-      "2026-08-02": 150
+      "2026-08-03": 84
     },
     "stockHealth": {
       "out": 2,
