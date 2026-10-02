@@ -1,6 +1,72 @@
 {
-  "syncedAt": "2026-10-02T06:37:55.000Z",
+  "syncedAt": "2026-10-02T13:31:20.759Z",
   "orders": [
+    {
+      "id": "NUB-3906",
+      "customer": "Sue",
+      "customerId": 25404478620034,
+      "email": "Constantine.sue@aol.com",
+      "customerOrders": null,
+      "placed": "2026-10-02",
+      "value": 109,
+      "gross": 109,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 109,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 109,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Leeds, ENG"
+    },
+    {
+      "id": "NUB-3905",
+      "customer": "Julie Dalimore",
+      "customerId": 965447745595,
+      "email": "jadalimore@yahoo.co.uk",
+      "customerOrders": null,
+      "placed": "2026-10-02",
+      "value": 48,
+      "gross": 41,
+      "discounts": 7,
+      "refunds": 0,
+      "net": 48,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NADVQAQ",
+          "qty": 1,
+          "revenue": 48,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Winchester, ENG"
+    },
     {
       "id": "NUB-3904",
       "customer": "Efrat Arbel",
@@ -1333,72 +1399,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Bayfield, CO"
-    },
-    {
-      "id": "NUB-3867",
-      "customer": "Amanda Parkin",
-      "customerId": 25447393591682,
-      "email": "Amanda.parkin-86@outlook.com",
-      "customerOrders": null,
-      "placed": "2026-08-03",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655967639GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-04",
-      "fc": "Tarlu",
-      "address": "Belper, ENG"
-    },
-    {
-      "id": "NUB-3866",
-      "customer": "Guna Lagzda",
-      "customerId": 25445470830978,
-      "email": "gunalagzda@inbox.lv",
-      "customerOrders": null,
-      "placed": "2026-08-03",
-      "value": 42,
-      "gross": 38,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 42,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655961738GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-03",
-      "fc": "Tarlu",
-      "address": "Croydon, ENG"
     }
   ],
   "products": [
@@ -1558,7 +1558,7 @@
     {
       "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
       "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2479,
+      "onHand": 2478,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2161,7 +2161,7 @@
     {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -11,
+      "onHand": -12,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
@@ -2349,18 +2349,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3238,
+    "totalValue": 3311,
     "orderCount": 39,
-    "unfulfilledValue": 177,
-    "unfulfilledCount": 2,
+    "unfulfilledValue": 334,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 2,
-        "value": 177
+        "count": 4,
+        "value": 334
       },
       "Fulfilled": {
-        "count": 35,
-        "value": 2758
+        "count": 33,
+        "value": 2674
       },
       "Processing": {
         "count": 2,
@@ -2368,6 +2368,7 @@
       }
     },
     "revenueByDay": {
+      "2026-10-02": 157,
       "2026-09-29": 129,
       "2026-09-27": 109,
       "2026-09-24": 406,
@@ -2392,8 +2393,7 @@
       "2026-08-11": 291,
       "2026-08-08": 45,
       "2026-08-07": 86,
-      "2026-08-05": 176,
-      "2026-08-03": 84
+      "2026-08-05": 176
     },
     "stockHealth": {
       "out": 2,
@@ -2405,7 +2405,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "2 unfulfilled orders worth $177 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $334 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2430,7 +2430,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 2."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
