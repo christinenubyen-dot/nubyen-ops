@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-05T08:12:48.430Z",
+  "syncedAt": "2026-10-05T17:47:42.365Z",
   "orders": [
     {
       "id": "NUB-3906",
@@ -13,7 +13,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 109,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -28,9 +28,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-05",
       "fc": "Tarlu",
       "address": "Leeds, ENG"
     },
@@ -46,7 +46,7 @@
       "discounts": 7,
       "refunds": 0,
       "net": 48,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -61,9 +61,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-05",
       "fc": "Tarlu",
       "address": "Winchester, ENG"
     },
@@ -412,9 +412,9 @@
       ],
       "region": "Massachusetts",
       "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
+      "courier": "FedEx",
+      "tracking": "384014789207",
+      "delivery": "In transit",
       "eta": null,
       "ship": "2026-09-26",
       "fc": "Tarlu",
@@ -2252,16 +2252,16 @@
   "analytics": {
     "totalValue": 3135,
     "orderCount": 36,
-    "unfulfilledValue": 334,
-    "unfulfilledCount": 4,
+    "unfulfilledValue": 177,
+    "unfulfilledCount": 2,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 4,
-        "value": 334
-      },
       "Fulfilled": {
-        "count": 30,
-        "value": 2498
+        "count": 32,
+        "value": 2655
+      },
+      "Unfulfilled": {
+        "count": 2,
+        "value": 177
       },
       "Processing": {
         "count": 2,
@@ -2305,7 +2305,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $334 awaiting fulfillment."
+      "text": "2 unfulfilled orders worth $177 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2330,7 +2330,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 2."
     }
   ]
 }
