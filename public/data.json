@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-06T17:50:30.403Z",
+  "syncedAt": "2026-10-06T22:14:29.054Z",
   "orders": [
     {
       "id": "NUB-3906",
@@ -1234,39 +1234,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "HALESWORTH, ENG"
-    },
-    {
-      "id": "NUB-3872",
-      "customer": "Carmen Chamberlain",
-      "customerId": 5559999440,
-      "email": "poloniouk@yahoo.co.uk",
-      "customerOrders": null,
-      "placed": "2026-08-07",
-      "value": 48,
-      "gross": 41,
-      "discounts": 7,
-      "refunds": 0,
-      "net": 48,
-      "status": "Unfulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
-          "sku": "NLIPFILG",
-          "qty": 1,
-          "revenue": 48,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
-      "eta": null,
-      "ship": null,
-      "fc": "Tarlu",
-      "address": "Hull, ENG"
     }
   ],
   "products": [
@@ -2217,18 +2184,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3097,
-    "orderCount": 35,
-    "unfulfilledValue": 177,
-    "unfulfilledCount": 2,
+    "totalValue": 3049,
+    "orderCount": 34,
+    "unfulfilledValue": 129,
+    "unfulfilledCount": 1,
     "statusBreakdown": {
       "Fulfilled": {
         "count": 31,
         "value": 2617
       },
       "Unfulfilled": {
-        "count": 2,
-        "value": 177
+        "count": 1,
+        "value": 129
       },
       "Processing": {
         "count": 2,
@@ -2259,8 +2226,7 @@
       "2026-08-14": 153,
       "2026-08-12": 44,
       "2026-08-11": 291,
-      "2026-08-08": 45,
-      "2026-08-07": 48
+      "2026-08-08": 45
     },
     "stockHealth": {
       "out": 2,
@@ -2272,12 +2238,12 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "2 unfulfilled orders worth $177 awaiting fulfillment."
+      "text": "1 unfulfilled order worth $129 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "2 orders have been unfulfilled over 7 days ($177). Prioritize these."
+      "text": "1 order has been unfulfilled over 7 days ($129). Prioritize these."
     },
     {
       "kind": "stock",
@@ -2297,7 +2263,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 2."
+      "text": "Unfulfilled load: Tarlu 1."
     }
   ]
 }
