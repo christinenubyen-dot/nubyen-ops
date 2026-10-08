@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-08T09:53:29.053Z",
+  "syncedAt": "2026-10-08T17:09:08.452Z",
   "orders": [
     {
       "id": "NUB-3906",
@@ -414,7 +414,7 @@
       "country": "US",
       "courier": "FedEx",
       "tracking": "384014789207",
-      "delivery": "In transit",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-09-26",
       "fc": "Tarlu",
