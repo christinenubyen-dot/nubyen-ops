@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-09T09:57:13.226Z",
+  "syncedAt": "2026-10-09T16:50:41.363Z",
   "orders": [
     {
       "id": "NUB-3909",
@@ -178,7 +178,7 @@
       "discounts": 23,
       "refunds": 0,
       "net": 129,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -191,11 +191,11 @@
       ],
       "region": "British Columbia",
       "country": "CA",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "FedEx",
+      "tracking": "878428721401",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-09",
       "fc": "Tarlu",
       "address": "Vancouver, BC"
     },
@@ -2252,16 +2252,16 @@
   "analytics": {
     "totalValue": 3552,
     "orderCount": 36,
-    "unfulfilledValue": 677,
-    "unfulfilledCount": 4,
+    "unfulfilledValue": 548,
+    "unfulfilledCount": 3,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 4,
-        "value": 677
+        "count": 3,
+        "value": 548
       },
       "Fulfilled": {
-        "count": 30,
-        "value": 2572
+        "count": 31,
+        "value": 2701
       },
       "Processing": {
         "count": 2,
@@ -2305,12 +2305,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $677 awaiting fulfillment."
-    },
-    {
-      "kind": "orders",
-      "severity": "high",
-      "text": "1 order has been unfulfilled over 7 days ($129). Prioritize these."
+      "text": "3 unfulfilled orders worth $548 awaiting fulfillment."
     },
     {
       "kind": "stock",
@@ -2330,7 +2325,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }

@@ -671,11 +671,11 @@
   },
   {
     "date": "2026-10-09",
-    "syncedAt": "2026-10-09T09:57:13.226Z",
+    "syncedAt": "2026-10-09T16:50:41.363Z",
     "totalValue": 3552,
     "orderCount": 36,
-    "unfulfilledValue": 677,
-    "unfulfilledCount": 4,
+    "unfulfilledValue": 548,
+    "unfulfilledCount": 3,
     "out": 2,
     "low": 5
   }
