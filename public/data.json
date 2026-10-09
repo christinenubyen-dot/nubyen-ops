@@ -1,6 +1,105 @@
 {
-  "syncedAt": "2026-10-08T22:48:04.367Z",
+  "syncedAt": "2026-10-09T02:43:10.258Z",
   "orders": [
+    {
+      "id": "NUB-3909",
+      "customer": "Vicki Baker",
+      "customerId": 5625203785787,
+      "email": "vickibaker@shaw.ca",
+      "customerOrders": null,
+      "placed": "2026-10-09",
+      "value": 397,
+      "gross": 397,
+      "discounts": 70,
+      "refunds": 0,
+      "net": 397,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 468,
+          "type": "Other"
+        }
+      ],
+      "region": "Alberta",
+      "country": "CA",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Calgary, AB"
+    },
+    {
+      "id": "NUB-3908",
+      "customer": "Sara Taylor",
+      "customerId": 23458743026050,
+      "email": "saraltaylor@aol.com",
+      "customerOrders": null,
+      "placed": "2026-10-08",
+      "value": 42,
+      "gross": 38,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 42,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "NLIPA4",
+          "qty": 1,
+          "revenue": 38,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "London, ENG"
+    },
+    {
+      "id": "NUB-3907",
+      "customer": "Sara Taylor",
+      "customerId": 23458743026050,
+      "email": "saraltaylor@aol.com",
+      "customerOrders": null,
+      "placed": "2026-10-08",
+      "value": 109,
+      "gross": 109,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 109,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": null,
+          "qty": 1,
+          "revenue": 109,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "London, ENG"
+    },
     {
       "id": "NUB-3906",
       "customer": "Sue",
@@ -1360,7 +1459,7 @@
     {
       "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
       "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 2478,
+      "onHand": 2477,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1567,7 +1666,7 @@
     {
       "sku": "pre-order-nubyen-lip-flip-peptide",
       "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 1000,
+      "onHand": 999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1783,7 +1882,7 @@
     {
       "sku": "NLIPA4",
       "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 981,
+      "onHand": 980,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2151,18 +2250,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3004,
-    "orderCount": 33,
-    "unfulfilledValue": 129,
-    "unfulfilledCount": 1,
+    "totalValue": 3552,
+    "orderCount": 36,
+    "unfulfilledValue": 677,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 4,
+        "value": 677
+      },
       "Fulfilled": {
         "count": 30,
         "value": 2572
-      },
-      "Unfulfilled": {
-        "count": 1,
-        "value": 129
       },
       "Processing": {
         "count": 2,
@@ -2170,6 +2269,8 @@
       }
     },
     "revenueByDay": {
+      "2026-10-09": 397,
+      "2026-10-08": 151,
       "2026-10-02": 157,
       "2026-09-29": 129,
       "2026-09-27": 109,
@@ -2204,7 +2305,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "1 unfulfilled order worth $129 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $677 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2229,7 +2330,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 1."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
