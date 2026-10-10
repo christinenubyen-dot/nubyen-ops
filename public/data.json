@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-09T21:26:33.351Z",
+  "syncedAt": "2026-10-10T01:28:07.644Z",
   "orders": [
     {
       "id": "NUB-3909",
@@ -1246,60 +1246,6 @@
       "ship": "2026-08-11",
       "fc": "Tarlu",
       "address": "Lake Elmo, MN"
-    },
-    {
-      "id": "NUB-3874",
-      "customer": "Anita",
-      "customerId": 25497618547074,
-      "email": "anitakilmema@icloud.com",
-      "customerOrders": null,
-      "placed": "2026-08-11",
-      "value": 126,
-      "gross": 119,
-      "discounts": 21,
-      "refunds": 0,
-      "net": 126,
-      "status": "Fulfilled",
-      "items": 4,
-      "lineItems": [
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-          "sku": "NLPO3",
-          "qty": 1,
-          "revenue": 34,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 38,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-          "sku": "NLPO5",
-          "qty": 1,
-          "revenue": 34,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-          "sku": "NLPO4",
-          "qty": 1,
-          "revenue": 34,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": "Royal Mail UK Tracked 48",
-      "tracking": "YT655997689GB",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-08-11",
-      "fc": "Tarlu",
-      "address": "Hemel Hempstead, ENG"
     }
   ],
   "products": [
@@ -2250,8 +2196,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 3552,
-    "orderCount": 36,
+    "totalValue": 3426,
+    "orderCount": 35,
     "unfulfilledValue": 548,
     "unfulfilledCount": 3,
     "statusBreakdown": {
@@ -2260,8 +2206,8 @@
         "value": 548
       },
       "Fulfilled": {
-        "count": 31,
-        "value": 2701
+        "count": 30,
+        "value": 2575
       },
       "Processing": {
         "count": 2,
@@ -2293,7 +2239,7 @@
       "2026-08-15": 137,
       "2026-08-14": 153,
       "2026-08-12": 44,
-      "2026-08-11": 291
+      "2026-08-11": 165
     },
     "stockHealth": {
       "out": 2,
