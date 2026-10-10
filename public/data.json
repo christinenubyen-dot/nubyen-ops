@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-10T19:12:59.974Z",
+  "syncedAt": "2026-10-10T23:09:47.688Z",
   "orders": [
     {
       "id": "NUB-3909",
@@ -1140,46 +1140,6 @@
       "ship": "2026-08-12",
       "fc": "Tarlu",
       "address": "Tulsa, OK"
-    },
-    {
-      "id": "NUB-3877",
-      "customer": "Colleen Bergin",
-      "customerId": 25501381296514,
-      "email": "cdbergin@outlook.com",
-      "customerOrders": null,
-      "placed": "2026-08-11",
-      "value": 83,
-      "gross": 83,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 83,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
-          "sku": "NNUDE1",
-          "qty": 1,
-          "revenue": 33,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Cheek Fillá - Lifting reversible Cheek Filler alternative",
-          "sku": "NCHEEK",
-          "qty": 1,
-          "revenue": 50,
-          "type": "Other"
-        }
-      ],
-      "region": "Michigan",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Howell, MI"
     }
   ],
   "products": [
@@ -2130,8 +2090,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 3344,
-    "orderCount": 33,
+    "totalValue": 3261,
+    "orderCount": 32,
     "unfulfilledValue": 548,
     "unfulfilledCount": 3,
     "statusBreakdown": {
@@ -2140,8 +2100,8 @@
         "value": 548
       },
       "Fulfilled": {
-        "count": 28,
-        "value": 2493
+        "count": 27,
+        "value": 2410
       },
       "Processing": {
         "count": 2,
@@ -2172,8 +2132,7 @@
       "2026-08-16": 198,
       "2026-08-15": 137,
       "2026-08-14": 153,
-      "2026-08-12": 44,
-      "2026-08-11": 83
+      "2026-08-12": 44
     },
     "stockHealth": {
       "out": 2,
