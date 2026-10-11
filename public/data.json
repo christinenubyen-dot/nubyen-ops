@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-10-11T10:32:25.230Z",
+  "syncedAt": "2026-10-11T16:30:17.622Z",
   "orders": [
+    {
+      "id": "NUB-3910",
+      "customer": "Judith Downing",
+      "customerId": 24878897889666,
+      "email": "Judithdowning@outlook.com",
+      "customerOrders": null,
+      "placed": "2026-10-11",
+      "value": 36,
+      "gross": 32,
+      "discounts": 6,
+      "refunds": 0,
+      "net": 36,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "NUBYÉN PLUMPING LIP FILÁ BALM",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 38,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Richmond, ENG"
+    },
     {
       "id": "NUB-3909",
       "customer": "Vicki Baker",
@@ -1680,7 +1713,7 @@
     {
       "sku": "NLIPFIL",
       "name": "NUBYÉN PLUMPING LIP FILÁ BALM",
-      "onHand": 2506,
+      "onHand": 2505,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2057,14 +2090,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3217,
-    "orderCount": 31,
-    "unfulfilledValue": 548,
-    "unfulfilledCount": 3,
+    "totalValue": 3253,
+    "orderCount": 32,
+    "unfulfilledValue": 584,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 3,
-        "value": 548
+        "count": 4,
+        "value": 584
       },
       "Fulfilled": {
         "count": 26,
@@ -2076,6 +2109,7 @@
       }
     },
     "revenueByDay": {
+      "2026-10-11": 36,
       "2026-10-09": 397,
       "2026-10-08": 151,
       "2026-10-02": 157,
@@ -2110,7 +2144,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "3 unfulfilled orders worth $548 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $584 awaiting fulfillment."
     },
     {
       "kind": "stock",
@@ -2130,7 +2164,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 3."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
