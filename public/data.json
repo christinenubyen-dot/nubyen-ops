@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-10-11T16:30:17.622Z",
+  "syncedAt": "2026-10-11T20:45:10.776Z",
   "orders": [
+    {
+      "id": "NUB-3911",
+      "customer": "Rachel",
+      "customerId": 25443574841730,
+      "email": "bridgemanbookkeeping@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-10-11",
+      "value": 76,
+      "gross": 76,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 76,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "NUBYÉN PLUMPING LIP FILÁ BALM",
+          "sku": "NLIPFIL",
+          "qty": 2,
+          "revenue": 76,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Colchester, ENG"
+    },
     {
       "id": "NUB-3910",
       "customer": "Judith Downing",
@@ -1713,7 +1746,7 @@
     {
       "sku": "NLIPFIL",
       "name": "NUBYÉN PLUMPING LIP FILÁ BALM",
-      "onHand": 2505,
+      "onHand": 2503,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2090,14 +2123,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3253,
-    "orderCount": 32,
-    "unfulfilledValue": 584,
-    "unfulfilledCount": 4,
+    "totalValue": 3329,
+    "orderCount": 33,
+    "unfulfilledValue": 660,
+    "unfulfilledCount": 5,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 4,
-        "value": 584
+        "count": 5,
+        "value": 660
       },
       "Fulfilled": {
         "count": 26,
@@ -2109,7 +2142,7 @@
       }
     },
     "revenueByDay": {
-      "2026-10-11": 36,
+      "2026-10-11": 112,
       "2026-10-09": 397,
       "2026-10-08": 151,
       "2026-10-02": 157,
@@ -2144,7 +2177,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $584 awaiting fulfillment."
+      "text": "5 unfulfilled orders worth $660 awaiting fulfillment."
     },
     {
       "kind": "stock",
@@ -2164,7 +2197,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 5."
     }
   ]
 }
