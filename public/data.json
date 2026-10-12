@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-10-12T06:54:03.280Z",
+  "syncedAt": "2026-10-12T16:26:16.309Z",
   "orders": [
+    {
+      "id": "NUB-3912",
+      "customer": "Judith Downing",
+      "customerId": 24878897889666,
+      "email": "Judithdowning@outlook.com",
+      "customerOrders": null,
+      "placed": "2026-10-12",
+      "value": 45,
+      "gross": 41,
+      "discounts": 7,
+      "refunds": 0,
+      "net": 45,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NADVQAQ",
+          "qty": 1,
+          "revenue": 48,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Richmond, ENG"
+    },
     {
       "id": "NUB-3911",
       "customer": "Rachel",
@@ -13,7 +46,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 76,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -26,11 +59,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "FP141426572GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-12",
       "fc": "Tarlu",
       "address": "Colchester, ENG"
     },
@@ -46,7 +79,7 @@
       "discounts": 6,
       "refunds": 0,
       "net": 36,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -59,11 +92,11 @@
       ],
       "region": "England",
       "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "Royal Mail UK Tracked 48",
+      "tracking": "FP141426555GB",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-12",
       "fc": "Tarlu",
       "address": "Richmond, ENG"
     },
@@ -479,7 +512,7 @@
       "region": "Michigan",
       "country": "US",
       "courier": "FedEx",
-      "tracking": "877662715293",
+      "tracking": "878430273287",
       "delivery": "In transit",
       "eta": null,
       "ship": "2026-09-07",
@@ -1022,7 +1055,7 @@
       "country": "US",
       "courier": "FedEx",
       "tracking": "878446487200",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-09-26",
       "fc": "Tarlu",
@@ -1935,7 +1968,7 @@
     {
       "sku": "NADVQAQ",
       "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -12,
+      "onHand": -13,
       "reorderPt": 1,
       "onOrder": 0,
       "lastStocked": null,
@@ -2123,18 +2156,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3329,
-    "orderCount": 33,
-    "unfulfilledValue": 660,
-    "unfulfilledCount": 5,
+    "totalValue": 3374,
+    "orderCount": 34,
+    "unfulfilledValue": 593,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 5,
-        "value": 660
+        "count": 4,
+        "value": 593
       },
       "Fulfilled": {
-        "count": 26,
-        "value": 2366
+        "count": 28,
+        "value": 2478
       },
       "Processing": {
         "count": 2,
@@ -2142,6 +2175,7 @@
       }
     },
     "revenueByDay": {
+      "2026-10-12": 45,
       "2026-10-11": 112,
       "2026-10-09": 397,
       "2026-10-08": 151,
@@ -2177,7 +2211,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "5 unfulfilled orders worth $660 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $593 awaiting fulfillment."
     },
     {
       "kind": "stock",
@@ -2197,7 +2231,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 5."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
