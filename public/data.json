@@ -1,6 +1,46 @@
 {
-  "syncedAt": "2026-10-12T23:26:29.580Z",
+  "syncedAt": "2026-10-13T05:14:22.545Z",
   "orders": [
+    {
+      "id": "NUB-3913",
+      "customer": "Frank Giacobetti",
+      "customerId": 25825993949570,
+      "email": "drg@jaxorthopedics.com",
+      "customerOrders": null,
+      "placed": "2026-10-13",
+      "value": 241,
+      "gross": 241,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 241,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyen Optimist The Cori Micro Skort",
+          "sku": null,
+          "qty": 1,
+          "revenue": 131,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyen Optimist Contrast Bra Top (Cori)",
+          "sku": null,
+          "qty": 1,
+          "revenue": 110,
+          "type": "Other"
+        }
+      ],
+      "region": "California",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Laguna Beach, CA"
+    },
     {
       "id": "NUB-3912",
       "customer": "Judith Downing",
@@ -1824,7 +1864,7 @@
     {
       "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
       "name": "Nubyen Optimist Contrast Bra Top (Cori)",
-      "onHand": 1000,
+      "onHand": 999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1833,7 +1873,7 @@
     {
       "sku": "nubyen-optimistthe-cori-micro-skort",
       "name": "Nubyen Optimist The Cori Micro Skort",
-      "onHand": 4000,
+      "onHand": 3999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -2156,14 +2196,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3374,
-    "orderCount": 34,
-    "unfulfilledValue": 593,
-    "unfulfilledCount": 4,
+    "totalValue": 3615,
+    "orderCount": 35,
+    "unfulfilledValue": 834,
+    "unfulfilledCount": 5,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 4,
-        "value": 593
+        "count": 5,
+        "value": 834
       },
       "Fulfilled": {
         "count": 28,
@@ -2175,6 +2215,7 @@
       }
     },
     "revenueByDay": {
+      "2026-10-13": 241,
       "2026-10-12": 45,
       "2026-10-11": 112,
       "2026-10-09": 397,
@@ -2211,7 +2252,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $593 awaiting fulfillment."
+      "text": "5 unfulfilled orders worth $834 awaiting fulfillment."
     },
     {
       "kind": "stock",
@@ -2231,7 +2272,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 5."
     }
   ]
 }
