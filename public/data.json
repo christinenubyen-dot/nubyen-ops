@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-13T05:14:22.545Z",
+  "syncedAt": "2026-10-13T13:27:02.575Z",
   "orders": [
     {
       "id": "NUB-3913",
@@ -553,7 +553,7 @@
       "country": "US",
       "courier": "FedEx",
       "tracking": "878430273287",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-09-07",
       "fc": "Tarlu",
@@ -1199,53 +1199,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Oxford, NC"
-    },
-    {
-      "id": "NUB-3879",
-      "customer": "Wendy",
-      "customerId": 25511779205506,
-      "email": "wendy@familyhorowitz.com",
-      "customerOrders": null,
-      "placed": "2026-08-14",
-      "value": 105,
-      "gross": 105,
-      "discounts": 19,
-      "refunds": 0,
-      "net": 105,
-      "status": "Processing",
-      "items": 3,
-      "lineItems": [
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+)",
-          "sku": "NLPO1",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        },
-        {
-          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 1,
-          "revenue": 49,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NLIPFIL",
-          "qty": 1,
-          "revenue": 39,
-          "type": "Other"
-        }
-      ],
-      "region": "New Jersey",
-      "country": "US",
-      "courier": "EasyPost - USPS Ground Advantage",
-      "tracking": "9434636208192283295086",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-09-21",
-      "fc": "Tarlu",
-      "address": "Englewood Cliffs, NJ"
     }
   ],
   "products": [
@@ -2196,8 +2149,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 3615,
-    "orderCount": 35,
+    "totalValue": 3510,
+    "orderCount": 34,
     "unfulfilledValue": 834,
     "unfulfilledCount": 5,
     "statusBreakdown": {
@@ -2210,8 +2163,8 @@
         "value": 2478
       },
       "Processing": {
-        "count": 2,
-        "value": 303
+        "count": 1,
+        "value": 198
       }
     },
     "revenueByDay": {
@@ -2240,7 +2193,7 @@
       "2026-08-17": 100,
       "2026-08-16": 198,
       "2026-08-15": 137,
-      "2026-08-14": 153
+      "2026-08-14": 48
     },
     "stockHealth": {
       "out": 2,
