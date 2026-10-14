@@ -718,5 +718,15 @@
     "unfulfilledCount": 5,
     "out": 2,
     "low": 5
+  },
+  {
+    "date": "2026-10-14",
+    "syncedAt": "2026-10-14T00:05:19.060Z",
+    "totalValue": 3462,
+    "orderCount": 33,
+    "unfulfilledValue": 834,
+    "unfulfilledCount": 5,
+    "out": 2,
+    "low": 5
   }
 ]
