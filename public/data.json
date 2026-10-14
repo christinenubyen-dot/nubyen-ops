@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-14T05:44:38.999Z",
+  "syncedAt": "2026-10-14T11:04:27.568Z",
   "orders": [
     {
       "id": "NUB-3913",
@@ -101,7 +101,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "FP141426572GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-10-12",
       "fc": "Tarlu",
@@ -134,7 +134,7 @@
       "country": "GB",
       "courier": "Royal Mail UK Tracked 48",
       "tracking": "FP141426555GB",
-      "delivery": "In transit",
+      "delivery": "Out for delivery",
       "eta": null,
       "ship": "2026-10-12",
       "fc": "Tarlu",
@@ -152,7 +152,7 @@
       "discounts": 70,
       "refunds": 0,
       "net": 397,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -167,9 +167,9 @@
       "country": "CA",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-14",
       "fc": "Tarlu",
       "address": "Calgary, AB"
     },
@@ -1100,72 +1100,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Beaver, PA"
-    },
-    {
-      "id": "NUB-3882",
-      "customer": "Deborah Aitchison",
-      "customerId": 366624014364,
-      "email": "deborahaitchison@me.com",
-      "customerOrders": null,
-      "placed": "2026-08-15",
-      "value": 52,
-      "gross": 48,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 52,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 1,
-          "revenue": 48,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Margate, ENG"
-    },
-    {
-      "id": "NUB-3881",
-      "customer": "Cami",
-      "customerId": 25514869719426,
-      "email": "Cmarculescu@aol.com",
-      "customerOrders": null,
-      "placed": "2026-08-15",
-      "value": 85,
-      "gross": 85,
-      "discounts": 15,
-      "refunds": 0,
-      "net": 85,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "Trio1",
-          "qty": 1,
-          "revenue": 101,
-          "type": "Other"
-        }
-      ],
-      "region": "South Carolina",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Charleston, SC"
     }
   ],
   "products": [
@@ -2116,18 +2050,18 @@
     }
   ],
   "analytics": {
-    "totalValue": 3462,
-    "orderCount": 33,
-    "unfulfilledValue": 834,
-    "unfulfilledCount": 5,
+    "totalValue": 3325,
+    "orderCount": 31,
+    "unfulfilledValue": 437,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 5,
-        "value": 834
+        "count": 4,
+        "value": 437
       },
       "Fulfilled": {
-        "count": 27,
-        "value": 2430
+        "count": 26,
+        "value": 2690
       },
       "Processing": {
         "count": 1,
@@ -2158,8 +2092,7 @@
       "2026-08-19": 139,
       "2026-08-18": 100,
       "2026-08-17": 100,
-      "2026-08-16": 198,
-      "2026-08-15": 137
+      "2026-08-16": 198
     },
     "stockHealth": {
       "out": 2,
@@ -2171,7 +2104,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "5 unfulfilled orders worth $834 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $437 awaiting fulfillment."
     },
     {
       "kind": "stock",
@@ -2191,7 +2124,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 5."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
