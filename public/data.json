@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-15T13:53:15.128Z",
+  "syncedAt": "2026-10-15T17:58:15.736Z",
   "orders": [
     {
       "id": "NUB-3913",
@@ -1060,46 +1060,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Alapaha, GA"
-    },
-    {
-      "id": "NUB-3883",
-      "customer": "Maggie",
-      "customerId": 25499577647490,
-      "email": "maggie_logan@aol.com",
-      "customerOrders": null,
-      "placed": "2026-08-16",
-      "value": 198,
-      "gross": 198,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 198,
-      "status": "Processing",
-      "items": 4,
-      "lineItems": [
-        {
-          "title": "PRE-ORDER Nubyén Lip Filá Max Plumping Silk Gloss",
-          "sku": "NLIPFILG",
-          "qty": 2,
-          "revenue": 99,
-          "type": "Other"
-        },
-        {
-          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 2,
-          "revenue": 99,
-          "type": "Other"
-        }
-      ],
-      "region": "Pennsylvania",
-      "country": "US",
-      "courier": "FedEx",
-      "tracking": "878446487200",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Beaver, PA"
     }
   ],
   "products": [
@@ -2050,8 +2010,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 3325,
-    "orderCount": 31,
+    "totalValue": 3127,
+    "orderCount": 30,
     "unfulfilledValue": 437,
     "unfulfilledCount": 4,
     "statusBreakdown": {
@@ -2062,10 +2022,6 @@
       "Fulfilled": {
         "count": 26,
         "value": 2690
-      },
-      "Processing": {
-        "count": 1,
-        "value": 198
       }
     },
     "revenueByDay": {
@@ -2091,8 +2047,7 @@
       "2026-08-21": 178,
       "2026-08-19": 139,
       "2026-08-18": 100,
-      "2026-08-17": 100,
-      "2026-08-16": 198
+      "2026-08-17": 100
     },
     "stockHealth": {
       "out": 2,
