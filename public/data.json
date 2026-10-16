@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-10-16T15:09:09.692Z",
+  "syncedAt": "2026-10-16T19:14:38.721Z",
   "orders": [
+    {
+      "id": "NUB-3914",
+      "customer": "Angie",
+      "customerId": 25504698499458,
+      "email": "medwick@icloud.com",
+      "customerOrders": null,
+      "placed": "2026-10-16",
+      "value": 86,
+      "gross": 86,
+      "discounts": 15,
+      "refunds": 0,
+      "net": 86,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "Trio1",
+          "qty": 1,
+          "revenue": 101,
+          "type": "Other"
+        }
+      ],
+      "region": "Missouri",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Cuba, MO"
+    },
     {
       "id": "NUB-3913",
       "customer": "Frank Giacobetti",
@@ -1726,7 +1759,7 @@
     {
       "sku": "Trio1",
       "name": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4967,
+      "onHand": 4966,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1977,14 +2010,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 3027,
-    "orderCount": 29,
-    "unfulfilledValue": 437,
-    "unfulfilledCount": 4,
+    "totalValue": 3113,
+    "orderCount": 30,
+    "unfulfilledValue": 523,
+    "unfulfilledCount": 5,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 4,
-        "value": 437
+        "count": 5,
+        "value": 523
       },
       "Fulfilled": {
         "count": 25,
@@ -1992,6 +2025,7 @@
       }
     },
     "revenueByDay": {
+      "2026-10-16": 86,
       "2026-10-13": 241,
       "2026-10-12": 45,
       "2026-10-11": 112,
@@ -2025,7 +2059,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $437 awaiting fulfillment."
+      "text": "5 unfulfilled orders worth $523 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -2050,7 +2084,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 5."
     }
   ]
 }
