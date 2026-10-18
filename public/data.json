@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-18T17:45:36.641Z",
+  "syncedAt": "2026-10-18T20:00:23.374Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -961,39 +961,6 @@
       "ship": "2026-08-29",
       "fc": "Tarlu",
       "address": "Miami, FL"
-    },
-    {
-      "id": "NUB-3887",
-      "customer": "Jeff",
-      "customerId": 25533337436546,
-      "email": "1jeffhue@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-19",
-      "value": 95,
-      "gross": 95,
-      "discounts": 17,
-      "refunds": 0,
-      "net": 95,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén ULTIMATE +++ Peptide Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": null,
-          "qty": 1,
-          "revenue": 112,
-          "type": "Other"
-        }
-      ],
-      "region": "Florida",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Winter Garden, FL"
     }
   ],
   "products": [
@@ -1944,8 +1911,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 2969,
-    "orderCount": 28,
+    "totalValue": 2874,
+    "orderCount": 27,
     "unfulfilledValue": 523,
     "unfulfilledCount": 5,
     "statusBreakdown": {
@@ -1954,8 +1921,8 @@
         "value": 523
       },
       "Fulfilled": {
-        "count": 23,
-        "value": 2446
+        "count": 22,
+        "value": 2351
       }
     },
     "revenueByDay": {
@@ -1979,8 +1946,7 @@
       "2026-08-25": 47,
       "2026-08-24": 38,
       "2026-08-23": 164,
-      "2026-08-21": 178,
-      "2026-08-19": 95
+      "2026-08-21": 178
     },
     "stockHealth": {
       "out": 2,
