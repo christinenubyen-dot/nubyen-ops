@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-20T13:15:54.055Z",
+  "syncedAt": "2026-10-20T18:17:00.135Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -888,79 +888,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "East hampton, NY"
-    },
-    {
-      "id": "NUB-3889",
-      "customer": "Dana Maier",
-      "customerId": 25541474550146,
-      "email": "maierd10@yahoo.com",
-      "customerOrders": null,
-      "placed": "2026-08-21",
-      "value": 88,
-      "gross": 88,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 88,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyén Nude Lip Plumping Augmentation Gloss",
-          "sku": "NNUDE1",
-          "qty": 1,
-          "revenue": 39,
-          "type": "Other"
-        },
-        {
-          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 1,
-          "revenue": 49,
-          "type": "Other"
-        }
-      ],
-      "region": "California",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Manhattan Beach, CA"
-    },
-    {
-      "id": "NUB-3888",
-      "customer": "Polina Lutsik-Artemenko",
-      "customerId": 25541403607426,
-      "email": "pollylutsik@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-21",
-      "value": 90,
-      "gross": 90,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 90,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyen Abundance High Rise Tie Up Legging (Alicante Vigo)",
-          "sku": null,
-          "qty": 1,
-          "revenue": 90,
-          "type": "Other"
-        }
-      ],
-      "region": "Florida",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-08-29",
-      "fc": "Tarlu",
-      "address": "Miami, FL"
     }
   ],
   "products": [
@@ -1911,14 +1838,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2874,
-    "orderCount": 27,
+    "totalValue": 2696,
+    "orderCount": 25,
     "unfulfilledValue": 395,
     "unfulfilledCount": 3,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 24,
-        "value": 2479
+        "count": 22,
+        "value": 2301
       },
       "Unfulfilled": {
         "count": 3,
@@ -1945,8 +1872,7 @@
       "2026-08-27": 45,
       "2026-08-25": 47,
       "2026-08-24": 38,
-      "2026-08-23": 164,
-      "2026-08-21": 178
+      "2026-08-23": 164
     },
     "stockHealth": {
       "out": 2,
