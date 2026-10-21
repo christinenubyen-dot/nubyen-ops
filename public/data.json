@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-21T12:48:48.350Z",
+  "syncedAt": "2026-10-21T17:52:04.749Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -520,7 +520,7 @@
       "country": "US",
       "courier": "FedEx",
       "tracking": "878081761655",
-      "delivery": "Out for delivery",
+      "delivery": "Delivered",
       "eta": null,
       "ship": "2026-09-24",
       "fc": "Tarlu",
@@ -1117,7 +1117,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-sleepless-in-seattle-trench-coat-in-burgundy-copy",
+      "sku": "nubyen-cropped-trench-coat-in-cashmere-grey",
       "name": "Nubyen Cropped Trench Coat in Cashmere Grey",
       "onHand": 310,
       "reorderPt": 10,
@@ -1126,7 +1126,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-cropped-trench-coat-in-cashmere-grey-copy",
+      "sku": "nubyen-cropped-fringe-jacket-in-green",
       "name": "Nubyen Cropped Fringe Jacket in Green",
       "onHand": 310,
       "reorderPt": 10,
@@ -1135,7 +1135,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-cropped-trench-coat-in-cashmere-grey-copy-1",
+      "sku": "nubyen-cropped-collared-jacket-in-black",
       "name": "Nubyen Cropped Collared Jacket in Black",
       "onHand": 310,
       "reorderPt": 10,
@@ -1144,7 +1144,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-cropped-collared-jacket-in-black-copy",
+      "sku": "nubyen-erewhon-jacket-in-olive",
       "name": "Nubyen Erewhon Jacket in Olive",
       "onHand": 310,
       "reorderPt": 10,
@@ -1153,7 +1153,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-sleepless-in-seattle-trench-coat-in-burgundy-copy-1",
+      "sku": "nubyen-contrast-fur-collar-trench-coat-in-black",
       "name": "Nubyen Contrast Fur Collar Trench Coat in Black",
       "onHand": 310,
       "reorderPt": 10,
@@ -1198,7 +1198,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "higher-dominion-capsule-sculpt-jacket-copy",
+      "sku": "nubyen-higher-dominion-capsule-sculpt-legging",
       "name": "Nubyen Higher Dominion Capsule Sculpt Legging",
       "onHand": 10000,
       "reorderPt": 10,
@@ -1504,7 +1504,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-abbot-kinney-double-layer-long-sleeve-top-copy",
+      "sku": "nubyen-optimist-contrast-bra-top",
       "name": "Nubyen Optimist Contrast Bra Top (Cori)",
       "onHand": 999,
       "reorderPt": 10,
@@ -1612,7 +1612,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-joy-two-tone-chain-cuff-ring-copy",
+      "sku": "nubyen-ring-dominion-double-dome",
       "name": "Nubyen Ring Dominion Double Dome",
       "onHand": 1000,
       "reorderPt": 10,
@@ -1630,7 +1630,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "copy-nubyen-ultimate-peptide-plus-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
+      "sku": "nubyen-powerful-plumping-peptide-color-lip-kit",
       "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 3999,
       "reorderPt": 10,
@@ -1639,7 +1639,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-advanced-silk-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers-copy",
+      "sku": "nubyen-intensity-silk-peptide-lip-kit",
       "name": "Nubyén Peptide Plumping INTENSITY +++ Silk Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 2483,
       "reorderPt": 10,
