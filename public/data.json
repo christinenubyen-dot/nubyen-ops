@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-22T20:23:33.166Z",
+  "syncedAt": "2026-10-22T23:50:49.139Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -822,39 +822,6 @@
       "ship": "2026-08-24",
       "fc": "Tarlu",
       "address": "St. George, UT"
-    },
-    {
-      "id": "NUB-3891",
-      "customer": "Erika",
-      "customerId": 25549968572802,
-      "email": "ortizerika272@yahoo.com",
-      "customerOrders": null,
-      "placed": "2026-08-23",
-      "value": 64,
-      "gross": 59,
-      "discounts": 10,
-      "refunds": 0,
-      "net": 64,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyen 'Botox' alternative- Vegan Beautox Skin Beautifying Elixir",
-          "sku": "NBEAU",
-          "qty": 1,
-          "revenue": 70,
-          "type": "Other"
-        }
-      ],
-      "region": "New York",
-      "country": "US",
-      "courier": "FedEx",
-      "tracking": "877467226878",
-      "delivery": "In transit",
-      "eta": null,
-      "ship": "2026-09-20",
-      "fc": "Tarlu",
-      "address": "New York, NY"
     }
   ],
   "products": [
@@ -1805,14 +1772,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2596,
-    "orderCount": 24,
+    "totalValue": 2532,
+    "orderCount": 23,
     "unfulfilledValue": 395,
     "unfulfilledCount": 3,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 21,
-        "value": 2201
+        "count": 20,
+        "value": 2137
       },
       "Unfulfilled": {
         "count": 3,
@@ -1838,8 +1805,7 @@
       "2026-08-28": 172,
       "2026-08-27": 45,
       "2026-08-25": 47,
-      "2026-08-24": 38,
-      "2026-08-23": 64
+      "2026-08-24": 38
     },
     "stockHealth": {
       "out": 2,
