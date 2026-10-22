@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-22T11:04:00.379Z",
+  "syncedAt": "2026-10-22T16:32:15.710Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -855,39 +855,6 @@
       "ship": "2026-09-20",
       "fc": "Tarlu",
       "address": "New York, NY"
-    },
-    {
-      "id": "NUB-3890",
-      "customer": "43 timber trail Heredos",
-      "customerId": 25548464783746,
-      "email": "kthformby@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-23",
-      "value": 100,
-      "gross": 100,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 100,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén ADAPTOGEN +++ Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": null,
-          "qty": 1,
-          "revenue": 100,
-          "type": "Other"
-        }
-      ],
-      "region": "New York",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "East hampton, NY"
     }
   ],
   "products": [
@@ -1838,14 +1805,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2696,
-    "orderCount": 25,
+    "totalValue": 2596,
+    "orderCount": 24,
     "unfulfilledValue": 395,
     "unfulfilledCount": 3,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 22,
-        "value": 2301
+        "count": 21,
+        "value": 2201
       },
       "Unfulfilled": {
         "count": 3,
@@ -1872,7 +1839,7 @@
       "2026-08-27": 45,
       "2026-08-25": 47,
       "2026-08-24": 38,
-      "2026-08-23": 164
+      "2026-08-23": 64
     },
     "stockHealth": {
       "out": 2,
