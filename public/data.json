@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-25T23:44:56.074Z",
+  "syncedAt": "2026-10-26T02:58:03.924Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -723,39 +723,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Ambler, PA"
-    },
-    {
-      "id": "NUB-3894",
-      "customer": "Debra Atkin",
-      "customerId": 24604339044738,
-      "email": "debz8877@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-27",
-      "value": 45,
-      "gross": 41,
-      "discounts": 7,
-      "refunds": 0,
-      "net": 45,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-          "sku": "NADVQAQ",
-          "qty": 1,
-          "revenue": 48,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Oldham, ENG"
     }
   ],
   "products": [
@@ -1706,14 +1673,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2447,
-    "orderCount": 21,
+    "totalValue": 2402,
+    "orderCount": 20,
     "unfulfilledValue": 395,
     "unfulfilledCount": 3,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 18,
-        "value": 2052
+        "count": 17,
+        "value": 2007
       },
       "Unfulfilled": {
         "count": 3,
@@ -1736,8 +1703,7 @@
       "2026-09-03": 89,
       "2026-09-02": 44,
       "2026-08-30": 40,
-      "2026-08-28": 172,
-      "2026-08-27": 45
+      "2026-08-28": 172
     },
     "stockHealth": {
       "out": 2,
