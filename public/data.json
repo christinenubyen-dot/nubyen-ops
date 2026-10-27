@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-27T17:22:08.740Z",
+  "syncedAt": "2026-10-27T21:45:43.166Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -657,39 +657,6 @@
       "ship": "2026-09-15",
       "fc": "Tarlu",
       "address": "Longmont, CO"
-    },
-    {
-      "id": "NUB-3896",
-      "customer": "Christine Wall",
-      "customerId": 25568940687746,
-      "email": "Wallc7822@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-08-28",
-      "value": 72,
-      "gross": 67,
-      "discounts": 12,
-      "refunds": 0,
-      "net": 72,
-      "status": "Fulfilled",
-      "items": 2,
-      "lineItems": [
-        {
-          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLIPA1",
-          "qty": 2,
-          "revenue": 78,
-          "type": "Other"
-        }
-      ],
-      "region": "Massachusetts",
-      "country": "US",
-      "courier": "FedEx",
-      "tracking": "384014789207",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Holyoke, MA"
     }
   ],
   "products": [
@@ -1640,14 +1607,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2302,
-    "orderCount": 19,
+    "totalValue": 2230,
+    "orderCount": 18,
     "unfulfilledValue": 395,
     "unfulfilledCount": 3,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 16,
-        "value": 1907
+        "count": 15,
+        "value": 1835
       },
       "Unfulfilled": {
         "count": 3,
@@ -1669,8 +1636,7 @@
       "2026-09-07": 0,
       "2026-09-03": 89,
       "2026-09-02": 44,
-      "2026-08-30": 40,
-      "2026-08-28": 72
+      "2026-08-30": 40
     },
     "stockHealth": {
       "out": 2,
