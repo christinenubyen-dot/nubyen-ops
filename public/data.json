@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-27T05:56:42.526Z",
+  "syncedAt": "2026-10-27T11:40:36.485Z",
   "orders": [
     {
       "id": "NUB-3914",
@@ -690,39 +690,6 @@
       "ship": "2026-09-26",
       "fc": "Tarlu",
       "address": "Holyoke, MA"
-    },
-    {
-      "id": "NUB-3895",
-      "customer": "Laura Blair",
-      "customerId": 25566794613122,
-      "email": "lblair001@comcast.net",
-      "customerOrders": null,
-      "placed": "2026-08-28",
-      "value": 100,
-      "gross": 100,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 100,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "Trio1",
-          "qty": 1,
-          "revenue": 100,
-          "type": "Other"
-        }
-      ],
-      "region": "Pennsylvania",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-26",
-      "fc": "Tarlu",
-      "address": "Ambler, PA"
     }
   ],
   "products": [
@@ -1673,14 +1640,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2402,
-    "orderCount": 20,
+    "totalValue": 2302,
+    "orderCount": 19,
     "unfulfilledValue": 395,
     "unfulfilledCount": 3,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 17,
-        "value": 2007
+        "count": 16,
+        "value": 1907
       },
       "Unfulfilled": {
         "count": 3,
@@ -1703,7 +1670,7 @@
       "2026-09-03": 89,
       "2026-09-02": 44,
       "2026-08-30": 40,
-      "2026-08-28": 172
+      "2026-08-28": 72
     },
     "stockHealth": {
       "out": 2,
