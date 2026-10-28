@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-10-28T06:37:12.925Z",
+  "syncedAt": "2026-10-28T13:47:18.042Z",
   "orders": [
     {
       "id": "NUB-3915",
@@ -79,7 +79,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 241,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -99,11 +99,11 @@
       ],
       "region": "California",
       "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Awaiting pick",
+      "courier": "FedEx",
+      "tracking": "879339828855",
+      "delivery": "In transit",
       "eta": null,
-      "ship": null,
+      "ship": "2026-10-28",
       "fc": "Tarlu",
       "address": "Laguna Beach, CA"
     },
@@ -1642,16 +1642,16 @@
   "analytics": {
     "totalValue": 2298,
     "orderCount": 19,
-    "unfulfilledValue": 463,
-    "unfulfilledCount": 4,
+    "unfulfilledValue": 222,
+    "unfulfilledCount": 3,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 4,
-        "value": 463
+        "count": 3,
+        "value": 222
       },
       "Fulfilled": {
-        "count": 15,
-        "value": 1835
+        "count": 16,
+        "value": 2076
       }
     },
     "revenueByDay": {
@@ -1682,12 +1682,12 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $463 awaiting fulfillment."
+      "text": "3 unfulfilled orders worth $222 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "3 orders have been unfulfilled over 7 days ($395). Prioritize these."
+      "text": "2 orders have been unfulfilled over 7 days ($154). Prioritize these."
     },
     {
       "kind": "stock",
@@ -1707,7 +1707,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }
