@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-11-01T20:57:18.609Z",
+  "syncedAt": "2026-11-02T00:21:56.172Z",
   "orders": [
+    {
+      "id": "NUB-3916",
+      "customer": "Hannah  Clark",
+      "customerId": 5699597140027,
+      "email": "esmee9eden@yahoo.co.uk",
+      "customerOrders": null,
+      "placed": "2026-11-02",
+      "value": 76,
+      "gross": 76,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 76,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyen Lash + Brow Growth Enhancement Serum (Lash Prósperity)",
+          "sku": "NPRO3",
+          "qty": 2,
+          "revenue": 76,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Newcastle Upon Tyne, ENG"
+    },
     {
       "id": "NUB-3915",
       "customer": "Carmen Chamberlain",
@@ -999,7 +1032,7 @@
     {
       "sku": "NPRO3",
       "name": "Nubyen Lash + Brow Growth Enhancement Serum (Lash Prósperity)",
-      "onHand": 333,
+      "onHand": 331,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1574,14 +1607,14 @@
     }
   ],
   "analytics": {
-    "totalValue": 2214,
-    "orderCount": 17,
-    "unfulfilledValue": 222,
-    "unfulfilledCount": 3,
+    "totalValue": 2290,
+    "orderCount": 18,
+    "unfulfilledValue": 298,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 3,
-        "value": 222
+        "count": 4,
+        "value": 298
       },
       "Fulfilled": {
         "count": 14,
@@ -1589,6 +1622,7 @@
       }
     },
     "revenueByDay": {
+      "2026-11-02": 76,
       "2026-10-27": 68,
       "2026-10-16": 86,
       "2026-10-13": 241,
@@ -1614,7 +1648,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "3 unfulfilled orders worth $222 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $298 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1639,7 +1673,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 3."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
