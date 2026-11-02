@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-02T07:09:21.180Z",
+  "syncedAt": "2026-11-02T17:44:43.302Z",
   "orders": [
     {
       "id": "NUB-3916",
@@ -624,39 +624,6 @@
       "ship": "2026-09-07",
       "fc": "Tarlu",
       "address": "New york, NY"
-    },
-    {
-      "id": "NUB-3899",
-      "customer": "John j Gurin",
-      "customerId": 24845363184002,
-      "email": "gurinchristine@gmail.com",
-      "customerOrders": null,
-      "placed": "2026-09-03",
-      "value": 89,
-      "gross": 80,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 89,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Collagen EXTREME +++ Nubyen Nude Lip Plumping Gloss | Lip Boosting & Hydrating | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NNUDE2",
-          "qty": 1,
-          "revenue": 80,
-          "type": "Other"
-        }
-      ],
-      "region": "Michigan",
-      "country": "US",
-      "courier": "FedEx",
-      "tracking": "878430273287",
-      "delivery": "Delivered",
-      "eta": null,
-      "ship": "2026-09-07",
-      "fc": "Tarlu",
-      "address": "Clinton twp, MI"
     }
   ],
   "products": [
@@ -1607,8 +1574,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 2290,
-    "orderCount": 18,
+    "totalValue": 2201,
+    "orderCount": 17,
     "unfulfilledValue": 298,
     "unfulfilledCount": 4,
     "statusBreakdown": {
@@ -1617,8 +1584,8 @@
         "value": 298
       },
       "Fulfilled": {
-        "count": 14,
-        "value": 1992
+        "count": 13,
+        "value": 1903
       }
     },
     "revenueByDay": {
@@ -1635,8 +1602,7 @@
       "2026-09-27": 109,
       "2026-09-24": 406,
       "2026-09-23": 224,
-      "2026-09-07": 0,
-      "2026-09-03": 89
+      "2026-09-07": 0
     },
     "stockHealth": {
       "out": 2,
