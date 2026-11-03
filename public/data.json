@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-03T15:46:27.177Z",
+  "syncedAt": "2026-11-03T21:28:06.418Z",
   "orders": [
     {
       "id": "NUB-3916",
@@ -46,7 +46,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 68,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -61,9 +61,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-11-03",
       "fc": "Tarlu",
       "address": "Hull, ENG"
     },
@@ -1576,16 +1576,16 @@
   "analytics": {
     "totalValue": 2201,
     "orderCount": 17,
-    "unfulfilledValue": 298,
-    "unfulfilledCount": 4,
+    "unfulfilledValue": 230,
+    "unfulfilledCount": 3,
     "statusBreakdown": {
       "Unfulfilled": {
-        "count": 4,
-        "value": 298
+        "count": 3,
+        "value": 230
       },
       "Fulfilled": {
-        "count": 13,
-        "value": 1903
+        "count": 14,
+        "value": 1971
       }
     },
     "revenueByDay": {
@@ -1614,12 +1614,12 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "4 unfulfilled orders worth $298 awaiting fulfillment."
+      "text": "3 unfulfilled orders worth $230 awaiting fulfillment."
     },
     {
       "kind": "orders",
       "severity": "high",
-      "text": "3 orders have been unfulfilled over 7 days ($222). Prioritize these."
+      "text": "2 orders have been unfulfilled over 7 days ($154). Prioritize these."
     },
     {
       "kind": "stock",
@@ -1639,7 +1639,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 4."
+      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }
