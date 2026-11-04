@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-04T01:51:31.581Z",
+  "syncedAt": "2026-11-04T08:31:49.427Z",
   "orders": [
     {
       "id": "NUB-3916",
@@ -13,7 +13,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 76,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -28,9 +28,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-11-04",
       "fc": "Tarlu",
       "address": "Newcastle Upon Tyne, ENG"
     },
@@ -1576,16 +1576,16 @@
   "analytics": {
     "totalValue": 2201,
     "orderCount": 17,
-    "unfulfilledValue": 230,
-    "unfulfilledCount": 3,
+    "unfulfilledValue": 154,
+    "unfulfilledCount": 2,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 3,
-        "value": 230
-      },
       "Fulfilled": {
-        "count": 14,
-        "value": 1971
+        "count": 15,
+        "value": 2047
+      },
+      "Unfulfilled": {
+        "count": 2,
+        "value": 154
       }
     },
     "revenueByDay": {
@@ -1614,7 +1614,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "3 unfulfilled orders worth $230 awaiting fulfillment."
+      "text": "2 unfulfilled orders worth $154 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1639,7 +1639,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 3."
+      "text": "Unfulfilled load: Tarlu 2."
     }
   ]
 }
