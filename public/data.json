@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-06T07:36:54.945Z",
+  "syncedAt": "2026-11-06T15:37:32.578Z",
   "orders": [
     {
       "id": "NUB-3916",
@@ -591,39 +591,6 @@
       "ship": "2026-09-24",
       "fc": "Tarlu",
       "address": "Alpharetta, GA"
-    },
-    {
-      "id": "NUB-3900",
-      "customer": "Hanna Osunsami",
-      "customerId": 1692962127931,
-      "email": "info@nubyen.com",
-      "customerOrders": null,
-      "placed": "2026-09-07",
-      "value": 0,
-      "gross": 0,
-      "discounts": 117,
-      "refunds": 0,
-      "net": 0,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": null,
-          "qty": 1,
-          "revenue": 112,
-          "type": "Other"
-        }
-      ],
-      "region": "New York",
-      "country": "US",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-07",
-      "fc": "Tarlu",
-      "address": "New york, NY"
     }
   ],
   "products": [
@@ -1575,12 +1542,12 @@
   ],
   "analytics": {
     "totalValue": 2201,
-    "orderCount": 17,
+    "orderCount": 16,
     "unfulfilledValue": 154,
     "unfulfilledCount": 2,
     "statusBreakdown": {
       "Fulfilled": {
-        "count": 15,
+        "count": 14,
         "value": 2047
       },
       "Unfulfilled": {
@@ -1601,8 +1568,7 @@
       "2026-09-29": 129,
       "2026-09-27": 109,
       "2026-09-24": 406,
-      "2026-09-23": 224,
-      "2026-09-07": 0
+      "2026-09-23": 224
     },
     "stockHealth": {
       "out": 2,
