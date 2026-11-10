@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-11-10T03:07:22.401Z",
+  "syncedAt": "2026-11-10T12:01:58.234Z",
   "orders": [
+    {
+      "id": "NUB-3917",
+      "customer": "Deborah Foulds",
+      "customerId": 5675230134331,
+      "email": "deborahxfoulds@hotmail.com",
+      "customerOrders": null,
+      "placed": "2026-11-10",
+      "value": 76,
+      "gross": 76,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 76,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "NNUDE1",
+          "qty": 2,
+          "revenue": 76,
+          "type": "Other"
+        }
+      ],
+      "region": "England",
+      "country": "GB",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Redcar, ENG"
+    },
     {
       "id": "NUB-3916",
       "customer": "Hannah  Clark",
@@ -748,7 +781,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-ultimate-peptide-lip-kit-safe-reversible-alternative-to-lip-fillers",
+      "sku": "NKADV",
       "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 2477,
       "reorderPt": 10,
@@ -955,7 +988,7 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "pre-order-nubyen-lip-flip-peptide",
+      "sku": "NKEXT",
       "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 999,
       "reorderPt": 10,
@@ -1119,7 +1152,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 788,
+      "onHand": 786,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1279,9 +1312,18 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-nude-duo-set-of-two",
+      "sku": "NKMIRF",
       "name": "Nubyen Plumping Lip Filá MIRACLE Kit. Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 1999,
+      "onHand": 999,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NKMIRN",
+      "name": "Nubyen Plumping Lip Filá MIRACLE Kit. Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1333,16 +1375,43 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-powerful-plumping-peptide-color-lip-kit",
+      "sku": "NKPOW1",
       "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 3999,
+      "onHand": 999,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-intensity-silk-peptide-lip-kit",
+      "sku": "NKPOW2",
+      "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NKPOW3",
+      "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NKPOW4",
+      "name": "Nubyén POWERFUL Plumping Peptide +++ (Color) Lip Kit | ADAPTOGEN | Safe, Reversible & Alternative to Lip Fillers",
+      "onHand": 1000,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NKINT",
       "name": "Nubyén Peptide Plumping INTENSITY +++ Silk Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 2483,
       "reorderPt": 10,
@@ -1541,21 +1610,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 2201,
-    "orderCount": 16,
-    "unfulfilledValue": 154,
-    "unfulfilledCount": 2,
+    "totalValue": 2277,
+    "orderCount": 17,
+    "unfulfilledValue": 230,
+    "unfulfilledCount": 3,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 3,
+        "value": 230
+      },
       "Fulfilled": {
         "count": 14,
         "value": 2047
-      },
-      "Unfulfilled": {
-        "count": 2,
-        "value": 154
       }
     },
     "revenueByDay": {
+      "2026-11-10": 76,
       "2026-11-02": 76,
       "2026-10-27": 68,
       "2026-10-16": 86,
@@ -1573,14 +1643,14 @@
     "stockHealth": {
       "out": 2,
       "low": 5,
-      "total": 105
+      "total": 109
     }
   },
   "insights": [
     {
       "kind": "orders",
       "severity": "info",
-      "text": "2 unfulfilled orders worth $154 awaiting fulfillment."
+      "text": "3 unfulfilled orders worth $230 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1605,7 +1675,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 2."
+      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }
