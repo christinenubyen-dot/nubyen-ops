@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-12T03:33:35.555Z",
+  "syncedAt": "2026-11-12T12:06:33.395Z",
   "orders": [
     {
       "id": "NUB-3917",
@@ -13,7 +13,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 76,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 2,
       "lineItems": [
         {
@@ -28,9 +28,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-11-12",
       "fc": "Tarlu",
       "address": "Redcar, ENG"
     },
@@ -185,7 +185,7 @@
       "discounts": 7,
       "refunds": 0,
       "net": 45,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -200,9 +200,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-11-12",
       "fc": "Tarlu",
       "address": "Richmond, ENG"
     },
@@ -350,7 +350,7 @@
       "discounts": 0,
       "refunds": 0,
       "net": 109,
-      "status": "Unfulfilled",
+      "status": "Fulfilled",
       "items": 1,
       "lineItems": [
         {
@@ -365,9 +365,9 @@
       "country": "GB",
       "courier": null,
       "tracking": null,
-      "delivery": "Awaiting pick",
+      "delivery": "Label created",
       "eta": null,
-      "ship": null,
+      "ship": "2026-11-12",
       "fc": "Tarlu",
       "address": "London, ENG"
     },
@@ -1612,16 +1612,12 @@
   "analytics": {
     "totalValue": 2277,
     "orderCount": 17,
-    "unfulfilledValue": 230,
-    "unfulfilledCount": 3,
+    "unfulfilledValue": 0,
+    "unfulfilledCount": 0,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 3,
-        "value": 230
-      },
       "Fulfilled": {
-        "count": 14,
-        "value": 2047
+        "count": 17,
+        "value": 2277
       }
     },
     "revenueByDay": {
@@ -1648,16 +1644,6 @@
   },
   "insights": [
     {
-      "kind": "orders",
-      "severity": "info",
-      "text": "3 unfulfilled orders worth $230 awaiting fulfillment."
-    },
-    {
-      "kind": "orders",
-      "severity": "high",
-      "text": "2 orders have been unfulfilled over 7 days ($154). Prioritize these."
-    },
-    {
       "kind": "stock",
       "severity": "high",
       "text": "1 SKU is oversold (negative stock): NADVQAQ. Restock urgently."
@@ -1671,11 +1657,6 @@
       "kind": "stock",
       "severity": "info",
       "text": "5 low-stock items have no incoming replenishment."
-    },
-    {
-      "kind": "orders",
-      "severity": "info",
-      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }
