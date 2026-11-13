@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-11-12T20:37:27.552Z",
+  "syncedAt": "2026-11-13T01:38:17.020Z",
   "orders": [
+    {
+      "id": "NUB-3918",
+      "customer": "Emeline Martin",
+      "customerId": 23209752134018,
+      "email": "emeline.6o@hotmail.fr",
+      "customerOrders": null,
+      "placed": "2026-11-12",
+      "value": 103,
+      "gross": 103,
+      "discounts": 18,
+      "refunds": 0,
+      "net": 103,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Starter Kit |Plumping Peptides Lip Filá Balm Trio| Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "Trio1",
+          "qty": 1,
+          "revenue": 121,
+          "type": "Other"
+        }
+      ],
+      "region": "France",
+      "country": "FR",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Beauvais, FR"
+    },
     {
       "id": "NUB-3917",
       "customer": "Deborah Foulds",
@@ -1332,7 +1365,7 @@
     {
       "sku": "Trio1",
       "name": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 4966,
+      "onHand": 4965,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1610,17 +1643,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 2277,
-    "orderCount": 17,
-    "unfulfilledValue": 0,
-    "unfulfilledCount": 0,
+    "totalValue": 2380,
+    "orderCount": 18,
+    "unfulfilledValue": 103,
+    "unfulfilledCount": 1,
     "statusBreakdown": {
+      "Unfulfilled": {
+        "count": 1,
+        "value": 103
+      },
       "Fulfilled": {
         "count": 17,
         "value": 2277
       }
     },
     "revenueByDay": {
+      "2026-11-12": 103,
       "2026-11-10": 76,
       "2026-11-02": 76,
       "2026-10-27": 68,
@@ -1644,6 +1682,11 @@
   },
   "insights": [
     {
+      "kind": "orders",
+      "severity": "info",
+      "text": "1 unfulfilled order worth $103 awaiting fulfillment."
+    },
+    {
       "kind": "stock",
       "severity": "high",
       "text": "1 SKU is oversold (negative stock): NADVQAQ. Restock urgently."
@@ -1657,6 +1700,11 @@
       "kind": "stock",
       "severity": "info",
       "text": "5 low-stock items have no incoming replenishment."
+    },
+    {
+      "kind": "orders",
+      "severity": "info",
+      "text": "Unfulfilled load: Tarlu 1."
     }
   ]
 }
