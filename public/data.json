@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-13T09:01:07.332Z",
+  "syncedAt": "2026-11-13T17:28:29.544Z",
   "orders": [
     {
       "id": "NUB-3918",
@@ -815,7 +815,7 @@
     },
     {
       "sku": "NKADV",
-      "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 2477,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1030,6 +1030,15 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "NADVQAQ",
+      "name": "Nubyen Lip Filá ADVANCED +++ Lip Plumping Adaptogen Elixir",
+      "onHand": -14,
+      "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NPRO3",
       "name": "Nubyen Lash + Brow Growth Enhancement Serum (Lash Prósperity)",
       "onHand": 331,
@@ -1060,6 +1069,15 @@
       "sku": "NTRIE",
       "name": "Nubyén Lip Plumping Matte Prosperity Lipstick | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 997,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPFIL",
+      "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
+      "onHand": 2503,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1174,15 +1192,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-mindful-halter-neck-top",
-      "name": "Nubyen Mindful Halter Neck Top",
-      "onHand": 3998,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
       "onHand": 786,
@@ -1222,15 +1231,6 @@
       "sku": "NMHB2",
       "name": "Nubyen Muse Highlighter Body & Face Brush",
       "onHand": 998,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLIPFIL",
-      "name": "NUBYÉN PLUMPING LIP FILÁ BALM",
-      "onHand": 2503,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1453,10 +1453,10 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NADVQAQ",
-      "name": "PRE ORDER | Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
-      "onHand": -14,
-      "reorderPt": 1,
+      "sku": "nubyen-mindful-halter-neck-top",
+      "name": "Nubyen Mindful Halter Neck Top",
+      "onHand": 3998,
+      "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
