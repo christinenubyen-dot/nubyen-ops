@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-23T11:43:03.926Z",
+  "syncedAt": "2026-11-23T23:18:26.368Z",
   "orders": [
     {
       "id": "NUB-3918",
@@ -535,95 +535,6 @@
       "ship": "2026-09-29",
       "fc": "Tarlu",
       "address": "London, ENG"
-    },
-    {
-      "id": "NUB-3902",
-      "customer": "Sultana AL FAISAL",
-      "customerId": 24234893508994,
-      "email": "s.alfaisal@irisgroupsa.com",
-      "customerOrders": null,
-      "placed": "2026-09-24",
-      "value": 406,
-      "gross": 406,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 406,
-      "status": "Fulfilled",
-      "items": 9,
-      "lineItems": [
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLPO4",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLPO3",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": null,
-          "qty": 1,
-          "revenue": 111,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Brow Pomade. Restore Me- Photoactive Elevator",
-          "sku": "NREM5",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyén Brow Pomade. Restore Me- Photoactive Elevator",
-          "sku": "NREM4",
-          "qty": 1,
-          "revenue": 35,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLIPA3",
-          "qty": 1,
-          "revenue": 39,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLIPA1",
-          "qty": 1,
-          "revenue": 39,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLIPA2",
-          "qty": 1,
-          "revenue": 39,
-          "type": "Other"
-        },
-        {
-          "title": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": "NLIPA4",
-          "qty": 1,
-          "revenue": 39,
-          "type": "Other"
-        }
-      ],
-      "region": "Saudi Arabia",
-      "country": "SA",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-29",
-      "fc": "Tarlu",
-      "address": "Jeddah, SA"
     }
   ],
   "products": [
@@ -1610,8 +1521,8 @@
     }
   ],
   "analytics": {
-    "totalValue": 2156,
-    "orderCount": 17,
+    "totalValue": 1750,
+    "orderCount": 16,
     "unfulfilledValue": 103,
     "unfulfilledCount": 1,
     "statusBreakdown": {
@@ -1620,8 +1531,8 @@
         "value": 103
       },
       "Fulfilled": {
-        "count": 16,
-        "value": 2053
+        "count": 15,
+        "value": 1647
       }
     },
     "revenueByDay": {
@@ -1637,8 +1548,7 @@
       "2026-10-08": 151,
       "2026-10-02": 157,
       "2026-09-29": 129,
-      "2026-09-27": 109,
-      "2026-09-24": 406
+      "2026-09-27": 109
     },
     "stockHealth": {
       "out": 2,
