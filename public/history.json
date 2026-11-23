@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-08-25",
-    "syncedAt": "2026-08-25T23:21:14.417Z",
-    "totalValue": 4955,
-    "orderCount": 99,
-    "unfulfilledValue": 1766,
-    "unfulfilledCount": 25,
-    "out": 2,
-    "low": 5
-  },
-  {
     "date": "2026-08-26",
     "syncedAt": "2026-08-26T21:36:42.452Z",
     "totalValue": 4955,
@@ -892,6 +882,16 @@
   {
     "date": "2026-11-22",
     "syncedAt": "2026-11-22T21:28:48.981Z",
+    "totalValue": 2156,
+    "orderCount": 17,
+    "unfulfilledValue": 103,
+    "unfulfilledCount": 1,
+    "out": 2,
+    "low": 5
+  },
+  {
+    "date": "2026-11-23",
+    "syncedAt": "2026-11-23T02:10:15.041Z",
     "totalValue": 2156,
     "orderCount": 17,
     "unfulfilledValue": 103,
