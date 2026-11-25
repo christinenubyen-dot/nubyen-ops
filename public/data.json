@@ -1,6 +1,119 @@
 {
-  "syncedAt": "2026-11-25T13:50:37.769Z",
+  "syncedAt": "2026-11-25T22:54:43.085Z",
   "orders": [
+    {
+      "id": "NUB-3921",
+      "customer": "STEPHENIE REED",
+      "customerId": 26039506862466,
+      "email": "bounce-o3-ptmdhe@mail.codisto.com",
+      "customerOrders": null,
+      "placed": "2026-11-25",
+      "value": 31,
+      "gross": 31,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 31,
+      "status": "Fulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyen Lip Fila Ultimate +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 31,
+          "type": "Other"
+        }
+      ],
+      "region": "Arkansas",
+      "country": "US",
+      "courier": "EasyPost - USPS Ground Advantage",
+      "tracking": "9434636208192309349991",
+      "delivery": "In transit",
+      "eta": null,
+      "ship": "2026-11-25",
+      "fc": "Tarlu",
+      "address": "Decatur, AR"
+    },
+    {
+      "id": "NUB-3920",
+      "customer": "Tanya Dodge",
+      "customerId": 26039391846786,
+      "email": "bounce-o2-ptmdhe@mail.codisto.com",
+      "customerOrders": null,
+      "placed": "2026-11-25",
+      "value": 71,
+      "gross": 71,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 71,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPA",
+          "qty": 1,
+          "revenue": 39,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyen Lip Fila Ultimate +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 32,
+          "type": "Other"
+        }
+      ],
+      "region": "Arkansas",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Rogers, AR"
+    },
+    {
+      "id": "NUB-3919",
+      "customer": "Tina Tate",
+      "customerId": 26039002399106,
+      "email": "bounce-o1-ptmdhe@mail.codisto.com",
+      "customerOrders": null,
+      "placed": "2026-11-25",
+      "value": 71,
+      "gross": 71,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 71,
+      "status": "Unfulfilled",
+      "items": 2,
+      "lineItems": [
+        {
+          "title": "Nubyen Lip Fila ADVANCED +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPA",
+          "qty": 1,
+          "revenue": 39,
+          "type": "Other"
+        },
+        {
+          "title": "Nubyen Lip Fila Ultimate +++ Lip Plumping Adaptogen Elixir",
+          "sku": "NLIPFIL",
+          "qty": 1,
+          "revenue": 32,
+          "type": "Other"
+        }
+      ],
+      "region": "Arkansas",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Centerton, AR"
+    },
     {
       "id": "NUB-3918",
       "customer": "Emeline Martin",
@@ -955,7 +1068,7 @@
     {
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
-      "onHand": 2503,
+      "onHand": 2500,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1521,21 +1634,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 1750,
-    "orderCount": 16,
-    "unfulfilledValue": 103,
-    "unfulfilledCount": 1,
+    "totalValue": 1923,
+    "orderCount": 19,
+    "unfulfilledValue": 245,
+    "unfulfilledCount": 3,
     "statusBreakdown": {
-      "Unfulfilled": {
-        "count": 1,
-        "value": 103
-      },
       "Fulfilled": {
-        "count": 15,
-        "value": 1647
+        "count": 16,
+        "value": 1678
+      },
+      "Unfulfilled": {
+        "count": 3,
+        "value": 245
       }
     },
     "revenueByDay": {
+      "2026-11-25": 173,
       "2026-11-12": 103,
       "2026-11-10": 76,
       "2026-11-02": 76,
@@ -1560,7 +1674,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "1 unfulfilled order worth $103 awaiting fulfillment."
+      "text": "3 unfulfilled orders worth $245 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1585,7 +1699,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 1."
+      "text": "Unfulfilled load: Tarlu 3."
     }
   ]
 }
