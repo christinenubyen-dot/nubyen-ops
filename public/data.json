@@ -1,6 +1,39 @@
 {
-  "syncedAt": "2026-11-26T04:40:35.876Z",
+  "syncedAt": "2026-11-26T14:40:47.509Z",
   "orders": [
+    {
+      "id": "NUB-3922",
+      "customer": "John j Gurin",
+      "customerId": 24845363184002,
+      "email": "gurinchristine@gmail.com",
+      "customerOrders": null,
+      "placed": "2026-11-26",
+      "value": 44,
+      "gross": 39,
+      "discounts": 0,
+      "refunds": 0,
+      "net": 44,
+      "status": "Unfulfilled",
+      "items": 1,
+      "lineItems": [
+        {
+          "title": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
+          "sku": "NNUDE1",
+          "qty": 1,
+          "revenue": 39,
+          "type": "Other"
+        }
+      ],
+      "region": "Michigan",
+      "country": "US",
+      "courier": null,
+      "tracking": null,
+      "delivery": "Awaiting pick",
+      "eta": null,
+      "ship": null,
+      "fc": "Tarlu",
+      "address": "Clinton twp, MI"
+    },
     {
       "id": "NUB-3921",
       "customer": "STEPHENIE REED",
@@ -615,39 +648,6 @@
       "ship": "2026-10-09",
       "fc": "Tarlu",
       "address": "Vancouver, BC"
-    },
-    {
-      "id": "NUB-3903",
-      "customer": "Jacki",
-      "customerId": 24908859605378,
-      "email": "jackicastelli@mac.com",
-      "customerOrders": null,
-      "placed": "2026-09-27",
-      "value": 109,
-      "gross": 109,
-      "discounts": 0,
-      "refunds": 0,
-      "net": 109,
-      "status": "Fulfilled",
-      "items": 1,
-      "lineItems": [
-        {
-          "title": "Nubyén ADVANCED Peptide Plumping ++ Collagen Plus Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
-          "sku": null,
-          "qty": 1,
-          "revenue": 109,
-          "type": "Other"
-        }
-      ],
-      "region": "England",
-      "country": "GB",
-      "courier": null,
-      "tracking": null,
-      "delivery": "Label created",
-      "eta": null,
-      "ship": "2026-09-29",
-      "fc": "Tarlu",
-      "address": "London, ENG"
     }
   ],
   "products": [
@@ -1185,7 +1185,7 @@
     {
       "sku": "NNUDE1",
       "name": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 786,
+      "onHand": 785,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1634,21 +1634,22 @@
     }
   ],
   "analytics": {
-    "totalValue": 1923,
+    "totalValue": 1858,
     "orderCount": 19,
-    "unfulfilledValue": 245,
-    "unfulfilledCount": 3,
+    "unfulfilledValue": 289,
+    "unfulfilledCount": 4,
     "statusBreakdown": {
-      "Fulfilled": {
-        "count": 16,
-        "value": 1678
-      },
       "Unfulfilled": {
-        "count": 3,
-        "value": 245
+        "count": 4,
+        "value": 289
+      },
+      "Fulfilled": {
+        "count": 15,
+        "value": 1569
       }
     },
     "revenueByDay": {
+      "2026-11-26": 44,
       "2026-11-25": 173,
       "2026-11-12": 103,
       "2026-11-10": 76,
@@ -1661,8 +1662,7 @@
       "2026-10-09": 397,
       "2026-10-08": 151,
       "2026-10-02": 157,
-      "2026-09-29": 129,
-      "2026-09-27": 109
+      "2026-09-29": 129
     },
     "stockHealth": {
       "out": 2,
@@ -1674,7 +1674,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "3 unfulfilled orders worth $245 awaiting fulfillment."
+      "text": "4 unfulfilled orders worth $289 awaiting fulfillment."
     },
     {
       "kind": "orders",
@@ -1699,7 +1699,7 @@
     {
       "kind": "orders",
       "severity": "info",
-      "text": "Unfulfilled load: Tarlu 3."
+      "text": "Unfulfilled load: Tarlu 4."
     }
   ]
 }
