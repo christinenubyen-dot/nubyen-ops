@@ -1,5 +1,5 @@
 {
-  "syncedAt": "2026-11-26T14:40:47.509Z",
+  "syncedAt": "2026-11-26T23:27:16.521Z",
   "orders": [
     {
       "id": "NUB-3922",
@@ -652,15 +652,6 @@
   ],
   "products": [
     {
-      "sku": "NNUDE2",
-      "name": "Collagen EXTREME +++ Nubyen Nude Lip Plumping Gloss | Lip Boosting & Hydrating | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 993,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "NBEAU",
       "name": "Nubyen 'Botox' alternative- Vegan Beautox Skin Beautifying Elixir",
       "onHand": 1029,
@@ -806,8 +797,17 @@
     },
     {
       "sku": "NKADV",
-      "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Lip Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén ADVANCED Peptide Plumping ++ Collagen Lip Kit",
       "onHand": 2477,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NNUDE2",
+      "name": "Nubyén Collagen EXTREME +++ Nude Lip Plumping Gloss",
+      "onHand": 993,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -923,7 +923,7 @@
     },
     {
       "sku": "NLIPD",
-      "name": "Nubyen EXTREME + Plumping Lip Filá Peptide Scrub",
+      "name": "Nubyén EXTREME + Plumping Lip Filá Peptide Scrub",
       "onHand": 987,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1013,7 +1013,7 @@
     },
     {
       "sku": "NKEXT",
-      "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén EXTREME Plumping & Rejuvenating Transformation Kit",
       "onHand": 999,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1022,7 +1022,7 @@
     },
     {
       "sku": "NADVQAQ",
-      "name": "Nubyen Lip Filá ADVANCED +++ Lip Plumping Adaptogen Elixir",
+      "name": "Nubyén Lip Filá ADVANCED +++ Plumping Adaptogen Elixir",
       "onHand": -14,
       "reorderPt": 1,
       "onOrder": 0,
@@ -1040,7 +1040,7 @@
     },
     {
       "sku": "NTRIR",
-      "name": "Nubyén Lip Plumping Matte Prosperity Lipstick | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Lip Plumping Matte Prosperity Lipstick",
       "onHand": 1058,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1049,7 +1049,7 @@
     },
     {
       "sku": "NTRIG",
-      "name": "Nubyén Lip Plumping Matte Prosperity Lipstick | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Lip Plumping Matte Prosperity Lipstick",
       "onHand": 1062,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1058,7 +1058,7 @@
     },
     {
       "sku": "NTRIE",
-      "name": "Nubyén Lip Plumping Matte Prosperity Lipstick | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Lip Plumping Matte Prosperity Lipstick",
       "onHand": 997,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1069,33 +1069,6 @@
       "sku": "NLIPFIL",
       "name": "Nubyén Lip Filá ULTIMATE +++ Lip Plumping Adaptogen Elixir",
       "onHand": 2500,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLPO1",
-      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 970,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLPO3",
-      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 989,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLPO4",
-      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 990,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1129,15 +1102,6 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLPO5",
-      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 993,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
       "sku": "nubyen-higher-powers-skirt",
       "name": "Nubyen Higher Powers Skirt",
       "onHand": 5000,
@@ -1147,18 +1111,18 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLPO2",
-      "name": "Nubyen Lip Plumping Oil - POWERFUL Enhancing Collagen Plus (+) | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 984,
+      "sku": "nubyen-joy-two-tone-chain-cuff-ring",
+      "name": "Nubyen Joy Two-Tone Chain Cuff Ring",
+      "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-joy-two-tone-chain-cuff-ring",
-      "name": "Nubyen Joy Two-Tone Chain Cuff Ring",
-      "onHand": 1000,
+      "sku": "nubyen-abundance-visor",
+      "name": "Nubyén Motivate & Go Visor",
+      "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1183,8 +1147,17 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "nubyen-mindful-halter-neck-top",
+      "name": "Nubyen Mindful Halter Neck Top",
+      "onHand": 3998,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "NNUDE1",
-      "name": "Nubyén Nude Lip Plumping Augmentation Gloss | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Nude Lip Plumping Augmentation Gloss",
       "onHand": 785,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1228,36 +1201,27 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLIPA4",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 980,
+      "sku": "NLPO1",
+      "name": "Nubyén POWERFUL Lip Plumping Oil with Collagen (+)",
+      "onHand": 970,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLIPA2",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 986,
+      "sku": "NLPO3",
+      "name": "Nubyén POWERFUL Lip Plumping Oil with Collagen (+)",
+      "onHand": 989,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
     },
     {
-      "sku": "NLIPA1",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 988,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "NLIPA3",
-      "name": "Nubyen Plumping  Lip Filá Tinted Prosperity Balm | Safe, Reversible & Alternative to Lip Fillers",
-      "onHand": 982,
+      "sku": "NLPO4",
+      "name": "Nubyén POWERFUL Lip Plumping Oil with Collagen (+)",
+      "onHand": 990,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1337,7 +1301,7 @@
     },
     {
       "sku": "NKMIRF",
-      "name": "Nubyen Plumping Lip Filá MIRACLE Kit. Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Plumping Lip Filá MIRACLE Kit",
       "onHand": 999,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1346,7 +1310,7 @@
     },
     {
       "sku": "NKMIRN",
-      "name": "Nubyen Plumping Lip Filá MIRACLE Kit. Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Plumping Lip Filá MIRACLE Kit",
       "onHand": 1000,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1354,8 +1318,26 @@
       "supplier": "Tarlu"
     },
     {
+      "sku": "NLPO5",
+      "name": "Nubyén POWERFUL Lip Plumping Oil with Collagen (+)",
+      "onHand": 993,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLPO2",
+      "name": "Nubyén POWERFUL Lip Plumping Oil with Collagen (+)",
+      "onHand": 984,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
       "sku": "Trio1",
-      "name": "Nubyén Plumping Peptide Lip Kit (Clear) | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "Nubyén Plumping Peptide Lip Kit (Clear)",
       "onHand": 4965,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1384,15 +1366,6 @@
       "sku": "nubyen-ring-dominion-double-dome",
       "name": "Nubyen Ring Dominion Double Dome",
       "onHand": 1000,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-abundance-visor",
-      "name": "Nubyén Motivate & Go Visor",
-      "onHand": 2000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1444,9 +1417,9 @@
       "supplier": "Tarlu"
     },
     {
-      "sku": "nubyen-mindful-halter-neck-top",
-      "name": "Nubyen Mindful Halter Neck Top",
-      "onHand": 3998,
+      "sku": "nubyen-soho-2-0-fold-over-capri-legging",
+      "name": "Nubyen Soho 2.0 Fold Over Capri Legging",
+      "onHand": 10000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
@@ -1484,6 +1457,42 @@
       "name": "The Minimalist- Nubyen Vegan 3 in 1 Face Brush",
       "onHand": 986,
       "reorderPt": 1,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA4",
+      "name": "Nubyén Tinted Plumping Lip Filá Prosperity Balm",
+      "onHand": 980,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA2",
+      "name": "Nubyén Tinted Plumping Lip Filá Prosperity Balm",
+      "onHand": 986,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA1",
+      "name": "Nubyén Tinted Plumping Lip Filá Prosperity Balm",
+      "onHand": 988,
+      "reorderPt": 10,
+      "onOrder": 0,
+      "lastStocked": null,
+      "supplier": "Tarlu"
+    },
+    {
+      "sku": "NLIPA3",
+      "name": "Nubyén Tinted Plumping Lip Filá Prosperity Balm",
+      "onHand": 982,
+      "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
       "supplier": "Tarlu"
@@ -1553,7 +1562,7 @@
     },
     {
       "sku": "NLIPFILG",
-      "name": "PRE-ORDER Nubyén Maximum Plumping +++ Lip Filá Max Silk Gloss | Safe, Reversible & Alternative to Lip Fillers",
+      "name": "PRE-ORDER | Nubyén Maximum +++ Lip Filá Plumping Gloss",
       "onHand": 6,
       "reorderPt": 10,
       "onOrder": 0,
@@ -1618,15 +1627,6 @@
       "sku": "sample-product",
       "name": "Sample Product",
       "onHand": 6,
-      "reorderPt": 10,
-      "onOrder": 0,
-      "lastStocked": null,
-      "supplier": "Tarlu"
-    },
-    {
-      "sku": "nubyen-soho-2-0-fold-over-capri-legging",
-      "name": "Nubyen Soho 2.0 Fold Over Capri Legging",
-      "onHand": 10000,
       "reorderPt": 10,
       "onOrder": 0,
       "lastStocked": null,
