@@ -891,11 +891,11 @@
   },
   {
     "date": "2026-11-28",
-    "syncedAt": "2026-11-28T01:00:04.017Z",
-    "totalValue": 1896,
-    "orderCount": 20,
-    "unfulfilledValue": 327,
-    "unfulfilledCount": 5,
+    "syncedAt": "2026-11-28T08:49:04.691Z",
+    "totalValue": 1979,
+    "orderCount": 21,
+    "unfulfilledValue": 410,
+    "unfulfilledCount": 6,
     "out": 2,
     "low": 5
   }
